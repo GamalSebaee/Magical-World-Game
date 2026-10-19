@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "id": "number-island",
+  "code": "ni",
+  "name": { "ar": "جزيرة الأرقام", "en": "Number Island" },
+  "nameAudio": { "ar": ["world.ni.name"], "en": ["world.ni.name"], "caption": { "ar": "جزيرة الأرقام", "en": "Number Island" } },
+  "welcome": { "ar": ["world.ni.welcome"], "en": ["world.ni.welcome"], "caption": { "ar": "أهلاً في جزيرة الأرقام!", "en": "Welcome to Number Island!" } },
+  "mapHotspot": { "asset": "map/number-island", "position": { "x": 0.8, "y": 0.62 } },
+  "levels": ["ni-01", "ni-02", "ni-03", "ni-04"],
+  "assetPack": "pack.number-island"
+}

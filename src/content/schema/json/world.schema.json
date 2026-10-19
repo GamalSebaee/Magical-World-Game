@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "contentVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+(-[a-z]+)*$"
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "ar": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mixed": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "ar",
+        "en"
+      ]
+    },
+    "nameAudio": {
+      "type": "object",
+      "properties": {
+        "ar": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+          }
+        },
+        "en": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+          }
+        },
+        "mixed": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+:(ar|en)$"
+          }
+        },
+        "caption": {
+          "type": "object",
+          "properties": {
+            "ar": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mixed": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "ar",
+            "en"
+          ]
+        }
+      },
+      "required": [
+        "ar",
+        "en",
+        "caption"
+      ]
+    },
+    "welcome": {
+      "type": "object",
+      "properties": {
+        "ar": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+          }
+        },
+        "en": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+          }
+        },
+        "mixed": {
+          "minItems": 1,
+          "maxItems": 4,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+:(ar|en)$"
+          }
+        },
+        "caption": {
+          "type": "object",
+          "properties": {
+            "ar": {
+              "type": "string",
+              "minLength": 1
+            },
+            "en": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mixed": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "ar",
+            "en"
+          ]
+        }
+      },
+      "required": [
+        "ar",
+        "en",
+        "caption"
+      ]
+    },
+    "mapHotspot": {
+      "type": "object",
+      "properties": {
+        "asset": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+\\/[a-z0-9-]+$"
+        },
+        "position": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "x",
+            "y"
+          ]
+        }
+      },
+      "required": [
+        "asset",
+        "position"
+      ]
+    },
+    "levels": {
+      "minItems": 4,
+      "maxItems": 4,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2}-\\d{2}$"
+      }
+    },
+    "assetPack": {
+      "type": "string",
+      "pattern": "^pack\\.[a-z-]+$"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "contentVersion",
+    "id",
+    "code",
+    "name",
+    "nameAudio",
+    "welcome",
+    "mapHotspot",
+    "levels",
+    "assetPack"
+  ]
+}

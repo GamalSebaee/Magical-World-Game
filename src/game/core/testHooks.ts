@@ -1,0 +1,43 @@
+import { getOfflineStatus } from '@services/offline/serviceWorker';
+import type { StorageRepositories } from '@services/storage/repositories';
+import type { StorageStatus } from '@services/storage/openStorage';
+import { phaserHost } from './phaserHost';
+import type { SceneObjectInfo } from './scenes/FoundationScene';
+
+interface HookDeps {
+  storage: StorageRepositories;
+  storageStatus: StorageStatus;
+}
+
+/**
+ * `window.__MWG__` for Playwright (09 §1). Installed only when the `testHooks` flag is on
+ * (development, or builds made with NEXT_PUBLIC_TEST_HOOKS=1). Read-only views of state.
+ */
+export function installTestHooks(deps: HookDeps) {
+  const hooks = {
+    phaser: () => phaserHost.getStats(),
+    sceneObjects: (): SceneObjectInfo[] => {
+      const game = phaserHost.getGame();
+      if (!game) return [];
+      return game.scene
+        .getScenes(true)
+        .flatMap((s) => ('describeObjects' in s ? (s as { describeObjects(): SceneObjectInfo[] }).describeObjects() : []));
+    },
+    phaserScale: () => {
+      const sm = phaserHost.getGame()?.scale;
+      if (!sm) return undefined;
+      return {
+        displayScale: { x: sm.displayScale.x, y: sm.displayScale.y },
+        baseSize: { w: sm.baseSize.width, h: sm.baseSize.height },
+        canvasBounds: { x: sm.canvasBounds.x, y: sm.canvasBounds.y, w: sm.canvasBounds.width, h: sm.canvasBounds.height },
+      };
+    },
+    storageStatus: () => deps.storageStatus,
+    storageCounts: () => deps.storage.counts(),
+    offline: () => getOfflineStatus(),
+  };
+  (window as unknown as { __MWG__: typeof hooks }).__MWG__ = hooks;
+  return hooks;
+}
+
+export type MwgTestHooks = ReturnType<typeof installTestHooks>;

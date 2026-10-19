@@ -1,0 +1,19 @@
+{
+  "name": "عالم مريم السحري · Mariam's Magical World",
+  "short_name": "عالم مريم",
+  "description": "A bilingual early-learning adventure for young children.",
+  "lang": "ar",
+  "dir": "auto",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#e8f6ff",
+  "theme_color": "#e8f6ff",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

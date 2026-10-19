@@ -10,10 +10,12 @@ magical-world-game/
 ├─ licenses/                          archived third-party licence texts for assets
 ├─ scripts/
 │  ├─ content/validate.ts             Zod + cross-ref + file existence + review-status checks
+│  ├─ content/sync-manifests.ts       adds `planned` manifest entries for newly referenced clips/assets
 │  ├─ content/gen-json-schema.ts      z.toJSONSchema → src/content/schema/*.schema.json
 │  ├─ audio/check.ts                  loudness, true peak, duration, missing files
 │  ├─ assets/pack-atlases.ts          free-tex-packer-core → public/assets/atlases
 │  ├─ assets/size-report.ts           per-pack and total precache sizes vs budget
+│  ├─ assets/render-icons.ts          icon.svg → PWA PNG icons
 │  └─ sw/build.ts                     serwist injectManifest over out/
 ├─ public/
 │  ├─ manifest.webmanifest            name, icons, display: standalone, orientation: any
@@ -25,6 +27,7 @@ magical-world-game/
 ├─ src/
 │  ├─ app/                            Next.js App Router (routing and layout only; thin pages)
 │  │  ├─ layout.tsx                   <html lang dir>, providers (AppServices, i18n), safe-area CSS vars
+│  │  ├─ _providers/                  AppServices wiring, boot sequence, AppProvider (private folder)
 │  │  ├─ error.tsx                    root error boundary
 │  │  ├─ (child)/
 │  │  │  ├─ page.tsx                  C1 splash
@@ -54,7 +57,8 @@ magical-world-game/
 │  │  │  ├─ registry.ts               ActivityRegistry
 │  │  │  ├─ lifecycle.machine.ts      base activity state chart (XState)
 │  │  │  ├─ hintPolicy.ts, feedbackDirector.ts, layoutSolver.ts, contentResolver.ts
-│  │  │  ├─ scenes/MapScene.ts, ActivityScene.ts, BootScene.ts
+│  │  │  ├─ scenes/keys.ts            scene keys (importable without pulling in Phaser)
+│  │  │  ├─ scenes/MapScene.ts, ActivityScene.ts (P2); FoundationScene.ts (P1 placeholder)
 │  │  │  └─ testHooks.ts              window.__MWG__ (test builds only)
 │  │  └─ activities/
 │  │     ├─ tap-discover/{definition.ts, machine.ts, evaluate.ts, scene.ts, layouts.ts, *.test.ts}
@@ -69,14 +73,16 @@ magical-world-game/
 │  │  ├─ mic/{MicrophoneRecorder.ts, MediaRecorderMic.ts, mic.machine.ts, vad.ts, mime.ts}
 │  │  ├─ speech/{SpeechRecognitionProvider.ts, NullSpeechRecognition.ts, WebSpeechRecognition.ts}
 │  │  ├─ storage/{db.ts, migrations/, repositories/, MemoryStorage.ts, export.ts}
-│  │  ├─ content/{ContentRepository.ts, loader.ts}
+│  │  ├─ content/{ContentRepository.ts, validateContent.ts, references.ts}
+│  │  ├─ offline/serviceWorker.ts     registration + honest offline-ready status
 │  │  └─ assets/{ImageAssetResolver.ts, packs.ts}
 │  ├─ shared/                         no project imports
-│  │  ├─ ids.ts (branded types), events.ts (AppEvent), result.ts, logger.ts, flags.ts, clock.ts
+│  │  ├─ ids.ts (branded types), events.ts (AppEvent + EventBus), runtime.ts (clock, logger, flags)
 │  │  ├─ i18n/{direction.ts, Bdi.tsx, digits.ts, uiStrings.ar.ts, uiStrings.en.ts}
 │  │  └─ ui/                          design tokens, BigButton, EarButton, Overlay, focus utils
 │  ├─ content/                        validated JSON (the only place content lives)
-│  │  ├─ schema/                      Zod schemas (.ts) + generated JSON Schema
+│  │  ├─ schema/                      Zod schemas (.ts) + generated JSON Schema in schema/json/
+│  │  ├─ bundle.ts                    the only module that imports content JSON
 │  │  ├─ index.json, skills.json, vocabulary.json
 │  │  ├─ worlds/*.world.json
 │  │  ├─ levels/*.level.json

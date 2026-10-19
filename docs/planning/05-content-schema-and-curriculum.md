@@ -63,7 +63,7 @@ export const LocalizedAudioRef = z.object({
 export const SkillId = z.string().regex(/^(vocab|math|color|shape|speak|listen)\.[a-z_]+\.[a-z0-9_]+$/).brand<'SkillId'>();
 export const AssetRef = z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/);
 
-const Hints = z.tuple([LocalizedAudioRef]).rest(LocalizedAudioRef).refine(h => h.length <= 3);
+const Hints = z.array(LocalizedAudioRef).min(1).max(3);   // 1–3 progressive hints
 
 const ActivityBase = z.object({
   id: z.string().regex(/^[a-z]{2}\d{2}\.a\d$/),

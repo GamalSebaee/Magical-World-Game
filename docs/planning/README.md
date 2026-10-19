@@ -1,6 +1,6 @@
 # Mariam's Magical World (عالم مريم السحري) — Planning Pack
 
-Status: **Phase 0: planning only. Waiting for approval.** No application code, dependencies or assets have been added.
+Status: **Plan approved 2026-10-19. Phase 1 (foundation) implemented**; see [the Phase 1 report](../progress/phase-1.md).
 
 | # | Document | Purpose |
 |---|----------|---------|

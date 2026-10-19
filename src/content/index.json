@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "worlds": ["animal-forest", "color-town", "number-island"]
+}

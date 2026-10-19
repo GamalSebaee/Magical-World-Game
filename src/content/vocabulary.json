@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    { "id": "animals.cat", "written": { "ar": "قِطّة", "en": "cat" }, "audio": "word.animals.cat", "picture": "animals/cat" },
+    { "id": "animals.dog", "written": { "ar": "كَلْب", "en": "dog" }, "audio": "word.animals.dog", "picture": "animals/dog" }
+  ]
+}

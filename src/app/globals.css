@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+/* Design tokens (07-art-direction §2). Teaching colors are separate and used only by content. */
+@theme {
+  --color-sky-100: #e8f6ff;
+  --color-leaf-500: #5dbb63;
+  --color-sun-400: #ffc93c;
+  --color-berry-500: #e4572e;
+  --color-ocean-500: #2e86de;
+  --color-candy-400: #f78fb3;
+  --color-ink-700: #2d3047;
+  --color-cloud-0: #ffffff;
+
+  --font-sans: 'Noto Sans Arabic', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Child touch targets (03 §0): minimum 64px, primary 88px. */
+  --spacing-target: 64px;
+  --spacing-target-lg: 88px;
+  --radius-blob: 2rem;
+}
+
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--color-sky-100);
+  color: var(--color-ink-700);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+/* Child screens never need text selection, and long-press menus get in the way. */
+.child-screen {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  min-height: 100dvh;
+  padding: max(12px, var(--safe-top)) max(12px, var(--safe-right)) max(24px, var(--safe-bottom))
+    max(12px, var(--safe-left));
+}
+
+:focus-visible {
+  outline: 4px solid var(--color-ocean-500);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes mwg-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-bob {
+  animation: mwg-bob 1.8s ease-in-out infinite;
+}

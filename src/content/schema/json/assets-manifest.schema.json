@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+\\/[a-z0-9-]+$"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "image",
+              "sprite-atlas-frames",
+              "background",
+              "sticker",
+              "ui-svg"
+            ]
+          },
+          "pack": {
+            "type": "string",
+            "pattern": "^pack\\.[a-z-]+$"
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "displaySize1x": {
+            "default": null,
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "w": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "h": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  }
+                },
+                "required": [
+                  "w",
+                  "h"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "custom-vector",
+              "cc0",
+              "cc-by",
+              "ai-assisted",
+              "commissioned",
+              "unassigned"
+            ]
+          },
+          "creator": {
+            "default": null,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "aiAssisted": {
+            "default": false,
+            "type": "boolean"
+          },
+          "licence": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "url": {
+                "default": null,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "attributionRequired": {
+                "default": false,
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "placeholder",
+              "draft",
+              "review",
+              "approved"
+            ]
+          },
+          "review": {
+            "default": {
+              "by": null,
+              "date": null,
+              "notes": ""
+            },
+            "type": "object",
+            "properties": {
+              "by": {
+                "default": null,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "date": {
+                "default": null,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "notes": {
+                "default": "",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "pack",
+          "files",
+          "source",
+          "licence",
+          "status"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "assets"
+  ]
+}

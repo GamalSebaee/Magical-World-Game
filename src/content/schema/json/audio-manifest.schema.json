@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "clips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(\\.[a-z0-9_]+)+$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "voice",
+              "sfx",
+              "music"
+            ]
+          },
+          "files": {
+            "type": "object",
+            "properties": {
+              "ar": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "common": {
+                "type": "string"
+              }
+            }
+          },
+          "transcript": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "ar": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              }
+            }
+          },
+          "source": {
+            "default": "unassigned",
+            "type": "string"
+          },
+          "licence": {
+            "default": "unassigned",
+            "type": "string"
+          },
+          "review": {
+            "type": "object",
+            "properties": {
+              "ar": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "planned",
+                      "placeholder",
+                      "draft",
+                      "review",
+                      "approved"
+                    ]
+                  },
+                  "by": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "date": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "notes": {
+                    "default": "",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              },
+              "en": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "planned",
+                      "placeholder",
+                      "draft",
+                      "review",
+                      "approved"
+                    ]
+                  },
+                  "by": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "date": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "notes": {
+                    "default": "",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              },
+              "common": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "planned",
+                      "placeholder",
+                      "draft",
+                      "review",
+                      "approved"
+                    ]
+                  },
+                  "by": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "date": {
+                    "default": null,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "notes": {
+                    "default": "",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "status"
+                ]
+              }
+            }
+          },
+          "pack": {
+            "type": "string",
+            "pattern": "^pack\\.[a-z-]+$"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "files",
+          "review",
+          "pack"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "clips"
+  ]
+}

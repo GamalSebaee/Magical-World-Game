@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "id": "af-01",
+  "worldId": "animal-forest",
+  "order": 1,
+  "title": { "ar": "قابل القطة والكلب", "en": "Meet Cat & Dog" },
+  "learningGoal": {
+    "ar": "يتعرّف الطفل على كلمتي «قطة» و«كلب» بالسمع، ويختار الصورة الصحيحة، ويجرّب نطق الكلمة.",
+    "en": "The child hears the words 'cat' and 'dog', picks the matching picture, and tries saying the word."
+  },
+  "story": {
+    "illustration": "scenes/af-01-intro",
+    "intro": {
+      "ar": ["af01.story.intro"],
+      "en": ["af01.story.intro"],
+      "caption": {
+        "ar": "القطة والكلب بيلعبوا استغماية في الغابة! يلا ندوّر عليهم.",
+        "en": "Cat and Dog are playing hide-and-seek in the forest! Let's find them."
+      }
+    },
+    "outro": {
+      "ar": ["af01.story.outro"],
+      "en": ["af01.story.outro"],
+      "mixed": ["af01.story.outro_mixed:ar", "word.animals.cat:en", "word.animals.dog:en"],
+      "caption": {
+        "ar": "برافو! عرفنا القطة والكلب.",
+        "en": "Hooray! We met Cat and Dog.",
+        "mixed": "برافو! عرفنا القطة والكلب… <bdi>Cat</bdi>، <bdi>Dog</bdi>!"
+      }
+    }
+  },
+  "skills": ["vocab.animals.cat", "vocab.animals.dog", "speak.vocab.cat"],
+  "activities": [
+    {
+      "id": "af01.a1",
+      "mechanic": "tap_discover",
+      "skills": ["vocab.animals.cat", "vocab.animals.dog"],
+      "layout": "scatter-2-hide",
+      "allowSkip": true,
+      "mode": "all",
+      "instruction": {
+        "ar": ["af01.a1.instruction"],
+        "en": ["af01.a1.instruction"],
+        "caption": { "ar": "مين مستخبي ورا الشجرة والشجيرة؟ يلا نلمسهم!", "en": "Who's hiding behind the tree and the bush? Let's tap them!" }
+      },
+      "hints": [
+        { "ar": ["af01.a1.hint1"], "en": ["af01.a1.hint1"], "caption": { "ar": "نلمس الشجرة الكبيرة!", "en": "Let's tap the big tree!" } },
+        { "ar": ["af01.a1.hint2"], "en": ["af01.a1.hint2"], "caption": { "ar": "الشجيرة بتتحرك!", "en": "Look! The bush is wiggling." } },
+        { "ar": ["nono.hint.watch_me"], "en": ["nono.hint.watch_me"], "caption": { "ar": "نتفرّج على نونو!", "en": "Let's watch Nono!" } }
+      ],
+      "items": [
+        { "id": "cat", "vocab": "animals.cat", "asset": "animals/cat", "hiddenBehind": "forest/bush", "revealAnimation": "peek" },
+        { "id": "dog", "vocab": "animals.dog", "asset": "animals/dog", "hiddenBehind": "forest/tree", "revealAnimation": "hop" }
+      ],
+      "completion": { "type": "all_found" }
+    },
+    {
+      "id": "af01.a2",
+      "mechanic": "listen_choose",
+      "skills": ["vocab.animals.cat", "vocab.animals.dog"],
+      "layout": "row-2",
+      "allowSkip": true,
+      "shuffle": true,
+      "instruction": {
+        "ar": ["af01.a2.instruction"],
+        "en": ["af01.a2.instruction"],
+        "caption": { "ar": "نسمع كويس، وبعدين نلمس الصورة.", "en": "Listen carefully, then tap the picture." }
+      },
+      "hints": [
+        { "ar": ["af01.a2.hint1"], "en": ["af01.a2.hint1"], "caption": { "ar": "نسمع تاني؟", "en": "Shall we listen again?" } },
+        { "ar": ["af01.a2.hint2"], "en": ["af01.a2.hint2"], "caption": { "ar": "الكلب بيقول هو هو!", "en": "The dog says woof woof!" } },
+        { "ar": ["nono.hint.watch_me"], "en": ["nono.hint.watch_me"], "caption": { "ar": "نتفرّج على نونو!", "en": "Let's watch Nono!" } }
+      ],
+      "rounds": [
+        {
+          "prompt": {
+            "ar": ["af01.a2.where_dog"],
+            "en": ["af01.a2.where_dog"],
+            "mixed": ["af01.a2.where_mixed:ar", "word.animals.dog:en"],
+            "caption": { "ar": "فين الكلب؟", "en": "Where is the dog?", "mixed": "فين الـ <bdi>Dog</bdi>؟" }
+          },
+          "choices": [
+            { "id": "cat", "vocab": "animals.cat", "asset": "animals/cat" },
+            { "id": "dog", "vocab": "animals.dog", "asset": "animals/dog" }
+          ],
+          "answer": "dog"
+        },
+        {
+          "prompt": {
+            "ar": ["af01.a2.where_cat"],
+            "en": ["af01.a2.where_cat"],
+            "mixed": ["af01.a2.where_mixed:ar", "word.animals.cat:en"],
+            "caption": { "ar": "فين القطة؟", "en": "Where is the cat?", "mixed": "فين الـ <bdi>Cat</bdi>؟" }
+          },
+          "choices": [
+            { "id": "cat", "vocab": "animals.cat", "asset": "animals/cat" },
+            { "id": "dog", "vocab": "animals.dog", "asset": "animals/dog" }
+          ],
+          "answer": "cat"
+        }
+      ],
+      "completion": { "type": "all_rounds" }
+    },
+    {
+      "id": "af01.a3",
+      "mechanic": "speak_repeat",
+      "skills": ["speak.vocab.cat"],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "animals.cat",
+      "picture": "animals/cat",
+      "instruction": {
+        "ar": ["af01.a3.instruction"],
+        "en": ["af01.a3.instruction"],
+        "caption": { "ar": "يلا نقول «قطة» سوا! نلمس الميكروفون ونقول.", "en": "Let's say 'cat' together! Let's tap the microphone and say it." }
+      },
+      "hints": [
+        { "ar": ["af01.a3.hint1"], "en": ["af01.a3.hint1"], "caption": { "ar": "نسمع نونو الأول.", "en": "Listen to Nono first." } },
+        { "ar": ["af01.a3.hint2"], "en": ["af01.a3.hint2"], "caption": { "ar": "نلمس الميكروفون الكبير.", "en": "Tap the big microphone." } }
+      ],
+      "model": {
+        "ar": ["word.animals.cat"],
+        "en": ["word.animals.cat"],
+        "mixed": ["word.animals.cat:ar", "word.animals.cat:en"],
+        "caption": { "ar": "قِطّة", "en": "Cat", "mixed": "قِطّة… <bdi>Cat</bdi>" }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": { "type": "any_attempt_or_skip" }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.af-01",
+    "asset": "stickers/af-01-cat-dog",
+    "name": {
+      "ar": ["sticker.af01.name"],
+      "en": ["sticker.af01.name"],
+      "caption": { "ar": "ملصق القطة والكلب", "en": "Cat & Dog sticker" }
+    }
+  },
+  "assetPack": "pack.animal-forest",
+  "estimatedMinutes": [4, 7],
+  "suggestedNext": ["af-02"]
+}

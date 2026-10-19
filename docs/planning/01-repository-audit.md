@@ -33,7 +33,7 @@ Checked so the plan names versions that exist, not remembered ones. Exact pins a
 | tailwindcss | 4.3.3 | 4.x | Uses logical properties for RTL |
 | serwist / @serwist/cli | 9.5.13 | 9.x, `injectManifest` over the static export | Bundler-agnostic route avoids Turbopack/webpack plugin coupling; verify in P1 |
 | vitest | 5.0.5 | 5.x | Unit and component tests |
-| @playwright/test | 1.64.1 | 1.64.x | E2E. Environment has Chromium preinstalled; Firefox/WebKit in CI |
+| @playwright/test | 1.64.1 | **1.56.1** (implemented in P1) | Pinned to match the Chromium build preinstalled in this environment; CI may move up |
 | @testing-library/react | 16.3.3 | 16.x | |
 | fake-indexeddb | 6.2.6 | 6.x | IndexedDB in unit tests |
 | @axe-core/playwright | 4.14.0 | 4.x | Accessibility checks in E2E |

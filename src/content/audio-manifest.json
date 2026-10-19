@@ -1,0 +1,655 @@
+{
+  "schemaVersion": 1,
+  "clips": [
+    {
+      "id": "af01.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a1.hint1.mp3",
+        "en": "assets/audio/en/af01.a1.hint1.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a1.hint2.mp3",
+        "en": "assets/audio/en/af01.a1.hint2.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a1.instruction.mp3",
+        "en": "assets/audio/en/af01.a1.instruction.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.hint1.mp3",
+        "en": "assets/audio/en/af01.a2.hint1.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.hint2.mp3",
+        "en": "assets/audio/en/af01.a2.hint2.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.instruction.mp3",
+        "en": "assets/audio/en/af01.a2.instruction.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.where_cat",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.where_cat.mp3",
+        "en": "assets/audio/en/af01.a2.where_cat.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.where_dog",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.where_dog.mp3",
+        "en": "assets/audio/en/af01.a2.where_dog.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a2.where_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a2.where_mixed.mp3",
+        "en": "assets/audio/en/af01.a2.where_mixed.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a3.hint1.mp3",
+        "en": "assets/audio/en/af01.a3.hint1.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a3.hint2.mp3",
+        "en": "assets/audio/en/af01.a3.hint2.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.a3.instruction.mp3",
+        "en": "assets/audio/en/af01.a3.instruction.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.story.intro.mp3",
+        "en": "assets/audio/en/af01.story.intro.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.story.outro.mp3",
+        "en": "assets/audio/en/af01.story.outro.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af01.story.outro_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af01.story.outro_mixed.mp3",
+        "en": "assets/audio/en/af01.story.outro_mixed.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "nono.hint.watch_me",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/nono.hint.watch_me.mp3",
+        "en": "assets/audio/en/nono.hint.watch_me.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "sticker.af01.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.af01.name.mp3",
+        "en": "assets/audio/en/sticker.af01.name.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "word.animals.cat",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.cat.mp3",
+        "en": "assets/audio/en/word.animals.cat.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.animals.dog",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.dog.mp3",
+        "en": "assets/audio/en/word.animals.dog.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "world.af.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.af.name.mp3",
+        "en": "assets/audio/en/world.af.name.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "world.af.welcome",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.af.welcome.mp3",
+        "en": "assets/audio/en/world.af.welcome.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "world.ct.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.ct.name.mp3",
+        "en": "assets/audio/en/world.ct.name.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "world.ct.welcome",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.ct.welcome.mp3",
+        "en": "assets/audio/en/world.ct.welcome.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "world.ni.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.ni.name.mp3",
+        "en": "assets/audio/en/world.ni.name.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "world.ni.welcome",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/world.ni.welcome.mp3",
+        "en": "assets/audio/en/world.ni.welcome.mp3"
+      },
+      "transcript": {},
+      "source": "unassigned",
+      "licence": "unassigned",
+      "review": {
+        "ar": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        },
+        "en": {
+          "status": "planned",
+          "by": null,
+          "date": null,
+          "notes": ""
+        }
+      },
+      "pack": "pack.number-island"
+    }
+  ]
+}

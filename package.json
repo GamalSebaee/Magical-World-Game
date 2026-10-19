@@ -1,0 +1,66 @@
+{
+  "name": "magical-world-game",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mariam's Magical World (عالم مريم السحري) — bilingual early-learning PWA game",
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsx scripts/content/validate.ts --quiet && next build && tsx scripts/sw/build.ts",
+    "start": "npx serve out -l 3000",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "content:validate": "tsx scripts/content/validate.ts",
+    "content:schema": "tsx scripts/content/gen-json-schema.ts",
+    "check": "pnpm lint && pnpm typecheck && pnpm content:validate && pnpm test"
+  },
+  "dependencies": {
+    "idb": "^8.0.4",
+    "next": "16.4.2",
+    "phaser": "3.90.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "serwist": "9.5.13",
+    "zod": "^4.6.7",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "1.56.1",
+    "@serwist/build": "9.5.13",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "fake-indexeddb": "^6.2.6",
+    "globals": "^17.13.0",
+    "jsdom": "^30.1.3",
+    "postcss": "^8.5.31",
+    "serve": "^14.2.6",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^5.0.5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

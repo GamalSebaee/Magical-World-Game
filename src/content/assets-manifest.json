@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "animals/cat",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "animals/dog",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "forest/bush",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "forest/tree",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "map/animal-forest",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "map/color-town",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "map/number-island",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "scenes/af-01-intro",
+      "type": "background",
+      "pack": "pack.animal-forest",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "stickers/af-01-cat-dog",
+      "type": "sticker",
+      "pack": "pack.animal-forest",
+      "files": [],
+      "displaySize1x": null,
+      "source": "unassigned",
+      "creator": null,
+      "aiAssisted": false,
+      "licence": {
+        "type": "unassigned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "planned",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": ""
+      }
+    }
+  ]
+}

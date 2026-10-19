@@ -7,7 +7,7 @@ Effort ranges assume one developer working with an AI coding agent (A1), in focu
 ### P0 — Planning (this pack)
 - **Objective:** approved plan. **Files:** `docs/planning/**`. **Gate:** explicit approval. **Status:** awaiting approval.
 
-### P1 — Foundation (4–7 days)
+### P1 — Foundation (4–7 days) — implemented, see [phase-1 report](../progress/phase-1.md)
 - **Objectives:** Next.js + TS + Tailwind scaffold with static export; lint/format/boundary rules; Vitest + Playwright + axe in CI; design tokens; bilingual app shell (RTL/LTR switch, `<bdi>` helpers); `AppServices` DI; event bus; Zod content schemas + `content:validate`; IndexedDB repositories + migration framework + memory fallback; Phaser host (client-only, singleton, resize/safe-area); Serwist `injectManifest` skeleton with offline-ready reporting; Phaser 3 vs 4 spike (half day); performance baseline on the reference device.
 - **Files:** root configs, `src/app/layout.tsx`, `src/shared/**`, `src/services/{storage,content}/**`, `src/game/core/phaserHost.ts`, `src/content/schema/**`, `scripts/content/**`, `tests/**`, `.github/workflows/ci.yml`.
 - **Dependencies:** answers to 12 Q1, Q2, Q5, Q6.
@@ -89,4 +89,6 @@ P0 approval → P1 → P2 (needs: Nono + cat/dog art, AF-01 voice) → approval 
 | D9 | Parent gate = hold + reading challenge, optional PIN | Arithmetic alone is weak; deterrent, honestly labelled | Math question; mandatory PIN |
 | D10 | Static content JSON bundled; no CMS | MVP scope; build-time validation | Headless CMS |
 | D11 | Mastery wording "demonstrated through activities"; evidence rule v1 is versioned | Avoids overclaiming; adjustable | Percent scores |
-| D12 | Serwist via `injectManifest` CLI over `out/` | Bundler-agnostic; avoids Turbopack plugin issues | `@serwist/next` plugin; hand-written SW |
+| D12 | Serwist via `injectManifest` over `out/` (via `@serwist/build` in `scripts/sw/build.ts`) | Bundler-agnostic; avoids Turbopack plugin issues | `@serwist/next` plugin; hand-written SW |
+| D13 | Phaser `Scale.NONE` with manual CSS sizing, device-pixel-ratio cap 2 and explicit `displayScale` (P1) | One canvas moves between route containers; crisp on phones; correct pointer mapping | `Scale.RESIZE` (bound to one parent) |
+| D14 | Storage behind a small `StorageBackend` port with IndexedDB and memory implementations sharing one store table (P1) | Same contract tests for both; memory fallback cannot drift | Repositories written directly against `idb` |

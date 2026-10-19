@@ -17,7 +17,7 @@ Principles: one goal per activity; the child can always replay the instruction, 
 | `ActivityRegistry` | Maps `mechanic` → `{ machine, createInitialState, evaluate, SceneAdapter, schema }`. Registration is static (no dynamic imports of unknown types) |
 | `ActivityController` | An XState 5 actor built from the base lifecycle machine plus the mechanic's interaction sub-machine |
 | `LevelRunner` | Sequences activities, handles resume, emits level completion, owns disposal |
-| `EventBus<AppEvent>` | Typed pub/sub (02 §3.2) |
+| `EventBus<AppEvent>` | Typed pub/sub (02 §3.2). Implemented in `shared/events.ts` (services emit events too) |
 | `HintPolicy` | Decides hint level from tries, idle time, age band and help taps |
 | `FeedbackDirector` | Maps outcomes to audio clip ids, animations and Nono state; enforces "one voice at a time" |
 | `LayoutSolver` | Turns a mechanic's anchor spec + viewport + safe area into object positions/scales for P or L |

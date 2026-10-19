@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "id": "animal-forest",
+  "code": "af",
+  "name": { "ar": "غابة الحيوانات", "en": "Animal Forest" },
+  "nameAudio": { "ar": ["world.af.name"], "en": ["world.af.name"], "caption": { "ar": "غابة الحيوانات", "en": "Animal Forest" } },
+  "welcome": { "ar": ["world.af.welcome"], "en": ["world.af.welcome"], "caption": { "ar": "أهلاً في غابة الحيوانات!", "en": "Welcome to Animal Forest!" } },
+  "mapHotspot": { "asset": "map/animal-forest", "position": { "x": 0.22, "y": 0.58 } },
+  "levels": ["af-01", "af-02", "af-03", "af-04"],
+  "assetPack": "pack.animal-forest"
+}

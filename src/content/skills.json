@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "id": "vocab.animals.cat",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «قطة»", "en": "The word 'cat'" },
+      "outcome": { "ar": "يسمع كلمة «قطة» ويختار صورة القطة", "en": "Hears the word 'cat' and picks the cat picture" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "vocab.animals.dog",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «كلب»", "en": "The word 'dog'" },
+      "outcome": { "ar": "يسمع كلمة «كلب» ويختار صورة الكلب", "en": "Hears the word 'dog' and picks the dog picture" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "speak.vocab.cat",
+      "domain": "speak",
+      "label": { "ar": "نطق «قطة»", "en": "Saying 'cat'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
+    }
+  ]
+}

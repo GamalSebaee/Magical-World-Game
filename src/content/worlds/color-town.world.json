@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "id": "color-town",
+  "code": "ct",
+  "name": { "ar": "مدينة الألوان", "en": "Color Town" },
+  "nameAudio": { "ar": ["world.ct.name"], "en": ["world.ct.name"], "caption": { "ar": "مدينة الألوان", "en": "Color Town" } },
+  "welcome": { "ar": ["world.ct.welcome"], "en": ["world.ct.welcome"], "caption": { "ar": "أهلاً في مدينة الألوان!", "en": "Welcome to Color Town!" } },
+  "mapHotspot": { "asset": "map/color-town", "position": { "x": 0.52, "y": 0.32 } },
+  "levels": ["ct-01", "ct-02", "ct-03", "ct-04"],
+  "assetPack": "pack.color-town"
+}
