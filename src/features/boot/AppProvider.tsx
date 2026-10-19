@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react';
-import { useSession } from '@features/settings/sessionStore';
+import { readStoredProfile, useSession } from '@features/settings/sessionStore';
 import { directionFor, htmlLangFor } from '@shared/i18n/language';
 import { installTestHooks } from '@game/core/testHooks';
 import { bootApp, BOOT_STEPS, type AppServices, type BootStep } from './appServices';
@@ -41,6 +41,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
         bootedServices = services;
         const settings = await services.storage.settings.get();
         setLanguage(settings.languageMode, settings.digitStyle);
+        applyReducedMotion(settings.reducedMotion);
+        services.audio.setMuted('all', settings.muted.all);
+        const stored = readStoredProfile();
+        if (stored && (await services.storage.profiles.get(stored))) useSession.getState().setActiveProfile(stored);
         if (services.flags.testHooks) installTestHooks(services);
         if (!cancelled) setBoot({ phase: 'ready', services });
       },
@@ -61,6 +65,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setAttempt((a) => a + 1);
   }, []);
 
+  // Browsers only allow sound after a gesture: unlock on the first tap anywhere (06 §3).
+  useEffect(() => {
+    if (boot.phase !== 'ready') return;
+    const audio = boot.services.audio;
+    const onTap = () => {
+      if (!audio.unlocked) void audio.unlock();
+    };
+    window.addEventListener('pointerdown', onTap, { capture: true });
+    return () => window.removeEventListener('pointerdown', onTap, { capture: true });
+  }, [boot]);
+
   return (
     <AppContext.Provider value={{ boot, retry }}>
       <LocaleSync />
@@ -69,14 +84,24 @@ export function AppProvider({ children }: { children: ReactNode }) {
   );
 }
 
-/** Keeps <html lang dir> in step with the language mode. */
+/** Resolves the reduced-motion setting against the system preference (P8). */
+export function applyReducedMotion(setting: 'system' | 'on' | 'off') {
+  const system = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  useSession.getState().setReducedMotion(setting === 'on' || (setting === 'system' && system));
+}
+
+/** Keeps <html lang dir> and the reduced-motion flag in step with settings. */
 function LocaleSync() {
   const mode = useSession((s) => s.languageMode);
+  const reduced = useSession((s) => s.reducedMotion);
   useEffect(() => {
     const el = document.documentElement;
     el.lang = htmlLangFor(mode);
     el.dir = directionFor(mode);
   }, [mode]);
+  useEffect(() => {
+    document.documentElement.dataset.reducedMotion = String(reduced);
+  }, [reduced]);
   return null;
 }
 

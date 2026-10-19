@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="40" fill="#dff3ff"/>
+  <path d="M0 330 Q400 270 800 330 L800 500 L0 500 Z" fill="#b9e4a8"/>
+  <g transform="translate(520 120) scale(1.1)">
+    <path d="M92 290 L96 170 L124 170 L128 290 Z" fill="#8d5a3b" stroke="#2d3047" stroke-width="5"/>
+    <g stroke="#2d3047" stroke-width="5"><circle cx="62" cy="140" r="52" fill="#3d9b4f"/><circle cx="158" cy="140" r="52" fill="#3d9b4f"/><circle cx="110" cy="84" r="70" fill="#4caf50"/></g>
+  </g>
+  <g transform="translate(560 250)"><circle cx="40" cy="40" r="34" fill="#b07a4f" stroke="#2d3047" stroke-width="5"/><circle cx="28" cy="36" r="5" fill="#2d3047"/><circle cx="52" cy="36" r="5" fill="#2d3047"/><ellipse cx="40" cy="52" rx="7" ry="5" fill="#2d3047"/></g>
+  <g transform="translate(80 230)">
+    <g stroke="#2d3047" stroke-width="5"><circle cx="60" cy="110" r="52" fill="#4caf50"/><circle cx="180" cy="110" r="52" fill="#4caf50"/><circle cx="120" cy="78" r="62" fill="#5dbb63"/></g>
+    <path d="M150 40 L156 12 L176 30 Z M196 40 L190 12 L170 30 Z" fill="#f4a259" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <text x="400" y="110" font-family="system-ui, sans-serif" font-size="80" text-anchor="middle" fill="#2d3047" opacity="0.15">?</text>
+</svg>

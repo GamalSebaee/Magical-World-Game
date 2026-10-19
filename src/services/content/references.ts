@@ -1,13 +1,18 @@
 import {
   parsePinnedClip,
+  type UiAudioFile,
   type LevelDefinition,
   type LocalizedAudioRef,
   type WorldDefinition,
 } from '@content/schema';
 
 /** Everything a piece of content points at, collected so cross-references can be checked. */
+export type ClipSlot = 'ar' | 'en' | 'common';
+
 export interface ContentReferences {
   clips: Set<string>;
+  /** Which language files each referenced clip needs. */
+  clipLangs: Map<string, Set<ClipSlot>>;
   assets: Set<string>;
   vocab: Set<string>;
   skills: Set<string>;
@@ -15,13 +20,30 @@ export interface ContentReferences {
 }
 
 export function emptyRefs(): ContentReferences {
-  return { clips: new Set(), assets: new Set(), vocab: new Set(), skills: new Set(), levels: new Set() };
+  return { clips: new Set(), clipLangs: new Map(), assets: new Set(), vocab: new Set(), skills: new Set(), levels: new Set() };
 }
 
-function addAudioRef(refs: ContentReferences, a: LocalizedAudioRef | undefined) {
+export function addClip(refs: ContentReferences, id: string, slot: ClipSlot) {
+  refs.clips.add(id);
+  const set = refs.clipLangs.get(id) ?? new Set<ClipSlot>();
+  set.add(slot);
+  refs.clipLangs.set(id, set);
+}
+
+export function addAudioRef(refs: ContentReferences, a: LocalizedAudioRef | undefined) {
   if (!a) return;
-  for (const id of [...a.ar, ...a.en]) refs.clips.add(id);
-  for (const pinned of a.mixed ?? []) refs.clips.add(parsePinnedClip(pinned).id);
+  for (const id of a.ar) addClip(refs, id, 'ar');
+  for (const id of a.en) addClip(refs, id, 'en');
+  for (const pinned of a.mixed ?? []) {
+    const p = parsePinnedClip(pinned);
+    addClip(refs, p.id, p.lang);
+  }
+}
+
+export function collectUiAudioRefs(ui: UiAudioFile, refs = emptyRefs()): ContentReferences {
+  for (const line of Object.values(ui.lines)) addAudioRef(refs, line);
+  for (const id of ui.sfx) addClip(refs, id, 'common');
+  return refs;
 }
 
 export function collectWorldRefs(w: WorldDefinition, refs = emptyRefs()): ContentReferences {
@@ -36,6 +58,7 @@ export function collectLevelRefs(lvl: LevelDefinition, refs = emptyRefs()): Cont
   addAudioRef(refs, lvl.story.intro);
   addAudioRef(refs, lvl.story.outro);
   refs.assets.add(lvl.story.illustration);
+  refs.assets.add(lvl.background);
   refs.assets.add(lvl.sticker.asset);
   addAudioRef(refs, lvl.sticker.name);
   for (const s of lvl.skills) refs.skills.add(s);
@@ -75,8 +98,8 @@ export function collectLevelRefs(lvl: LevelDefinition, refs = emptyRefs()): Cont
         for (const p of a.pairs) {
           refs.assets.add(p.left.asset);
           refs.assets.add(p.right.asset);
-          if (p.left.audio) refs.clips.add(p.left.audio);
-          if (p.right.audio) refs.clips.add(p.right.audio);
+          if (p.left.audio) addClip(refs, p.left.audio, 'common');
+          if (p.right.audio) addClip(refs, p.right.audio, 'common');
         }
         break;
       case 'count_objects':

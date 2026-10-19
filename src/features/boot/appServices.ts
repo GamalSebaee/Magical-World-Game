@@ -3,16 +3,25 @@ import { ContentRepository } from '@services/content/ContentRepository';
 import { openStorage, type StorageStatus } from '@services/storage/openStorage';
 import type { StorageRepositories } from '@services/storage/repositories';
 import { registerServiceWorker } from '@services/offline/serviceWorker';
+import { AudioPlaybackService } from '@services/audio/AudioPlaybackService';
+import { AudioResolver } from '@services/audio/resolver';
+import { WebAudioBackend } from '@services/audio/WebAudioBackend';
+import { browserMicEnvironment, MicrophoneRecorder } from '@services/mic/MicrophoneRecorder';
+import type { AudioClipId } from '@shared/ids';
 import { EventBus, type AppEvent } from '@shared/events';
 import { cryptoIds, type IdGenerator } from '@shared/ids';
 import { consoleLogger, defaultFlags, systemClock, type Clock, type FeatureFlags, type Logger } from '@shared/runtime';
 
 /**
  * Everything screens and the game need, built once per page load (02 §3.1).
- * Phase 2 adds audio, mic, speech and TTS services here.
+ * TTS and speech recognition are not configured in this build (NullProviders by omission; 06 §4, §6).
  */
 export interface AppServices {
   content: ContentRepository;
+  audio: AudioPlaybackService;
+  resolver: AudioResolver;
+  /** A fresh recorder per speaking activity; the activity disposes it. */
+  createMic(): MicrophoneRecorder;
   storage: StorageRepositories;
   storageStatus: StorageStatus;
   events: EventBus<AppEvent>;
@@ -62,5 +71,12 @@ export async function bootApp(onStep: (done: BootStep) => void = () => {}): Prom
   void registerServiceWorker({ enabled: process.env.NODE_ENV === 'production' });
   onStep('offline');
 
-  return { content, storage: repos, storageStatus: status, events, clock, ids, flags, logger };
+  const resolver = new AudioResolver(content.audioManifest());
+  const backend = new WebAudioBackend();
+  const audio = new AudioPlaybackService(backend, (clipId, reason) =>
+    events.emit({ type: 'audio.unavailable', clipId: clipId as AudioClipId, reason, at: clock.now() }),
+  );
+  const createMic = () => new MicrophoneRecorder(browserMicEnvironment(() => backend.context));
+
+  return { content, audio, resolver, createMic, storage: repos, storageStatus: status, events, clock, ids, flags, logger };
 }

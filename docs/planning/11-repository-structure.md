@@ -27,7 +27,6 @@ magical-world-game/
 ├─ src/
 │  ├─ app/                            Next.js App Router (routing and layout only; thin pages)
 │  │  ├─ layout.tsx                   <html lang dir>, providers (AppServices, i18n), safe-area CSS vars
-│  │  ├─ _providers/                  AppServices wiring, boot sequence, AppProvider (private folder)
 │  │  ├─ error.tsx                    root error boundary
 │  │  ├─ (child)/
 │  │  │  ├─ page.tsx                  C1 splash
@@ -41,6 +40,9 @@ magical-world-game/
 │  │  ├─ parent/…                     P1–P9 (+ ParentGuard layout)
 │  │  └─ dev/playground/page.tsx      P3, excluded from prod by flag
 │  ├─ features/                       product features; UI + use-cases; talk via event bus/public index.ts
+│  │  ├─ boot/                        AppServices wiring, boot sequence, AppProvider (P2: moved from app/_providers)
+│  │  ├─ shell/                       ChildScreen chrome, profile guard, ear button, captions
+│  │  ├─ voice/                       say(), screen cues, audio status hook
 │  │  ├─ profiles/                    profile list/create/edit, active profile
 │  │  ├─ avatar/                      AvatarConfig, layered composer (React preview + Phaser container)
 │  │  ├─ levels/                      LevelRunner, level intro/result view-models, resume

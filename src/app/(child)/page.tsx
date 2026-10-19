@@ -2,13 +2,14 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect, useSyncExternalStore } from 'react';
-import { bootProgress, useApp } from '../_providers/AppProvider';
+import { bootProgress, useApp } from '@features/boot/AppProvider';
 import { useSession } from '@features/settings/sessionStore';
 import { applyUpdateIfWaiting, getOfflineStatus, subscribeOfflineStatus } from '@services/offline/serviceWorker';
-import { primaryLang, type LanguageMode } from '@shared/i18n/language';
+import { primaryLang } from '@shared/i18n/language';
 import { t } from '@shared/i18n/uiStrings';
 import { BigButton } from '@shared/ui/BigButton';
-import { CheckIcon, NonoPlaceholder, PlayIcon, RetryIcon } from '@shared/ui/icons';
+import { CheckIcon, PlayIcon, RetryIcon } from '@shared/ui/icons';
+import { Nono } from '@shared/ui/Nono';
 
 /** C1 Splash / loading (03-screen-specifications). */
 export default function SplashPage() {
@@ -28,9 +29,7 @@ export default function SplashPage() {
   return (
     <main className="child-screen flex flex-col items-center justify-center gap-8 landscape:flex-row landscape:gap-16">
       <section className="flex flex-col items-center gap-4">
-        <div className="animate-bob">
-          <NonoPlaceholder size={150} />
-        </div>
+        <Nono size={150} />
         <h1 className="text-center text-3xl font-bold">{t('appName', lang)}</h1>
       </section>
 
@@ -46,7 +45,17 @@ export default function SplashPage() {
             </BigButton>
           </div>
         ) : services ? (
-          <BigButton label={t('play', lang)} size="hero" onPress={() => router.push('/map/')} data-testid="play">
+          <BigButton
+            label={t('play', lang)}
+            size="hero"
+            onPress={async () => {
+              // The Play tap is the user gesture that unlocks audio (06 §3).
+              await services.audio.unlock();
+              const profiles = await services.storage.profiles.list();
+              router.push(profiles.length ? '/profiles/' : '/parent/setup/');
+            }}
+            data-testid="play"
+          >
             <PlayIcon size={72} />
           </BigButton>
         ) : (
@@ -61,8 +70,6 @@ export default function SplashPage() {
             <div className="h-full bg-leaf-500 transition-[width]" style={{ width: `${progress * 100}%` }} />
           </div>
         )}
-
-        {services && <LanguagePicker lang={lang} />}
 
         {services?.storageStatus.backend === 'memory' && (
           <p role="status" className="max-w-xs rounded-xl bg-sun-400/40 px-3 py-2 text-center text-sm">
@@ -90,43 +97,5 @@ function OfflineBadge({ state, lang }: { state: ReturnType<typeof getOfflineStat
       {state === 'ready' && <CheckIcon />}
       {text}
     </p>
-  );
-}
-
-/**
- * Temporary: language switching lives here until the parent area exists (Phase 6, P5 screen).
- * Kept small and below the Play button so a child is unlikely to need it.
- */
-function LanguagePicker({ lang }: { lang: 'ar' | 'en' }) {
-  const { boot } = useApp();
-  const mode = useSession((s) => s.languageMode);
-  const setLanguage = useSession((s) => s.setLanguage);
-  const options: Array<[LanguageMode, Parameters<typeof t>[0]]> = [
-    ['ar', 'langAr'],
-    ['en', 'langEn'],
-    ['mixed', 'langMixed'],
-  ];
-  const choose = (m: LanguageMode) => {
-    setLanguage(m);
-    if (boot.phase === 'ready') {
-      const digits = useSession.getState().digitStyle;
-      void boot.services.storage.settings.patch({ languageMode: m, digitStyle: digits });
-    }
-  };
-  return (
-    <fieldset className="flex items-center gap-2" aria-label={t('language', lang)}>
-      {options.map(([m, key]) => (
-        <button
-          key={m}
-          type="button"
-          aria-pressed={mode === m}
-          onClick={() => choose(m)}
-          data-testid={`lang-${m}`}
-          className={`min-h-[48px] rounded-full border-2 border-ink-700 px-4 text-base ${mode === m ? 'bg-ink-700 text-cloud-0' : 'bg-cloud-0'}`}
-        >
-          {t(key, lang)}
-        </button>
-      ))}
-    </fieldset>
   );
 }

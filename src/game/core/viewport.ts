@@ -53,6 +53,13 @@ export function computeViewport(width: number, height: number, insets: Insets, d
   };
 }
 
+/** The game area below the HUD row (pause, ear, help: 03 C8). */
+export const HUD_HEIGHT_PX = 88;
+
+export function belowHud(vp: Viewport, hud = HUD_HEIGHT_PX): Viewport {
+  return { ...vp, safe: { ...vp.safe, y: vp.safe.y + hud, height: Math.max(0, vp.safe.height - hud) } };
+}
+
 export function rectInside(inner: Rect, outer: Rect, tolerance = 0.5): boolean {
   return (
     inner.x >= outer.x - tolerance &&

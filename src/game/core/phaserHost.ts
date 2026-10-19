@@ -56,6 +56,13 @@ class PhaserHost {
     this.observe(container);
     this.measure();
 
+    this.start(sceneKey, data);
+  }
+
+  /** Switches the attached canvas to a scene (or restarts it with new data) without detaching. */
+  start(sceneKey: string, data?: object) {
+    const game = this.game;
+    if (!game || !this.container) return;
     for (const s of game.scene.getScenes(true)) {
       if (s.scene.key !== sceneKey) s.scene.stop();
     }

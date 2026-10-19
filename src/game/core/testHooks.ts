@@ -2,11 +2,18 @@ import { getOfflineStatus } from '@services/offline/serviceWorker';
 import type { StorageRepositories } from '@services/storage/repositories';
 import type { StorageStatus } from '@services/storage/openStorage';
 import { phaserHost } from './phaserHost';
-import type { SceneObjectInfo } from './scenes/FoundationScene';
+import type { SceneObjectInfo } from './sceneTypes';
 
 interface HookDeps {
   storage: StorageRepositories;
   storageStatus: StorageStatus;
+  audio: { history: readonly string[]; getStatus(): unknown };
+}
+
+let activityProbe: (() => unknown) | undefined;
+/** The play screen registers a probe for the current activity snapshot (test builds only). */
+export function setActivityProbe(p: (() => unknown) | undefined) {
+  activityProbe = p;
 }
 
 /**
@@ -32,6 +39,11 @@ export function installTestHooks(deps: HookDeps) {
         canvasBounds: { x: sm.canvasBounds.x, y: sm.canvasBounds.y, w: sm.canvasBounds.width, h: sm.canvasBounds.height },
       };
     },
+    activity: () => activityProbe?.() as
+      | { activityId: string; phase: string; paused: boolean; hintLevel: number; m: unknown; offerSkip: boolean }
+      | undefined,
+    audioHistory: () => [...deps.audio.history],
+    audioStatus: () => deps.audio.getStatus(),
     storageStatus: () => deps.storageStatus,
     storageCounts: () => deps.storage.counts(),
     offline: () => getOfflineStatus(),

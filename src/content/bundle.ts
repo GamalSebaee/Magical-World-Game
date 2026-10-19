@@ -6,6 +6,7 @@
 import index from './index.json';
 import skills from './skills.json';
 import vocabulary from './vocabulary.json';
+import uiAudio from './ui-audio.json';
 import audioManifest from './audio-manifest.json';
 import assetsManifest from './assets-manifest.json';
 
@@ -19,6 +20,7 @@ export interface RawContentBundle {
   index: unknown;
   skills: unknown;
   vocabulary: unknown;
+  uiAudio: unknown;
   audioManifest: unknown;
   assetsManifest: unknown;
   worlds: Record<string, unknown>;
@@ -29,6 +31,7 @@ export const rawContent: RawContentBundle = {
   index,
   skills,
   vocabulary,
+  uiAudio,
   audioManifest,
   assetsManifest,
   worlds: {

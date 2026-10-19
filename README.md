@@ -2,7 +2,7 @@
 
 A bilingual (Arabic / English / mixed), offline-first, installable web game for children aged 3–6. The child plays by sound and pictures and never needs to read.
 
-**Status: Phase 1 (foundation) complete. No gameplay yet.** See [`docs/progress/phase-1.md`](docs/progress/phase-1.md) for what exists, what was measured and what's next. The full plan is in [`docs/planning/`](docs/planning/README.md).
+**Status: Phase 2 (AF-01 vertical slice) complete with placeholder voice and art.** One level, "Meet Cat & Dog", is playable end to end in Arabic, English and mixed modes, with real microphone practice, offline play and saved progress. See [`docs/progress/phase-2.md`](docs/progress/phase-2.md) (and [phase 1](docs/progress/phase-1.md)) for what exists, what was measured and what's next. The full plan is in [`docs/planning/`](docs/planning/README.md).
 
 ## Requirements
 
@@ -22,6 +22,7 @@ A bilingual (Arabic / English / mixed), offline-first, installable web game for 
 | `pnpm content:validate [--release]` | Validate all content; `--release` also fails on planned or unreviewed audio and art |
 | `tsx scripts/content/sync-manifests.ts` | Add `planned` manifest entries for newly referenced audio and assets |
 | `pnpm content:schema` | Regenerate JSON Schema for editor autocomplete |
+| `tsx scripts/audio/gen-placeholders.ts` | Generate labelled placeholder audio for clips that are only planned |
 
 Only Chromium is installed in the cloud dev environment, so locally run
 `pnpm test:e2e --project=chromium-portrait --project=chromium-landscape --project=desktop-chromium`.
@@ -31,9 +32,9 @@ CI installs Firefox and WebKit as well.
 
 ```
 src/app        routes and layout (Next.js App Router, static export)
-src/features   product features (settings store so far)
-src/game       Phaser host, scenes, engine (activities from Phase 2/3)
-src/services   storage (IndexedDB + memory fallback), content, offline
+src/features   product features: boot, levels, avatar, parental, speech, voice, shell
+src/game       Phaser host, scenes, activity engine and mechanics
+src/services   storage (IndexedDB + memory fallback), content, audio, microphone, offline
 src/shared     ids, events, i18n, runtime, UI atoms
 src/content    versioned JSON content + Zod schemas
 src/sw         service worker source

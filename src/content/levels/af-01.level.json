@@ -30,6 +30,7 @@
       }
     }
   },
+  "background": "forest/bg-clearing",
   "skills": ["vocab.animals.cat", "vocab.animals.dog", "speak.vocab.cat"],
   "activities": [
     {

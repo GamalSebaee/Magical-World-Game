@@ -170,6 +170,21 @@
               }
             }
           },
+          "durationMs": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "ar": {
+                "type": "number"
+              },
+              "en": {
+                "type": "number"
+              },
+              "common": {
+                "type": "number"
+              }
+            }
+          },
           "pack": {
             "type": "string",
             "pattern": "^pack\\.[a-z-]+$"

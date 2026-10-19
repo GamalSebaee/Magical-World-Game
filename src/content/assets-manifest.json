@@ -5,189 +5,286 @@
       "id": "animals/cat",
       "type": "image",
       "pack": "pack.common",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/animals/cat.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "animals/dog",
       "type": "image",
       "pack": "pack.common",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/animals/dog.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "forest/bg-clearing",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/bg-clearing.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "forest/bush",
       "type": "image",
       "pack": "pack.animal-forest",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/forest/bush.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "forest/tree",
       "type": "image",
       "pack": "pack.animal-forest",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/forest/tree.svg"
+      ],
+      "displaySize1x": {
+        "w": 220,
+        "h": 300
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "map/animal-forest",
       "type": "image",
       "pack": "pack.common",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/map/animal-forest.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "map/background",
+      "type": "background",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/map/background.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "map/color-town",
       "type": "image",
       "pack": "pack.common",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/map/color-town.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "map/number-island",
       "type": "image",
       "pack": "pack.common",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/map/number-island.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "scenes/af-01-intro",
       "type": "background",
       "pack": "pack.animal-forest",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/scenes/af-01-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     },
     {
       "id": "stickers/af-01-cat-dog",
       "type": "sticker",
       "pack": "pack.animal-forest",
-      "files": [],
-      "displaySize1x": null,
-      "source": "unassigned",
-      "creator": null,
+      "files": [
+        "assets/art/stickers/af-01-cat-dog.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
       "aiAssisted": false,
       "licence": {
-        "type": "unassigned",
+        "type": "project-owned",
         "url": null,
         "attributionRequired": false
       },
-      "status": "planned",
+      "status": "placeholder",
       "review": {
         "by": null,
         "date": null,
-        "notes": ""
+        "notes": "Functional placeholder vector; replace with art per style bible."
       }
     }
   ]

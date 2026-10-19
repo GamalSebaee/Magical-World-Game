@@ -20,6 +20,8 @@ export const LevelDefinition = z
     title: LocalizedText,
     learningGoal: LocalizedText,
     story: z.object({ intro: LocalizedAudioRef, outro: LocalizedAudioRef, illustration: AssetRef }),
+    /** Scene backdrop for activities. */
+    background: AssetRef,
     skills: z.array(SkillId).min(1),
     activities: z.array(ActivityDefinition).min(2).max(4),
     sticker: z.object({ id: z.string().regex(/^sticker\.[a-z]{2}-\d{2}$/), asset: AssetRef, name: LocalizedAudioRef }),
@@ -91,6 +93,14 @@ export const ContentIndex = z.object({
   worlds: z.array(WorldIdSchema).min(1),
 });
 export type ContentIndex = z.infer<typeof ContentIndex>;
+
+/** Shared spoken lines (screen cues, Nono's praise, speech feedback) and SFX ids used by code. */
+export const UiAudioFile = z.object({
+  schemaVersion: z.literal(1),
+  lines: z.record(z.string().regex(/^[a-z0-9]+(\.[a-z0-9_]+)+$/), LocalizedAudioRef),
+  sfx: z.array(z.string().regex(/^sfx\.[a-z0-9_]+$/)),
+});
+export type UiAudioFile = z.infer<typeof UiAudioFile>;
 
 export const SkillsFile = z.object({ schemaVersion: z.literal(1), skills: z.array(SkillDefinition) });
 export const VocabularyFile = z.object({ schemaVersion: z.literal(1), entries: z.array(VocabularyEntry) });

@@ -5,12 +5,13 @@ import {
   ContentIndex,
   LevelDefinition,
   SkillsFile,
+  UiAudioFile,
   VocabularyFile,
   WorldDefinition,
   type ReviewStatus,
 } from '@content/schema';
 import type { RawContentBundle } from '@content/bundle';
-import { collectLevelRefs, collectWorldRefs, emptyRefs } from './references';
+import { addClip, collectLevelRefs, collectUiAudioRefs, collectWorldRefs, emptyRefs } from './references';
 
 export interface ValidateOptions {
   /** Release builds require every clip/asset to exist and be approved. */
@@ -50,10 +51,12 @@ export function validateContent(raw: RawContentBundle, opts: ValidateOptions): V
   const index = check(ContentIndex, raw.index, 'index.json', errors);
   const skills = check(SkillsFile, raw.skills, 'skills.json', errors);
   const vocab = check(VocabularyFile, raw.vocabulary, 'vocabulary.json', errors);
+  const uiAudio = check(UiAudioFile, raw.uiAudio, 'ui-audio.json', errors);
   const audio = check(AudioManifest, raw.audioManifest, 'audio-manifest.json', errors);
   const assets = check(AssetManifest, raw.assetsManifest, 'assets-manifest.json', errors);
 
   const refs = emptyRefs();
+  if (uiAudio) collectUiAudioRefs(uiAudio, refs);
   const worlds = new Map<string, WorldDefinition>();
   for (const [key, value] of Object.entries(raw.worlds)) {
     const w = check(WorldDefinition, value, `worlds/${key}`, errors);
@@ -117,7 +120,8 @@ export function validateContent(raw: RawContentBundle, opts: ValidateOptions): V
     const known = new Map(vocab.entries.map((v) => [v.id, v]));
     for (const v of refs.vocab) if (!known.has(v)) errors.push(`vocabulary "${v}" is not defined in vocabulary.json`);
     for (const v of vocab.entries) {
-      refs.clips.add(v.audio);
+      addClip(refs, v.audio, 'ar');
+      addClip(refs, v.audio, 'en');
       refs.assets.add(v.picture);
     }
   }
@@ -128,8 +132,15 @@ export function validateContent(raw: RawContentBundle, opts: ValidateOptions): V
       if (byId.has(c.id)) errors.push(`audio-manifest: duplicate clip "${c.id}"`);
       byId.set(c.id, c);
     }
-    for (const id of refs.clips) {
-      if (!byId.has(id)) errors.push(`audio clip "${id}" is referenced but not in audio-manifest.json`);
+    for (const [id, slots] of refs.clipLangs) {
+      const entry = byId.get(id);
+      if (!entry) {
+        errors.push(`audio clip "${id}" is referenced but not in audio-manifest.json`);
+        continue;
+      }
+      for (const slot of slots) {
+        if (!entry.files[slot]) errors.push(`audio clip "${id}" is needed in "${slot}" but has no file for it`);
+      }
     }
     for (const c of audio.clips) {
       for (const slot of ['ar', 'en', 'common'] as const) {

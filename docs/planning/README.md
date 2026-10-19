@@ -1,6 +1,6 @@
 # Mariam's Magical World (عالم مريم السحري) — Planning Pack
 
-Status: **Plan approved 2026-10-19. Phase 1 (foundation) implemented**; see [the Phase 1 report](../progress/phase-1.md).
+Status: **Plan approved 2026-10-19.** Phase 1 (foundation) and Phase 2 (AF-01 vertical slice, placeholder voice/art) implemented; see the [Phase 1](../progress/phase-1.md) and [Phase 2](../progress/phase-2.md) reports.
 
 | # | Document | Purpose |
 |---|----------|---------|

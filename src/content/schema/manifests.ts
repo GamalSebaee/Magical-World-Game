@@ -25,10 +25,13 @@ export const AudioClipEntry = z
     source: z.string().default('unassigned'),
     licence: z.string().default('unassigned'),
     review: z.object({ ar: Review.optional(), en: Review.optional(), common: Review.optional() }),
+    durationMs: z.object({ ar: z.number().optional(), en: z.number().optional(), common: z.number().optional() }).default({}),
     pack: z.string().regex(/^pack\.[a-z-]+$/),
   })
   .superRefine((c, ctx) => {
-    const keys = c.kind === 'voice' ? (['ar', 'en'] as const) : (['common'] as const);
+    // Voice clips exist per language (a mixed-mode carrier may be Arabic only); SFX/music are common.
+    const keys = c.kind === 'voice' ? (['ar', 'en'] as const).filter((k) => c.files[k]) : (['common'] as const);
+    if (keys.length === 0) ctx.addIssue({ code: 'custom', message: `${c.id}: no files` });
     for (const k of keys) {
       if (!c.files[k]) ctx.addIssue({ code: 'custom', message: `${c.id}: missing files.${k}` });
       if (!c.review[k]) ctx.addIssue({ code: 'custom', message: `${c.id}: missing review.${k}` });

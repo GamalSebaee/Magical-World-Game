@@ -1,0 +1,87 @@
+import * as Phaser from 'phaser';
+import type { AssetTable } from '../sceneTypes';
+import type { Rect, Viewport } from '../viewport';
+
+export const textureKey = (assetId: string) => `asset:${assetId}`;
+const FALLBACK = 'asset:__missing';
+
+/**
+ * Queues SVG/PNG textures for assets (rasterised at 2× their 1× size, enough for DPR ≤ 2).
+ * Missing files fall back to a labelled placeholder texture so play continues (03 C8).
+ */
+export function queueTextures(scene: Phaser.Scene, table: AssetTable, ids: string[]) {
+  for (const id of new Set(ids)) {
+    const a = table[id];
+    const key = textureKey(id);
+    if (!a || scene.textures.exists(key)) continue;
+    if (a.url.endsWith('.svg')) scene.load.svg(key, a.url, { width: a.w * 2, height: a.h * 2 });
+    else scene.load.image(key, a.url);
+  }
+  scene.load.off(Phaser.Loader.Events.FILE_LOAD_ERROR, onLoadError);
+  scene.load.on(Phaser.Loader.Events.FILE_LOAD_ERROR, onLoadError);
+}
+
+function onLoadError(file: Phaser.Loader.File) {
+  console.warn(`[game] asset failed to load: ${file.key}`);
+}
+
+/** Texture key to use for an asset, falling back to a visible placeholder. */
+export function textureFor(scene: Phaser.Scene, assetId: string | undefined): string {
+  const key = assetId ? textureKey(assetId) : FALLBACK;
+  if (assetId && scene.textures.exists(key)) return key;
+  if (!scene.textures.exists(FALLBACK)) {
+    const g = scene.make.graphics({ x: 0, y: 0 }, false);
+    g.fillStyle(0xffffff).fillRoundedRect(0, 0, 200, 200, 36);
+    g.lineStyle(10, 0x2d3047).strokeRoundedRect(5, 5, 190, 190, 32);
+    g.fillStyle(0xf78fb3).fillCircle(100, 100, 46);
+    g.generateTexture(FALLBACK, 200, 200);
+    g.destroy();
+  }
+  return FALLBACK;
+}
+
+/** Scales an image to cover the viewport (backgrounds). */
+export function cover(img: Phaser.GameObjects.Image, vp: Viewport) {
+  const s = vp.scale;
+  const k = Math.max((vp.width * s) / img.width, (vp.height * s) / img.height);
+  img.setScale(k).setPosition((vp.width * s) / 2, (vp.height * s) / 2);
+}
+
+/** Fits an image inside a CSS rect (contain), centred; `pad` shrinks the box. */
+export function fitInto(img: Phaser.GameObjects.Image, rect: Rect, s: number, pad = 0) {
+  const w = (rect.width - pad * 2) * s;
+  const h = (rect.height - pad * 2) * s;
+  img.setScale(Math.min(w / img.width, h / img.height));
+  img.setPosition((rect.x + rect.width / 2) * s, (rect.y + rect.height / 2) * s);
+}
+
+export function sparkle(scene: Phaser.Scene, x: number, y: number, s: number, reducedMotion: boolean) {
+  const colors = [0xffc93c, 0xf78fb3, 0x5dbb63, 0x2e86de];
+  const n = reducedMotion ? 4 : 10;
+  for (let i = 0; i < n; i++) {
+    const dot = scene.add.star(x, y, 5, 5 * s, 11 * s, colors[i % colors.length]).setDepth(50);
+    const angle = (i / n) * Math.PI * 2;
+    const dist = (reducedMotion ? 40 : 90) * s;
+    scene.tweens.add({
+      targets: dot,
+      x: x + Math.cos(angle) * dist,
+      y: y + Math.sin(angle) * dist,
+      alpha: 0,
+      duration: reducedMotion ? 500 : 700,
+      ease: 'Cubic.out',
+      onComplete: () => dot.destroy(),
+    });
+  }
+}
+
+export function wiggle(scene: Phaser.Scene, target: Phaser.GameObjects.Components.Transform & Phaser.GameObjects.GameObject, reducedMotion: boolean) {
+  if (reducedMotion) {
+    scene.tweens.add({ targets: target, alpha: { from: 0.5, to: 1 }, duration: 300 });
+    return;
+  }
+  scene.tweens.add({ targets: target, angle: { from: -6, to: 6 }, duration: 75, yoyo: true, repeat: 2, onComplete: () => target.setAngle(0) });
+}
+
+export function rectOf(o: { x: number; y: number; displayWidth: number; displayHeight: number }, s: number): Rect {
+  return { x: (o.x - o.displayWidth / 2) / s, y: (o.y - o.displayHeight / 2) / s, width: o.displayWidth / s, height: o.displayHeight / s };
+}

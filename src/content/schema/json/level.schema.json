@@ -195,6 +195,10 @@
         "illustration"
       ]
     },
+    "background": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+\\/[a-z0-9-]+$"
+    },
     "skills": {
       "minItems": 1,
       "type": "array",
@@ -2177,6 +2181,7 @@
     "title",
     "learningGoal",
     "story",
+    "background",
     "skills",
     "activities",
     "sticker",

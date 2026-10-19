@@ -17,7 +17,7 @@ Effort ranges assume one developer working with an AI coding agent (A1), in focu
 - **Demo:** `pnpm dev`, switch language, rotate in device emulation, go offline and reload.
 - **Known limitations:** no gameplay yet.
 
-### P2 — Vertical slice AF-01 (8–12 days + asset/voice track)
+### P2 — Vertical slice AF-01 (8–12 days + asset/voice track) — implemented with placeholders, see [phase-2 report](../progress/phase-2.md)
 - **Objectives:** splash → (first-run parent setup minimal) → profile → avatar (minimum options) → welcome → map → Animal Forest overview → AF-01 intro → 3 activities (`tap_discover`, `listen_choose`, `speak_repeat`) → result with sticker → sticker book (minimal). Real audio playback service, real mic recorder with VAD, permission/denied/unsupported paths, pause/help overlays, resume after refresh, persistence, both orientations, offline after cache.
 - **Vertical-slice definition of done:** every item above works with real interactions on a real Android phone and desktop browsers; ar/en/mixed audio for AF-01 exists (placeholder-labelled if not yet approved, disclosed in demo notes); slice-scoped G3–G10, G13, G14 checks pass; child-usability pilot with 1–2 children done.
 - **Files:** `src/app/(child)/**` for the slice screens, `src/features/{profiles,avatar,progress,rewards,speech}/**`, `src/game/activities/{tap-discover,listen-choose,speak-repeat}/**`, `src/services/{audio,mic,speech}/**`, `src/content/levels/af-01.level.json`, `public/assets/audio/**`, `public/assets/atlases/**`.
@@ -81,7 +81,7 @@ P0 approval → P1 → P2 (needs: Nono + cat/dog art, AF-01 voice) → approval 
 | D1 | Next.js App Router with `output: 'export'` | Offline-first PWA needs no server; deploy anywhere; meets brief | Vite SPA (simpler, but brief specifies Next.js) |
 | D2 | Phaser 3.90 default, spike Phaser 4 in P1 | Honours brief; stable; isolate via adapters | Phaser 4 now (active line, newer API) |
 | D3 | One persistent `Phaser.Game` | Avoid WebGL context churn on iOS | Create/destroy per route |
-| D4 | Gameplay truth in XState actors, not scenes or Zustand | Survives rotation; testable without rendering; avoids boolean soup | Hand-written reducers (lighter, less tooling) |
+| D4 | Gameplay truth in controller state machines, not scenes or Zustand. **Revised in P2: hand-written typed machines instead of XState** | Survives rotation; testable without rendering; avoids boolean soup; no extra dependency | XState actors (original choice) |
 | D5 | Single Web Audio service; Phaser `noAudio` | One unlock, one context, shared by React and Phaser | Phaser sound manager; Howler (inactive since 2023) |
 | D6 | MP3 for all audio | One universally decodable format → one file per clip in the precache | Opus + AAC dual (better quality/size, doubles management) |
 | D7 | Recognition off by default; VAD-based feedback | Honest, private, works offline | Web Speech API on by default (privacy and accuracy problems) |
@@ -91,4 +91,7 @@ P0 approval → P1 → P2 (needs: Nono + cat/dog art, AF-01 voice) → approval 
 | D11 | Mastery wording "demonstrated through activities"; evidence rule v1 is versioned | Avoids overclaiming; adjustable | Percent scores |
 | D12 | Serwist via `injectManifest` over `out/` (via `@serwist/build` in `scripts/sw/build.ts`) | Bundler-agnostic; avoids Turbopack plugin issues | `@serwist/next` plugin; hand-written SW |
 | D13 | Phaser `Scale.NONE` with manual CSS sizing, device-pixel-ratio cap 2 and explicit `displayScale` (P1) | One canvas moves between route containers; crisp on phones; correct pointer mapping | `Scale.RESIZE` (bound to one parent) |
+| D15 | Map shows only worlds with authored levels (P2) | No locked or empty destinations (R-03, 03 C5) | Showing all three worlds with empty overviews |
+| D16 | Arabic placeholder audio = tone + caption, never synthetic Arabic speech (P2) | A wrong pronunciation would teach the wrong word | espeak-style Arabic TTS placeholders |
+| D17 | VAD noise floor = 10th percentile of the recording, threshold capped at 0.12 RMS (P2) | Children often speak the instant they tap | First-200 ms noise floor (missed immediate speech) |
 | D14 | Storage behind a small `StorageBackend` port with IndexedDB and memory implementations sharing one store table (P1) | Same contract tests for both; memory fallback cannot drift | Repositories written directly against `idb` |

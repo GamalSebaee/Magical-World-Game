@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "lines": {
+    "screen.profiles.who": {
+      "ar": [
+        "screen.profiles.who"
+      ],
+      "en": [
+        "screen.profiles.who"
+      ],
+      "caption": {
+        "ar": "مين هيلعب النهارده؟",
+        "en": "Who's playing today?"
+      }
+    },
+    "screen.avatar.choose": {
+      "ar": [
+        "screen.avatar.choose"
+      ],
+      "en": [
+        "screen.avatar.choose"
+      ],
+      "caption": {
+        "ar": "يلا نختار شكلنا!",
+        "en": "Let's choose your look!"
+      }
+    },
+    "avatar.hair": {
+      "ar": [
+        "avatar.hair"
+      ],
+      "en": [
+        "avatar.hair"
+      ],
+      "caption": {
+        "ar": "الشعر",
+        "en": "Hair"
+      }
+    },
+    "avatar.hair_color": {
+      "ar": [
+        "avatar.hair_color"
+      ],
+      "en": [
+        "avatar.hair_color"
+      ],
+      "caption": {
+        "ar": "لون الشعر",
+        "en": "Hair color"
+      }
+    },
+    "avatar.skin": {
+      "ar": [
+        "avatar.skin"
+      ],
+      "en": [
+        "avatar.skin"
+      ],
+      "caption": {
+        "ar": "لون البشرة",
+        "en": "Skin"
+      }
+    },
+    "avatar.top": {
+      "ar": [
+        "avatar.top"
+      ],
+      "en": [
+        "avatar.top"
+      ],
+      "caption": {
+        "ar": "البلوزة",
+        "en": "Top"
+      }
+    },
+    "avatar.bottom": {
+      "ar": [
+        "avatar.bottom"
+      ],
+      "en": [
+        "avatar.bottom"
+      ],
+      "caption": {
+        "ar": "البنطلون والجيبة",
+        "en": "Bottoms"
+      }
+    },
+    "avatar.shoes": {
+      "ar": [
+        "avatar.shoes"
+      ],
+      "en": [
+        "avatar.shoes"
+      ],
+      "caption": {
+        "ar": "الجزمة",
+        "en": "Shoes"
+      }
+    },
+    "screen.welcome.greeting": {
+      "ar": [
+        "screen.welcome.greeting"
+      ],
+      "en": [
+        "screen.welcome.greeting"
+      ],
+      "caption": {
+        "ar": "أهلاً! أنا نونو. يلا نلعب سوا!",
+        "en": "Hi! I'm Nono. Let's play together!"
+      }
+    },
+    "screen.map.where": {
+      "ar": [
+        "screen.map.where"
+      ],
+      "en": [
+        "screen.map.where"
+      ],
+      "caption": {
+        "ar": "نروح فين؟",
+        "en": "Where shall we go?"
+      }
+    },
+    "screen.stickers.intro": {
+      "ar": [
+        "screen.stickers.intro"
+      ],
+      "en": [
+        "screen.stickers.intro"
+      ],
+      "caption": {
+        "ar": "ده كتاب الملصقات بتاعنا!",
+        "en": "This is our sticker book!"
+      }
+    },
+    "screen.stickers.empty": {
+      "ar": [
+        "screen.stickers.empty"
+      ],
+      "en": [
+        "screen.stickers.empty"
+      ],
+      "caption": {
+        "ar": "يلا نلعب علشان نلاقي ملصقات!",
+        "en": "Let's play to find stickers!"
+      }
+    },
+    "screen.result.sticker": {
+      "ar": [
+        "screen.result.sticker"
+      ],
+      "en": [
+        "screen.result.sticker"
+      ],
+      "caption": {
+        "ar": "ملصق جديد في الكتاب!",
+        "en": "A new sticker for the book!"
+      }
+    },
+    "screen.result.have_it": {
+      "ar": [
+        "screen.result.have_it"
+      ],
+      "en": [
+        "screen.result.have_it"
+      ],
+      "caption": {
+        "ar": "الملصق ده عندنا! برافو!",
+        "en": "We have this sticker! Well done!"
+      }
+    },
+    "screen.intro.continue": {
+      "ar": [
+        "screen.intro.continue"
+      ],
+      "en": [
+        "screen.intro.continue"
+      ],
+      "caption": {
+        "ar": "نكمّل من مكاننا؟",
+        "en": "Shall we carry on where we were?"
+      }
+    },
+    "nono.praise.01": {
+      "ar": [
+        "nono.praise.01"
+      ],
+      "en": [
+        "nono.praise.01"
+      ],
+      "caption": {
+        "ar": "برافو!",
+        "en": "Well done!"
+      }
+    },
+    "nono.praise.02": {
+      "ar": [
+        "nono.praise.02"
+      ],
+      "en": [
+        "nono.praise.02"
+      ],
+      "caption": {
+        "ar": "هايل!",
+        "en": "Wonderful!"
+      }
+    },
+    "nono.praise.03": {
+      "ar": [
+        "nono.praise.03"
+      ],
+      "en": [
+        "nono.praise.03"
+      ],
+      "caption": {
+        "ar": "جميل جداً!",
+        "en": "Very nice!"
+      }
+    },
+    "nono.praise.04": {
+      "ar": [
+        "nono.praise.04"
+      ],
+      "en": [
+        "nono.praise.04"
+      ],
+      "caption": {
+        "ar": "يا سلام!",
+        "en": "Hooray!"
+      }
+    },
+    "nono.notyet.01": {
+      "ar": [
+        "nono.notyet.01"
+      ],
+      "en": [
+        "nono.notyet.01"
+      ],
+      "caption": {
+        "ar": "نجرب تاني؟",
+        "en": "Shall we try again?"
+      }
+    },
+    "nono.notyet.02": {
+      "ar": [
+        "nono.notyet.02"
+      ],
+      "en": [
+        "nono.notyet.02"
+      ],
+      "caption": {
+        "ar": "قربنا! نشوف تاني.",
+        "en": "Almost! Let's look again."
+      }
+    },
+    "nono.offer_skip": {
+      "ar": [
+        "nono.offer_skip"
+      ],
+      "en": [
+        "nono.offer_skip"
+      ],
+      "caption": {
+        "ar": "نجرب حاجة تانية؟",
+        "en": "Shall we try something else?"
+      }
+    },
+    "nono.break": {
+      "ar": [
+        "nono.break"
+      ],
+      "en": [
+        "nono.break"
+      ],
+      "caption": {
+        "ar": "نونو تعبان شوية… نرتاح شوية؟",
+        "en": "Nono is a bit sleepy… shall we take a break?"
+      }
+    },
+    "speech.your_turn": {
+      "ar": [
+        "speech.your_turn"
+      ],
+      "en": [
+        "speech.your_turn"
+      ],
+      "caption": {
+        "ar": "دورنا! نلمس الميكروفون ونقول.",
+        "en": "Our turn! Let's tap the microphone and say it."
+      }
+    },
+    "speech.heard": {
+      "ar": [
+        "speech.heard"
+      ],
+      "en": [
+        "speech.heard"
+      ],
+      "caption": {
+        "ar": "سمعت الصوت! نسمعه تاني؟",
+        "en": "I heard that! Shall we listen to it?"
+      }
+    },
+    "speech.silent": {
+      "ar": [
+        "speech.silent"
+      ],
+      "en": [
+        "speech.silent"
+      ],
+      "caption": {
+        "ar": "مش سامع كويس… نقرّب ونقول تاني؟",
+        "en": "I couldn't hear that… shall we come closer and try again?"
+      }
+    },
+    "speech.hold_longer": {
+      "ar": [
+        "speech.hold_longer"
+      ],
+      "en": [
+        "speech.hold_longer"
+      ],
+      "caption": {
+        "ar": "نقول الكلمة كلها سوا!",
+        "en": "Let's say the whole word together!"
+      }
+    },
+    "speech.together": {
+      "ar": [
+        "speech.together"
+      ],
+      "en": [
+        "speech.together"
+      ],
+      "caption": {
+        "ar": "يلا نقولها مع بعض!",
+        "en": "Let's say it together!"
+      }
+    },
+    "speech.great_try": {
+      "ar": [
+        "speech.great_try"
+      ],
+      "en": [
+        "speech.great_try"
+      ],
+      "caption": {
+        "ar": "محاولة حلوة!",
+        "en": "Great try!"
+      }
+    },
+    "speech.retry": {
+      "ar": [
+        "speech.retry"
+      ],
+      "en": [
+        "speech.retry"
+      ],
+      "caption": {
+        "ar": "نجرب تاني؟",
+        "en": "Shall we try again?"
+      }
+    }
+  },
+  "sfx": [
+    "sfx.tap",
+    "sfx.pop",
+    "sfx.sparkle",
+    "sfx.boop",
+    "sfx.chime",
+    "sfx.record_start",
+    "sfx.record_stop",
+    "sfx.celebrate",
+    "sfx.page"
+  ]
+}

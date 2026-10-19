@@ -14,9 +14,9 @@ describe('bundled content (T-CON)', () => {
     expect(r.errors).toEqual([]);
   });
 
-  it('fails release validation while audio and art are only planned', () => {
+  it('fails release validation while audio and art are placeholders', () => {
     const r = validateContent(rawContent, { release: true });
-    expect(r.errors.some((e) => e.includes('is planned'))).toBe(true);
+    expect(r.errors.some((e) => e.includes('not approved'))).toBe(true);
     expect(r.errors.some((e) => e.includes('not authored yet'))).toBe(true);
   });
 

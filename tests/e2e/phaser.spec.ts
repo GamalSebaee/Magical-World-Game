@@ -1,68 +1,52 @@
-import { expect, test, type Page } from '@playwright/test';
-import { guardPage, openMap } from './helpers';
+import { expect, test } from '@playwright/test';
+import { expectObjectsInViewport, guardPage, setupChild, sceneObjects, waitForObjects } from './helpers';
 
-const objects = (page: Page) => page.evaluate(() => window.__MWG__.sceneObjects());
-
-async function expectInsideViewport(page: Page) {
-  const vp = page.viewportSize()!;
-  for (const o of await objects(page)) {
-    expect(o.rect.x, o.id).toBeGreaterThanOrEqual(-0.5);
-    expect(o.rect.y, o.id).toBeGreaterThanOrEqual(-0.5);
-    expect(o.rect.x + o.rect.width, o.id).toBeLessThanOrEqual(vp.width + 0.5);
-    expect(o.rect.y + o.rect.height, o.id).toBeLessThanOrEqual(vp.height + 0.5);
-    expect(o.rect.width, o.id).toBeGreaterThanOrEqual(64);
-  }
-}
-
-async function tapObject(page: Page, index: number) {
-  const o = (await objects(page))[index]!;
-  const x = o.rect.x + o.rect.width / 2;
-  const y = o.rect.y + o.rect.height / 2;
-  if (test.info().project.use.hasTouch) await page.touchscreen.tap(x, y);
-  else await page.mouse.click(x, y);
-}
-
-test.describe('Phaser host lifecycle (02 §4)', () => {
-  test('mounts a canvas and lays out targets inside the viewport', async ({ page }) => {
+test.describe('Phaser host lifecycle (02 §4) on the world map', () => {
+  test('map shows only playable worlds, inside the viewport, with large hotspots', async ({ page }) => {
     const guard = guardPage(page);
-    await openMap(page);
+    await setupChild(page);
     await expect(page.locator('[data-testid="game-host"] canvas')).toHaveCount(1);
-    await expectInsideViewport(page);
+    expect((await sceneObjects(page)).map((o) => o.id)).toEqual(['animal-forest']);
+    await expectObjectsInViewport(page);
     guard.assertClean();
   });
 
-  test('rotation keeps scene state and re-lays out (T-ORI)', async ({ page }) => {
-    await openMap(page);
-    await tapObject(page, 1);
-    await expect.poll(async () => (await objects(page))[1]!.state).toBe('tapped');
-
+  test('rotation re-lays out the map (T-ORI)', async ({ page }) => {
+    await setupChild(page);
     const { width, height } = page.viewportSize()!;
     await page.setViewportSize({ width: height, height: width });
     await expect.poll(async () => (await page.evaluate(() => window.__MWG__.phaser().viewport))?.width).toBe(height);
+    await expectObjectsInViewport(page);
+  });
 
-    const after = await objects(page);
-    expect(after.map((o) => o.state)).toEqual(['idle', 'tapped', 'idle']);
-    await expectInsideViewport(page);
+  test('a drag starting on a world does not enter it (03 C5)', async ({ page }) => {
+    await setupChild(page);
+    const o = (await sceneObjects(page))[0]!;
+    const x = o.rect.x + o.rect.width / 2;
+    const y = o.rect.y + o.rect.height / 2;
+    await page.mouse.move(x, y);
+    await page.mouse.down();
+    await page.mouse.move(x + 40, y + 10, { steps: 5 });
+    await page.mouse.up();
+    await page.waitForTimeout(500);
+    expect(page.url()).toContain('/map/');
   });
 
   test('20 route round-trips reuse one game and never leak canvases', async ({ page }) => {
     test.setTimeout(120_000);
     const guard = guardPage(page);
-    await openMap(page);
+    await setupChild(page);
     for (let i = 0; i < 20; i++) {
-      await page.getByTestId('home').click();
-      await expect(page.getByTestId('play')).toBeVisible();
-      await page.getByTestId('play').click();
+      await page.getByTestId('open-stickers').click();
+      await page.waitForURL('**/stickers/');
+      await page.getByTestId('back').click();
       await page.waitForURL('**/map/');
-      await page.waitForFunction(() => window.__MWG__.sceneObjects().length === 3);
+      await waitForObjects(page, 1);
     }
     const stats = await page.evaluate(() => window.__MWG__.phaser());
     expect(stats.gamesCreated).toBe(1);
     expect(stats.canvasesInDocument).toBe(1);
     expect(stats.attachCount - stats.detachCount).toBe(1);
-    await page.getByTestId('home').click();
-    await expect(page.getByTestId('play')).toBeVisible();
-    await expect.poll(() => page.evaluate(() => window.__MWG__.phaser().sleeping)).toBe(true);
     guard.assertClean();
   });
 });

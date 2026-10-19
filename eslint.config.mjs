@@ -60,7 +60,7 @@ export default tseslint.config(
   {
     // Only `*/scene.ts` adapters and scene classes talk to Phaser; controllers stay framework-free.
     files: ['src/**'],
-    ignores: ['src/game/core/phaserHost.ts', 'src/game/core/scenes/**', 'src/game/activities/*/scene.ts'],
+    ignores: ['src/game/core/phaserHost.ts', 'src/game/core/scenes/**', 'src/game/activities/*/scene.ts', 'src/game/activities/ActivityScene.ts'],
     // A different rule name from the boundary rule above, so both apply.
     rules: {
       '@typescript-eslint/no-restricted-imports': [
