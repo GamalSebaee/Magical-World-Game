@@ -1,4 +1,5 @@
 import type { ActivityDefinition } from '@content/schema';
+import type { DigitStyle } from '@shared/i18n/language';
 import type { ActivityController, ActivitySnapshot } from './engine/ActivityController';
 import type { Rect, Viewport } from './viewport';
 
@@ -19,6 +20,10 @@ export interface AdapterContext {
   controller: ActivityController;
   assets: AssetTable;
   reducedMotion: boolean;
+  /** Digits on numeral cards and count badges (12 Q7). */
+  digits: DigitStyle;
+  /** Drag magnet assist (04 §4.3: off at age 6; the activity can also turn it off). */
+  magnet: boolean;
   /** Pictures for vocabulary ids (vocab id → asset id). */
   vocabPicture(vocabId: string): string | undefined;
 }
@@ -35,6 +40,8 @@ export interface ActivitySceneAdapter {
   render(snap: ActivitySnapshot): void;
   /** Rect (CSS px) of a target, for hint glow and the demo hand. */
   targetRect(id: string): Rect | undefined;
+  /** For drags: the demo hand travels from the item to its target instead of tapping. */
+  demoPath?(snap: ActivitySnapshot): { from: Rect; to: Rect } | undefined;
   describe(): SceneObjectInfo[];
   destroy(): void;
 }

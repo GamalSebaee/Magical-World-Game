@@ -6,6 +6,7 @@ import type { AudioPlaybackService, AudioStatus } from '@services/audio/AudioPla
 import type { AudioResolver, ResolvedLine } from '@services/audio/resolver';
 import type { ContentRepository } from '@services/content/ContentRepository';
 import { useSession } from '@features/settings/sessionStore';
+import type { SpeechPort } from '@game/core/engine/ActivityController';
 import type { SayItem } from '@game/core/engine/types';
 
 export interface VoiceServices {
@@ -40,6 +41,15 @@ export function resolveSay(s: VoiceServices, items: SayItem[], random: () => num
 
 export function say(s: VoiceServices, items: SayItem[]) {
   return s.audio.playVoice(resolveSay(s, items));
+}
+
+/** The controller's speech port: voice lines in the current language mode, SFX, stop. */
+export function speechPort(s: VoiceServices): SpeechPort {
+  return {
+    say: (items) => say(s, items),
+    sfx: (id) => s.audio.playSfx(s.resolver.sfx(id)),
+    stop: () => s.audio.stopVoice(),
+  };
 }
 
 export function useAudioStatus(audio: AudioPlaybackService | undefined): AudioStatus | undefined {

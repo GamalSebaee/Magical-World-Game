@@ -1,5 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import type { ActivityDefinition } from '@content/schema';
+import { describe, expect, it, vi } from 'vitest';
+import { rawContent } from '@content/bundle';
+import type { ActivityDefinition, LevelDefinition } from '@content/schema';
+import { LevelRunner } from '@features/levels/LevelRunner';
+import { MemoryBackend } from '@services/storage/MemoryBackend';
+import { createRepositories } from '@services/storage/repositories';
+import { EventBus, type AppEvent } from '@shared/events';
+import { sequentialIds } from '@shared/ids';
+import { fixedClock, silentLogger } from '@shared/runtime';
 import { playgroundEntries } from '@features/playground/fixtures';
 import { ActivityController, type SpeechPort, type Timers } from '@game/core/engine/ActivityController';
 import { afterNotYet, idleHintMs, offersSkip, raiseHint } from '@game/core/engine/hintPolicy';
@@ -329,5 +336,43 @@ describe('controller: inline outcomes and the counting voice queue', () => {
     const n = speech.lines.length;
     await flush();
     expect(speech.lines.length).toBe(n);
+  });
+});
+
+describe('resume mid-count (AF-04 QA 2, NI-02 QA 3)', () => {
+  it('a refresh restores the counted set and the same objects', async () => {
+    const level = { ...(rawContent.levels['af-01'] as LevelDefinition), activities: [apples, tapN] };
+    const repos = createRepositories(new MemoryBackend(), { clock: fixedClock(Date.UTC(2026, 9, 20)), ids: sequentialIds('r') });
+    const make = () => {
+      const speech: SpeechPort = { say: () => ({ done: Promise.resolve('ended'), stop: () => {} }), sfx: () => {}, stop: () => {} };
+      return new LevelRunner({
+        level,
+        profileId: 'kid',
+        storage: repos,
+        events: new EventBus<AppEvent>(),
+        clock: fixedClock(Date.UTC(2026, 9, 20)),
+        ids: sequentialIds('run'),
+        logger: silentLogger,
+        random: () => 0.5,
+        makeController: (a) => new ActivityController({ ...a, logic: logicFor(a.def), speech, timers, minFeedbackMs: 0 }),
+      });
+    };
+    const r1 = make();
+    r1.start();
+    await flush();
+    const c = r1.state().controller!;
+    c.input(tap('apple-2'));
+    c.input(tap('apple-3'));
+    r1.pause();
+    await vi.waitFor(async () =>
+      expect(await repos.activeSession.resumable('kid', level.id, level.contentVersion)).toMatchObject({ mechanicState: { counted: ['apple-2', 'apple-3'], stage: 'counting' } }),
+    );
+    const snap = (await repos.activeSession.resumable('kid', level.id, level.contentVersion))!;
+    r1.dispose();
+
+    const r2 = make();
+    r2.start(snap);
+    expect(r2.state().controller!.snapshot.m).toEqual({ counted: ['apple-2', 'apple-3'], stage: 'counting' });
+    r2.dispose();
   });
 });

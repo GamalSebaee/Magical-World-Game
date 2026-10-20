@@ -5,7 +5,10 @@ import type { ActivitySceneAdapter, ActivitySceneData, AdapterContext, SceneObje
 import { cover, queueTextures, textureFor } from '@game/core/scenes/common';
 import { ACTIVITY_SCENE } from '@game/core/scenes/keys';
 import { belowHud, type Viewport } from '@game/core/viewport';
+import { countObjectsScene } from './count-objects/scene';
+import { dragDropScene } from './drag-drop/scene';
 import { listenChooseScene } from './listen-choose/scene';
+import { matchPairsScene } from './match-pairs/scene';
 import { speakRepeatScene } from './speak-repeat/scene';
 import { tapDiscoverScene } from './tap-discover/scene';
 
@@ -13,6 +16,9 @@ const ADAPTERS: Record<string, (scene: Phaser.Scene) => ActivitySceneAdapter> = 
   tap_discover: tapDiscoverScene,
   listen_choose: listenChooseScene,
   speak_repeat: speakRepeatScene,
+  drag_drop: dragDropScene,
+  match_pairs: matchPairsScene,
+  count_objects: countObjectsScene,
 };
 
 /**
@@ -90,17 +96,35 @@ export class ActivityScene extends Phaser.Scene {
       this.glow.setPosition(cx, cy).setRadius((Math.max(rect.width, rect.height) / 2 + 12) * k).setVisible(true);
       if (s.demo) {
         this.handTween?.remove();
-        this.hand.setVisible(true).setScale(k).setPosition(cx + 70 * k, cy + 90 * k).setAlpha(1);
+        const path = this.adapter?.demoPath?.(s);
         const amp = this.ctx.reducedMotion ? 0.4 : 1;
-        this.handTween = this.tweens.add({
-          targets: this.hand,
-          x: cx + 70 * k * (1 - amp) + 10 * k * amp,
-          y: cy + 90 * k * (1 - amp) + 20 * k * amp,
-          duration: 700,
-          yoyo: true,
-          repeat: -1,
-          ease: 'Sine.inOut',
-        });
+        if (path) {
+          // Drags: the hand travels from the item to where it goes, then starts again.
+          const from = { x: (path.from.x + path.from.width / 2) * k, y: (path.from.y + path.from.height / 2) * k };
+          const to = { x: (path.to.x + path.to.width / 2) * k, y: (path.to.y + path.to.height / 2) * k };
+          this.hand.setVisible(true).setScale(k).setPosition(from.x + 20 * k, from.y + 30 * k).setAlpha(1);
+          this.handTween = this.tweens.add({
+            targets: this.hand,
+            x: from.x + 20 * k + (to.x - from.x) * amp,
+            y: from.y + 30 * k + (to.y - from.y) * amp,
+            duration: 1200,
+            hold: 300,
+            repeatDelay: 400,
+            repeat: -1,
+            ease: 'Sine.inOut',
+          });
+        } else {
+          this.hand.setVisible(true).setScale(k).setPosition(cx + 70 * k, cy + 90 * k).setAlpha(1);
+          this.handTween = this.tweens.add({
+            targets: this.hand,
+            x: cx + 70 * k * (1 - amp) + 10 * k * amp,
+            y: cy + 90 * k * (1 - amp) + 20 * k * amp,
+            duration: 700,
+            yoyo: true,
+            repeat: -1,
+            ease: 'Sine.inOut',
+          });
+        }
       } else this.hideHand();
     } else {
       this.glow.setVisible(false);

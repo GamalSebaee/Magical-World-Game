@@ -1,4 +1,5 @@
-import { parsePinnedClip, type AudioManifest, type LocalizedAudioRef } from '@content/schema';
+import type { AudioManifest, LocalizedAudioRef } from '@content/schema';
+import { parsePinnedClip } from '@content/schema/pinned';
 import { primaryLang, type LanguageMode } from '@shared/i18n/language';
 
 export type ClipSlot = 'ar' | 'en' | 'common';

@@ -20,8 +20,8 @@ const LOGIC: Record<Mechanic, MechanicLogic<never, unknown>> = {
   count_objects: countObjectsLogic as MechanicLogic<never, unknown>,
 };
 
-export function logicFor(def: ActivityDefinition): MechanicLogic<ActivityDefinition, unknown> | undefined {
-  return LOGIC[def.mechanic] as MechanicLogic<ActivityDefinition, unknown> | undefined;
+export function logicFor(def: ActivityDefinition): MechanicLogic<ActivityDefinition, unknown> {
+  return LOGIC[def.mechanic] as MechanicLogic<ActivityDefinition, unknown>;
 }
 
 export const IMPLEMENTED_MECHANICS = Object.keys(LOGIC) as Mechanic[];

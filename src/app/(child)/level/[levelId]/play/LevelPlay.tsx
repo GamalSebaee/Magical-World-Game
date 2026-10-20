@@ -9,9 +9,10 @@ import { LevelRunner, type RunnerState } from '@features/levels/LevelRunner';
 import { useSession } from '@features/settings/sessionStore';
 import { CaptionBubble, useGuardedProfile } from '@features/shell/ChildScreen';
 import { SpeechPanel } from '@features/speech/SpeechPanel';
-import { say, useAudioStatus } from '@features/voice/voice';
+import { speechPort, useAudioStatus } from '@features/voice/voice';
 import { logicFor } from '@game/activities/registry';
 import { ActivityController, type ActivitySnapshot } from '@game/core/engine/ActivityController';
+import { idleHintMs, magnetAllowed } from '@game/core/engine/hintPolicy';
 import { GameHost } from '@game/core/GameHost';
 import { setActivityProbe } from '@game/core/testHooks';
 import type { ActivitySceneData } from '@game/core/sceneTypes';
@@ -23,12 +24,6 @@ import { t } from '@shared/i18n/uiStrings';
 import { BigButton } from '@shared/ui/BigButton';
 import { BulbIcon, EarIcon, MapIcon, NextIcon, PauseIcon, PlayIcon, RetryIcon, SpeakerIcon } from '@shared/ui/icons';
 import { Nono, type NonoMood } from '@shared/ui/Nono';
-
-/** Idle time before an automatic hint, by age (04 §3.2) and the parent's timing preference. */
-function idleHintMs(age: ChildProfile['ageBand'], timing: Settings['hintTiming']): number {
-  const base = age <= 3 ? 15_000 : age >= 6 ? 10_000 : 12_000;
-  return timing === 'slower' ? base * 1.5 : timing === 'faster' ? base * 0.7 : base;
-}
 
 export function LevelPlay({ levelId }: { levelId: string }) {
   return (
@@ -74,6 +69,7 @@ function Play({
   const router = useRouter();
   const lang = primaryLang(useSession((s) => s.languageMode));
   const reducedMotion = useSession((s) => s.reducedMotion);
+  const digits = useSession((s) => s.digitStyle);
   const setLastResult = useSession((s) => s.setLastResult);
   const runnerRef = useRef<LevelRunner | undefined>(undefined);
   const [state, setState] = useState<RunnerState>();
@@ -100,11 +96,7 @@ function Play({
         return new ActivityController({
           ...a,
           logic,
-          speech: {
-            say: (items) => say(services, items),
-            sfx: (id) => services.audio.playSfx(services.resolver.sfx(id)),
-            stop: () => services.audio.stopVoice(),
-          },
+          speech: speechPort(services),
           timers: { setTimeout: (fn, ms) => window.setTimeout(fn, ms), clearTimeout: (h) => window.clearTimeout(h as number) },
           idleHintMs: idleHintMs(profile.ageBand, settings.hintTiming),
         });
@@ -199,11 +191,13 @@ function Play({
               controller,
               assets: services.content.assetTable(),
               reducedMotion,
+              digits,
+              magnet: magnetAllowed(profile.ageBand),
               vocabPicture: (v) => services.content.vocabulary(v)?.picture,
             },
           }
         : undefined,
-    [controller, services, reducedMotion, level.background],
+    [controller, services, reducedMotion, digits, profile.ageBand, level.background],
   );
 
   const mood: NonoMood =

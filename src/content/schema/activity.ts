@@ -64,7 +64,7 @@ export const DragDropDef = ActivityBase.extend({
     .array(z.object({ id: z.string(), asset: AssetRef, accepts: z.array(z.string()).min(1) }))
     .min(1)
     .max(3),
-  magnetAssist: z.boolean().default(true),
+  magnetAssist: z.boolean(),
   completion: z.discriminatedUnion('type', [
     z.object({ type: z.literal('all_placed') }),
     z.object({ type: z.literal('count_placed'), n: z.number().int().min(1).max(5) }),
@@ -131,8 +131,8 @@ export const SpeakRepeatDef = ActivityBase.extend({
   vocab: VocabId,
   picture: AssetRef,
   model: LocalizedAudioRef,
-  maxRecordMs: z.number().int().min(2000).max(8000).default(5000),
-  attemptsBeforeAutoContinue: z.number().int().min(1).max(3).default(2),
+  maxRecordMs: z.number().int().min(2000).max(8000),
+  attemptsBeforeAutoContinue: z.number().int().min(1).max(3),
   recognition: z.enum(['off', 'optional']),
   completion: z.object({ type: z.literal('any_attempt_or_skip') }),
 });

@@ -55,7 +55,8 @@ export function defaultFlags(env: string | undefined = process.env.NODE_ENV): Fe
   return {
     ttsDynamic: false,
     speechRecognition: false,
-    devPlayground: !isProd,
+    // Development, and test builds (E2E drives the playground); never a release build.
+    devPlayground: !isProd || process.env.NEXT_PUBLIC_TEST_HOOKS === '1',
     testHooks: !isProd || process.env.NEXT_PUBLIC_TEST_HOOKS === '1',
   };
 }

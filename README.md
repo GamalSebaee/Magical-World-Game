@@ -23,6 +23,11 @@ A bilingual (Arabic / English / mixed), offline-first, installable web game for 
 | `tsx scripts/content/sync-manifests.ts` | Add `planned` manifest entries for newly referenced audio and assets |
 | `pnpm content:schema` | Regenerate JSON Schema for editor autocomplete |
 | `tsx scripts/audio/gen-placeholders.ts` | Generate labelled placeholder audio for clips that are only planned |
+| `pnpm size` | After a build: JavaScript each page downloads (gzip), against the 200 KB budget |
+
+**Activity playground:** `pnpm dev`, then open http://localhost:3000/dev/playground/ to run any
+activity alone with language, orientation, reduced motion, fake microphone, sound and magnet
+toggles and a live state view. It exists only in development and test builds.
 
 Only Chromium is installed in the cloud dev environment, so locally run
 `pnpm test:e2e --project=chromium-portrait --project=chromium-landscape --project=desktop-chromium`.

@@ -64,6 +64,8 @@ export class AudioPlaybackService {
   private paused = false;
   /** Recently played voice clip URLs (newest last), for test hooks and diagnostics. */
   readonly history: string[] = [];
+  /** Sound effects started (URLs), kept apart from voice lines; for tests. */
+  readonly sfxHistory: string[] = [];
 
   constructor(
     private readonly backend: AudioBackend,
@@ -184,6 +186,8 @@ export class AudioPlaybackService {
       if (this.sfxPlaying.length >= SFX_POLYPHONY) this.sfxPlaying.shift()?.stop();
       const h = this.backend.play(buf, 'sfx');
       this.sfxPlaying.push(h);
+      this.sfxHistory.push(clip.url);
+      if (this.sfxHistory.length > 50) this.sfxHistory.shift();
       void h.ended.then(() => {
         this.sfxPlaying = this.sfxPlaying.filter((x) => x !== h);
       });

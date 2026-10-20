@@ -94,12 +94,10 @@ describe('schema rules', () => {
     expect(ActivityDefinition.safeParse({ ...base, answerChoices: [1, 3] }).success).toBe(false);
   });
 
-  it('defaults speak_repeat limits', () => {
+  it('requires speak_repeat limits to be explicit (the app reads content unparsed, D18)', () => {
     const lvl = af01();
     delete lvl.activities[2].maxRecordMs;
-    const parsed = LevelDefinition.parse(lvl);
-    const speak = parsed.activities[2];
-    expect(speak?.mechanic === 'speak_repeat' && speak.maxRecordMs).toBe(5000);
+    expect(LevelDefinition.safeParse(lvl).success).toBe(false);
   });
 });
 

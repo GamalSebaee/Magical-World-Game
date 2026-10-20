@@ -85,3 +85,22 @@ export function wiggle(scene: Phaser.Scene, target: Phaser.GameObjects.Component
 export function rectOf(o: { x: number; y: number; displayWidth: number; displayHeight: number }, s: number): Rect {
   return { x: (o.x - o.displayWidth / 2) / s, y: (o.y - o.displayHeight / 2) / s, width: o.displayWidth / s, height: o.displayHeight / s };
 }
+
+export const INK = 0x2d3047;
+export const SUN = 0xffc93c;
+
+/** A white rounded card with an ink outline; `selected` adds a thick sun-coloured ring. */
+export function drawCard(g: Phaser.GameObjects.Graphics, r: Rect, s: number, opts: { selected?: boolean; alpha?: number; fill?: number } = {}) {
+  g.clear();
+  const radius = Math.min(28, r.width / 5) * s;
+  g.fillStyle(opts.fill ?? 0xffffff, 0.95 * (opts.alpha ?? 1)).fillRoundedRect(r.x * s, r.y * s, r.width * s, r.height * s, radius);
+  g.lineStyle((opts.selected ? 10 : 6) * s, opts.selected ? SUN : INK, opts.alpha ?? 1).strokeRoundedRect(r.x * s, r.y * s, r.width * s, r.height * s, radius);
+}
+
+/** Places a zone over a CSS rect (hit area = the whole rect). */
+export function placeZone(zone: Phaser.GameObjects.Zone, r: Rect, s: number) {
+  zone.setPosition((r.x + r.width / 2) * s, (r.y + r.height / 2) * s).setSize(r.width * s, r.height * s);
+  zone.input?.hitArea.setTo(0, 0, r.width * s, r.height * s);
+}
+
+export const centreOf = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });

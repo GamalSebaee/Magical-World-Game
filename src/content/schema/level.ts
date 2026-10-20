@@ -104,3 +104,4 @@ export type UiAudioFile = z.infer<typeof UiAudioFile>;
 
 export const SkillsFile = z.object({ schemaVersion: z.literal(1), skills: z.array(SkillDefinition) });
 export const VocabularyFile = z.object({ schemaVersion: z.literal(1), entries: z.array(VocabularyEntry) });
+export type VocabularyFile = z.infer<typeof VocabularyFile>;

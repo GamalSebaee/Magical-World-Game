@@ -7,7 +7,7 @@ import type { SceneObjectInfo } from './sceneTypes';
 interface HookDeps {
   storage: StorageRepositories;
   storageStatus: StorageStatus;
-  audio: { history: readonly string[]; getStatus(): unknown };
+  audio: { history: readonly string[]; sfxHistory: readonly string[]; getStatus(): unknown };
 }
 
 let activityProbe: (() => unknown) | undefined;
@@ -40,9 +40,19 @@ export function installTestHooks(deps: HookDeps) {
       };
     },
     activity: () => activityProbe?.() as
-      | { activityId: string; phase: string; paused: boolean; hintLevel: number; m: unknown; offerSkip: boolean }
+      | {
+          activityId: string;
+          phase: string;
+          paused: boolean;
+          hintLevel: number;
+          notYetCount: number;
+          m: unknown;
+          offerSkip: boolean;
+          last?: { seq: number; anim?: string; targetId?: string; kind: string };
+        }
       | undefined,
     audioHistory: () => [...deps.audio.history],
+    sfxHistory: () => [...deps.audio.sfxHistory],
     audioStatus: () => deps.audio.getStatus(),
     storageStatus: () => deps.storageStatus,
     storageCounts: () => deps.storage.counts(),

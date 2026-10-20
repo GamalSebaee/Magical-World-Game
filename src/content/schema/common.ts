@@ -37,8 +37,4 @@ export const VocabId = z.string().regex(/^[a-z]+\.[a-z0-9_]+$/, 'vocabulary id l
 export const WorldIdSchema = z.string().regex(/^[a-z]+(-[a-z]+)*$/);
 export const LevelIdSchema = z.string().regex(/^[a-z]{2}-\d{2}$/);
 
-/** Splits "word.animals.cat:en" into its clip id and pinned language. */
-export function parsePinnedClip(pinned: string): { id: string; lang: 'ar' | 'en' } {
-  const idx = pinned.lastIndexOf(':');
-  return { id: pinned.slice(0, idx), lang: pinned.slice(idx + 1) as 'ar' | 'en' };
-}
+export { parsePinnedClip } from './pinned';
