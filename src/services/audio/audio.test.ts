@@ -1,12 +1,13 @@
 import { describe, expect, it, vi } from 'vitest';
 import { rawContent } from '@content/bundle';
 import { AudioManifest, LevelDefinition, UiAudioFile } from '@content/schema';
+import { runtimeAudio } from '@services/content/runtimeManifests';
 import { AudioPlaybackService } from './AudioPlaybackService';
 import { FakeAudioBackend } from './FakeAudioBackend';
 import { AudioResolver, type ResolvedLine } from './resolver';
 
 const manifest = AudioManifest.parse(rawContent.audioManifest);
-const resolver = new AudioResolver(manifest);
+const resolver = new AudioResolver(runtimeAudio(manifest));
 const level = LevelDefinition.parse(rawContent.levels['af-01']);
 const ui = UiAudioFile.parse(rawContent.uiAudio);
 const noWait = () => Promise.resolve();
@@ -38,10 +39,9 @@ describe('AudioResolver', () => {
   });
 
   it('reports clips that are only planned as missing', () => {
-    const planned = new AudioResolver({
-      schemaVersion: 1,
-      clips: [{ ...manifest.clips[0]!, review: { ar: { status: 'planned', by: null, date: null, notes: '' } } }],
-    });
+    const planned = new AudioResolver(
+      runtimeAudio({ schemaVersion: 1, clips: [{ ...manifest.clips[0]!, review: { ar: { status: 'planned', by: null, date: null, notes: '' } } }] }),
+    );
     const line = planned.line({ ar: [manifest.clips[0]!.id], en: [manifest.clips[0]!.id], caption: { ar: 'x', en: 'x' } }, 'ar');
     expect(line.clips).toEqual([]);
     expect(line.missing).toHaveLength(1);

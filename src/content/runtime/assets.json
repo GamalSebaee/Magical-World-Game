@@ -1,0 +1,662 @@
+{
+  "animals/bird": {
+    "url": "/assets/art/animals/bird.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/cat": {
+    "url": "/assets/art/animals/cat.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/cow": {
+    "url": "/assets/art/animals/cow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/dog": {
+    "url": "/assets/art/animals/dog.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/duck": {
+    "url": "/assets/art/animals/duck.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/fish": {
+    "url": "/assets/art/animals/fish.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "animals/rabbit": {
+    "url": "/assets/art/animals/rabbit.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "forest/bg-clearing": {
+    "url": "/assets/art/forest/bg-clearing.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "forest/bg-garden": {
+    "url": "/assets/art/forest/bg-garden.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "forest/bg-path": {
+    "url": "/assets/art/forest/bg-path.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "forest/bg-stage": {
+    "url": "/assets/art/forest/bg-stage.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "forest/burrow": {
+    "url": "/assets/art/forest/burrow.svg",
+    "w": 240,
+    "h": 180,
+    "placeholder": true
+  },
+  "forest/bush": {
+    "url": "/assets/art/forest/bush.svg",
+    "w": 240,
+    "h": 180,
+    "placeholder": true
+  },
+  "forest/soil": {
+    "url": "/assets/art/forest/soil.svg",
+    "w": 240,
+    "h": 180,
+    "placeholder": true
+  },
+  "forest/tree": {
+    "url": "/assets/art/forest/tree.svg",
+    "w": 220,
+    "h": 300,
+    "placeholder": true
+  },
+  "island/bg-beach": {
+    "url": "/assets/art/island/bg-beach.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "island/bg-cove": {
+    "url": "/assets/art/island/bg-cove.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "island/bg-lagoon": {
+    "url": "/assets/art/island/bg-lagoon.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "island/bg-palms": {
+    "url": "/assets/art/island/bg-palms.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "map/animal-forest": {
+    "url": "/assets/art/map/animal-forest.svg",
+    "w": 260,
+    "h": 240,
+    "placeholder": true
+  },
+  "map/background": {
+    "url": "/assets/art/map/background.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "map/color-town": {
+    "url": "/assets/art/map/color-town.svg",
+    "w": 260,
+    "h": 240,
+    "placeholder": true
+  },
+  "map/number-island": {
+    "url": "/assets/art/map/number-island.svg",
+    "w": 260,
+    "h": 240,
+    "placeholder": true
+  },
+  "numerals/1": {
+    "url": "/assets/art/numerals/1.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "numerals/2": {
+    "url": "/assets/art/numerals/2.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "numerals/3": {
+    "url": "/assets/art/numerals/3.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "numerals/4": {
+    "url": "/assets/art/numerals/4.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "numerals/5": {
+    "url": "/assets/art/numerals/5.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/apple": {
+    "url": "/assets/art/objects/apple.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/apple-grey": {
+    "url": "/assets/art/objects/apple-grey.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/ball-blue": {
+    "url": "/assets/art/objects/ball-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/ball-red": {
+    "url": "/assets/art/objects/ball-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/ball-yellow": {
+    "url": "/assets/art/objects/ball-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/bananas-1": {
+    "url": "/assets/art/objects/bananas-1.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/bananas-2": {
+    "url": "/assets/art/objects/bananas-2.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/bananas-3": {
+    "url": "/assets/art/objects/bananas-3.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/bananas-4": {
+    "url": "/assets/art/objects/bananas-4.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/bananas-5": {
+    "url": "/assets/art/objects/bananas-5.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/band-blue": {
+    "url": "/assets/art/objects/band-blue.svg",
+    "w": 240,
+    "h": 142,
+    "placeholder": true
+  },
+  "objects/band-green": {
+    "url": "/assets/art/objects/band-green.svg",
+    "w": 240,
+    "h": 142,
+    "placeholder": true
+  },
+  "objects/band-red": {
+    "url": "/assets/art/objects/band-red.svg",
+    "w": 240,
+    "h": 142,
+    "placeholder": true
+  },
+  "objects/band-yellow": {
+    "url": "/assets/art/objects/band-yellow.svg",
+    "w": 240,
+    "h": 142,
+    "placeholder": true
+  },
+  "objects/basket": {
+    "url": "/assets/art/objects/basket.svg",
+    "w": 260,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/block-blue": {
+    "url": "/assets/art/objects/block-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/block-red": {
+    "url": "/assets/art/objects/block-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/block-yellow": {
+    "url": "/assets/art/objects/block-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/box-blue": {
+    "url": "/assets/art/objects/box-blue.svg",
+    "w": 240,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/box-red": {
+    "url": "/assets/art/objects/box-red.svg",
+    "w": 240,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/box-yellow": {
+    "url": "/assets/art/objects/box-yellow.svg",
+    "w": 240,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/car-blue": {
+    "url": "/assets/art/objects/car-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/car-red": {
+    "url": "/assets/art/objects/car-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/car-yellow": {
+    "url": "/assets/art/objects/car-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/carrot": {
+    "url": "/assets/art/objects/carrot.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/chest": {
+    "url": "/assets/art/objects/chest.svg",
+    "w": 260,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/cloud": {
+    "url": "/assets/art/objects/cloud.svg",
+    "w": 240,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/clue": {
+    "url": "/assets/art/objects/clue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/coin": {
+    "url": "/assets/art/objects/coin.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/coral-home": {
+    "url": "/assets/art/objects/coral-home.svg",
+    "w": 260,
+    "h": 200,
+    "placeholder": true
+  },
+  "objects/drop-blue": {
+    "url": "/assets/art/objects/drop-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/drop-green": {
+    "url": "/assets/art/objects/drop-green.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/drop-red": {
+    "url": "/assets/art/objects/drop-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/drop-yellow": {
+    "url": "/assets/art/objects/drop-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/jewel": {
+    "url": "/assets/art/objects/jewel.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/map-piece": {
+    "url": "/assets/art/objects/map-piece.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/rock-1": {
+    "url": "/assets/art/objects/rock-1.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/rock-2": {
+    "url": "/assets/art/objects/rock-2.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/rock-3": {
+    "url": "/assets/art/objects/rock-3.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/sea": {
+    "url": "/assets/art/objects/sea.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/sea-grey": {
+    "url": "/assets/art/objects/sea-grey.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/shell": {
+    "url": "/assets/art/objects/shell.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/starfish": {
+    "url": "/assets/art/objects/starfish.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/sun": {
+    "url": "/assets/art/objects/sun.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "objects/sun-grey": {
+    "url": "/assets/art/objects/sun-grey.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "scenes/af-01-intro": {
+    "url": "/assets/art/scenes/af-01-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/af-02-intro": {
+    "url": "/assets/art/scenes/af-02-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/af-03-intro": {
+    "url": "/assets/art/scenes/af-03-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/af-04-intro": {
+    "url": "/assets/art/scenes/af-04-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ct-01-intro": {
+    "url": "/assets/art/scenes/ct-01-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ct-02-intro": {
+    "url": "/assets/art/scenes/ct-02-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ct-03-intro": {
+    "url": "/assets/art/scenes/ct-03-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ct-04-intro": {
+    "url": "/assets/art/scenes/ct-04-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ni-01-intro": {
+    "url": "/assets/art/scenes/ni-01-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ni-02-intro": {
+    "url": "/assets/art/scenes/ni-02-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ni-03-intro": {
+    "url": "/assets/art/scenes/ni-03-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "scenes/ni-04-intro": {
+    "url": "/assets/art/scenes/ni-04-intro.svg",
+    "w": 800,
+    "h": 500,
+    "placeholder": true
+  },
+  "shapes/circle-blue": {
+    "url": "/assets/art/shapes/circle-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/circle-red": {
+    "url": "/assets/art/shapes/circle-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/outline-circle-red": {
+    "url": "/assets/art/shapes/outline-circle-red.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/outline-square-blue": {
+    "url": "/assets/art/shapes/outline-square-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/outline-triangle-yellow": {
+    "url": "/assets/art/shapes/outline-triangle-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/square-blue": {
+    "url": "/assets/art/shapes/square-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/triangle-blue": {
+    "url": "/assets/art/shapes/triangle-blue.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "shapes/triangle-yellow": {
+    "url": "/assets/art/shapes/triangle-yellow.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  },
+  "stickers/af-01-cat-dog": {
+    "url": "/assets/art/stickers/af-01-cat-dog.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/af-02": {
+    "url": "/assets/art/stickers/af-02.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/af-03": {
+    "url": "/assets/art/stickers/af-03.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/af-04": {
+    "url": "/assets/art/stickers/af-04.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ct-01": {
+    "url": "/assets/art/stickers/ct-01.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ct-02": {
+    "url": "/assets/art/stickers/ct-02.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ct-03": {
+    "url": "/assets/art/stickers/ct-03.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ct-04": {
+    "url": "/assets/art/stickers/ct-04.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ni-01": {
+    "url": "/assets/art/stickers/ni-01.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ni-02": {
+    "url": "/assets/art/stickers/ni-02.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ni-03": {
+    "url": "/assets/art/stickers/ni-03.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "stickers/ni-04": {
+    "url": "/assets/art/stickers/ni-04.svg",
+    "w": 240,
+    "h": 240,
+    "placeholder": true
+  },
+  "town/bg-sky": {
+    "url": "/assets/art/town/bg-sky.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "town/bg-square": {
+    "url": "/assets/art/town/bg-square.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "town/bg-street": {
+    "url": "/assets/art/town/bg-street.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "town/bg-toyshop": {
+    "url": "/assets/art/town/bg-toyshop.svg",
+    "w": 1600,
+    "h": 1000,
+    "placeholder": true
+  },
+  "ui/sound-card": {
+    "url": "/assets/art/ui/sound-card.svg",
+    "w": 180,
+    "h": 180,
+    "placeholder": true
+  }
+}

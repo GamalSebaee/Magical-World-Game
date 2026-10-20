@@ -53,7 +53,8 @@ function Levels({
   return (
     <div className="flex flex-1 flex-col items-center justify-center gap-6">
       <h1 className="text-2xl font-bold opacity-80">{world.name[lang]}</h1>
-      <ol className="flex flex-col gap-6 landscape:flex-row">
+      {/* Portrait: 2×2; landscape: one row. Buttons shrink with the screen, never below 120 px. */}
+      <ol className="grid grid-cols-2 gap-5 landscape:grid-cols-4">
         {levels.map((l) => (
           <li key={l.id}>
             <button
@@ -61,7 +62,7 @@ function Levels({
               aria-label={l.title[lang]}
               data-testid={`level-${l.id}`}
               onClick={() => onOpen(l.id)}
-              className="relative flex h-[150px] w-[150px] items-center justify-center overflow-hidden rounded-full border-4 border-ink-700 bg-cloud-0 shadow-[0_6px_0_var(--color-ink-700)]"
+              className="relative flex h-[clamp(120px,min(40vw,30dvh),150px)] w-[clamp(120px,min(40vw,30dvh),150px)] items-center justify-center overflow-hidden rounded-full border-4 border-ink-700 bg-cloud-0 shadow-[0_6px_0_var(--color-ink-700)]"
             >
               <img src={assets[l.story.illustration]?.url} alt="" className="h-full w-full object-cover" />
               {stickers?.has(l.id) && (

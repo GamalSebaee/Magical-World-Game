@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "af01.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.where_cat": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.where_dog": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a2.where_mixed": {
+      "ar": "placeholder"
+    },
+    "af01.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af01.story.outro_mixed": {
+      "ar": "placeholder"
+    },
+    "af02.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af02.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.who_moo": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.who_quack": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a1.who_woof": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af03.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a2.where_rabbit": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a2.who_woof": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a4.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a4.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.a4.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "af04.where_mixed": {
+      "ar": "placeholder"
+    },
+    "avatar.bottom": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "avatar.hair": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "avatar.hair_color": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "avatar.shoes": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "avatar.skin": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "avatar.top": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.where_blue": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.where_red": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.a2.where_yellow": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct01.where_mixed": {
+      "ar": "placeholder"
+    },
+    "ct02.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct02.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.where_circle": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.where_square": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a1.where_triangle": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct03.where_mixed": {
+      "ar": "placeholder"
+    },
+    "ct04.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ct04.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a3.where_1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a3.where_3": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a4.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a4.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.a4.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni01.where_mixed": {
+      "ar": "placeholder"
+    },
+    "ni02.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni02.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a1.who_more": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a2.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a2.who_fewer": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni03.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a1.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a1.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a1.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a2.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a2.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a3.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a3.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.a3.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.story.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "ni04.story.outro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.break": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.hint.watch_me": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.notyet.01": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.notyet.02": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.offer_skip": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.praise.01": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.praise.02": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.praise.03": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "nono.praise.04": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.count.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.count.how_many": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.count.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.count.thats": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.drag.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.drag.hint2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.drag.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.match.hint1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "play.match.instruction": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.avatar.choose": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.intro.continue": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.map.where": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.profiles.who": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.result.have_it": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.result.sticker": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.stickers.empty": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.stickers.intro": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "screen.welcome.greeting": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sfx.animal_cat": {
+      "common": "placeholder"
+    },
+    "sfx.animal_cow": {
+      "common": "placeholder"
+    },
+    "sfx.animal_dog": {
+      "common": "placeholder"
+    },
+    "sfx.animal_duck": {
+      "common": "placeholder"
+    },
+    "sfx.boop": {
+      "common": "placeholder"
+    },
+    "sfx.celebrate": {
+      "common": "placeholder"
+    },
+    "sfx.chime": {
+      "common": "placeholder"
+    },
+    "sfx.page": {
+      "common": "placeholder"
+    },
+    "sfx.pop": {
+      "common": "placeholder"
+    },
+    "sfx.record_start": {
+      "common": "placeholder"
+    },
+    "sfx.record_stop": {
+      "common": "placeholder"
+    },
+    "sfx.sparkle": {
+      "common": "placeholder"
+    },
+    "sfx.tap": {
+      "common": "placeholder"
+    },
+    "speech.great_try": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.heard": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.hold_longer": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.retry": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.silent": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.together": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "speech.your_turn": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.af01.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.af02.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.af03.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.af04.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ct01.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ct02.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ct03.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ct04.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ni01.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ni02.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ni03.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "sticker.ni04.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.bird": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.cat": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.cow": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.dog": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.duck": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.animals.rabbit": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.colors.blue": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.colors.green": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.colors.red": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.colors.yellow": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.food.apple": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.food.carrot": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.numbers.1": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.numbers.2": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.numbers.3": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.numbers.4": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.numbers.5": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.shapes.circle": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.shapes.square": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "word.shapes.triangle": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.af.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.af.welcome": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.ct.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.ct.welcome": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.ni.name": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    },
+    "world.ni.welcome": {
+      "ar": "placeholder",
+      "en": "placeholder"
+    }
+  }
+}

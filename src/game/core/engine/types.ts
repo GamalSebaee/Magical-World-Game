@@ -59,7 +59,11 @@ export type ActivityInput =
 
 export interface LogicContext {
   hintLevel: HintLevel;
-  /** Maps a vocabulary id to the skill it evidences, if the activity declares it. */
+  /**
+   * Maps a vocabulary id to the skill it evidences, if the activity declares it: `vocab.<id>`, or
+   * by domain (colors.red → color.identify.red, shapes.circle → shape.identify.circle,
+   * numbers.3 → math.numeral.3, animals.cow → listen.sounds.cow). See `skillCandidates`.
+   */
   skillForVocab(vocabId: string): string | undefined;
 }
 

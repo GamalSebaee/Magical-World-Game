@@ -84,6 +84,146 @@
       "label": { "ar": "صوت الكلب", "en": "The dog's sound" },
       "outcome": { "ar": "يربط صوت «هو هو» بالكلب", "en": "Links 'woof' to the dog" },
       "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "vocab.animals.cow",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «بقرة»", "en": "The word 'cow'" },
+      "outcome": { "ar": "يسمع كلمة «بقرة» ويختار صورتها", "en": "Hears the word 'cow' and picks its picture" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "vocab.animals.duck",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «بطة»", "en": "The word 'duck'" },
+      "outcome": { "ar": "يسمع كلمة «بطة» ويختار صورتها", "en": "Hears the word 'duck' and picks its picture" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "vocab.animals.bird",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «عصفورة»", "en": "The word 'bird'" },
+      "outcome": { "ar": "يسمع كلمة «عصفورة» ويختار صورتها", "en": "Hears the word 'bird' and picks its picture" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "listen.sounds.cow",
+      "domain": "listen",
+      "label": { "ar": "صوت البقرة", "en": "The cow's sound" },
+      "outcome": { "ar": "يربط الصوت بالبقرة", "en": "Links the sound to the cow" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "listen.sounds.duck",
+      "domain": "listen",
+      "label": { "ar": "صوت البطة", "en": "The duck's sound" },
+      "outcome": { "ar": "يربط الصوت بالبطة", "en": "Links the sound to the duck" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "color.identify.green",
+      "domain": "color",
+      "label": { "ar": "اللون الأخضر", "en": "The colour green" },
+      "outcome": { "ar": "يحط الحاجات الخضرا مع بعض", "en": "Puts green things together" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "shape.identify.circle",
+      "domain": "shape",
+      "label": { "ar": "شكل «دايرة»", "en": "The circle shape" },
+      "outcome": { "ar": "يتعرّف على الدايرة من شكله", "en": "Recognises a circle by its shape" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "shape.identify.square",
+      "domain": "shape",
+      "label": { "ar": "شكل «مربع»", "en": "The square shape" },
+      "outcome": { "ar": "يتعرّف على المربع من شكله", "en": "Recognises a square by its shape" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "shape.identify.triangle",
+      "domain": "shape",
+      "label": { "ar": "شكل «مثلث»", "en": "The triangle shape" },
+      "outcome": { "ar": "يتعرّف على المثلث من شكله", "en": "Recognises a triangle by its shape" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.numeral.1",
+      "domain": "math",
+      "label": { "ar": "الرقم ١", "en": "The number 1" },
+      "outcome": { "ar": "يسمع الرقم واحد ويلاقيه", "en": "Hears 'one' and finds the numeral" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.numeral.2",
+      "domain": "math",
+      "label": { "ar": "الرقم ٢", "en": "The number 2" },
+      "outcome": { "ar": "يسمع الرقم اتنين ويلاقيه", "en": "Hears 'two' and finds the numeral" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.numeral.3",
+      "domain": "math",
+      "label": { "ar": "الرقم ٣", "en": "The number 3" },
+      "outcome": { "ar": "يسمع الرقم تلاتة ويلاقيه", "en": "Hears 'three' and finds the numeral" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.numeral.4",
+      "domain": "math",
+      "label": { "ar": "الرقم ٤", "en": "The number 4" },
+      "outcome": { "ar": "يسمع الرقم أربعة ويلاقيه", "en": "Hears 'four' and finds the numeral" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.numeral.5",
+      "domain": "math",
+      "label": { "ar": "الرقم ٥", "en": "The number 5" },
+      "outcome": { "ar": "يسمع الرقم خمسة ويلاقيه", "en": "Hears 'five' and finds the numeral" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.compare.more_less",
+      "domain": "math",
+      "label": { "ar": "أكتر وأقل", "en": "More and fewer" },
+      "outcome": { "ar": "يقارن مجموعتين صغيرين ويعرف مين أكتر ومين أقل", "en": "Compares two small groups and tells which has more or fewer" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "speak.vocab.cow",
+      "domain": "speak",
+      "label": { "ar": "نطق «بقرة»", "en": "Saying 'cow'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
+    },
+    {
+      "id": "speak.vocab.dog",
+      "domain": "speak",
+      "label": { "ar": "نطق «كلب»", "en": "Saying 'dog'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
+    },
+    {
+      "id": "speak.vocab.circle",
+      "domain": "speak",
+      "label": { "ar": "نطق «دايرة»", "en": "Saying 'circle'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
+    },
+    {
+      "id": "speak.vocab.red",
+      "domain": "speak",
+      "label": { "ar": "نطق «أحمر»", "en": "Saying 'red'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
+    },
+    {
+      "id": "speak.vocab.num3",
+      "domain": "speak",
+      "label": { "ar": "نطق «تلاتة»", "en": "Saying 'three'" },
+      "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
+      "evidenceRule": "speech.practice.v1"
     }
   ]
 }

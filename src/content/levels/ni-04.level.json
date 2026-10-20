@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ni-04",
+  "worldId": "number-island",
+  "order": 4,
+  "title": {
+    "ar": "كنز الأرقام",
+    "en": "Treasure Counting"
+  },
+  "learningGoal": {
+    "ar": "مراجعة: العدّ والأرقام والسحب.",
+    "en": "A review: counting, numbers and dragging."
+  },
+  "story": {
+    "illustration": "scenes/ni-04-intro",
+    "intro": {
+      "ar": [
+        "ni04.story.intro"
+      ],
+      "en": [
+        "ni04.story.intro"
+      ],
+      "caption": {
+        "ar": "الببغاء القرصان خبّى صندوق كنز! يلا نمشي ورا الأرقام.",
+        "en": "Pirate Parrot hid a treasure chest! Let's follow the numbers."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ni04.story.outro"
+      ],
+      "en": [
+        "ni04.story.outro"
+      ],
+      "caption": {
+        "ar": "فتحنا الكنز! إحنا شطار!",
+        "en": "We opened the treasure! Well done, us!"
+      }
+    }
+  },
+  "background": "island/bg-cove",
+  "skills": [
+    "math.count.upto5",
+    "math.numeral.1",
+    "math.numeral.2",
+    "math.numeral.3"
+  ],
+  "activities": [
+    {
+      "id": "ni04.a1",
+      "mechanic": "tap_discover",
+      "skills": [
+        "math.numeral.1",
+        "math.numeral.2",
+        "math.numeral.3"
+      ],
+      "layout": "scatter-3-hide",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni04.a1.instruction"
+        ],
+        "en": [
+          "ni04.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نلمس الصخور بالترتيب: واحد، اتنين، تلاتة!",
+          "en": "Tap the rocks in order: one, two, three!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni04.a1.hint1"
+          ],
+          "en": [
+            "ni04.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نبدأ برقم واحد!",
+            "en": "Let's start with number one!"
+          }
+        },
+        {
+          "ar": [
+            "ni04.a1.hint2"
+          ],
+          "en": [
+            "ni04.a1.hint2"
+          ],
+          "caption": {
+            "ar": "نعدّ النقط على الصخرة.",
+            "en": "Count the dots on the rock."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "mode": "sequence",
+      "items": [
+        {
+          "id": "rock-1",
+          "vocab": "numbers.1",
+          "asset": "objects/clue",
+          "hiddenBehind": "objects/rock-1",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "rock-2",
+          "vocab": "numbers.2",
+          "asset": "objects/clue",
+          "hiddenBehind": "objects/rock-2",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "rock-3",
+          "vocab": "numbers.3",
+          "asset": "objects/clue",
+          "hiddenBehind": "objects/rock-3",
+          "revealAnimation": "pop"
+        }
+      ],
+      "completion": {
+        "type": "all_found"
+      }
+    },
+    {
+      "id": "ni04.a2",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni04.a2.instruction"
+        ],
+        "en": [
+          "ni04.a2.instruction"
+        ],
+        "caption": {
+          "ar": "نعدّ الدهب!",
+          "en": "Let's count the gold coins!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni04.a2.hint1"
+          ],
+          "en": [
+            "ni04.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل واحدة ونعدّ.",
+            "en": "Tap each one and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "coin-1",
+          "asset": "objects/coin"
+        },
+        {
+          "id": "coin-2",
+          "asset": "objects/coin"
+        },
+        {
+          "id": "coin-3",
+          "asset": "objects/coin"
+        },
+        {
+          "id": "coin-4",
+          "asset": "objects/coin"
+        }
+      ],
+      "target": 4,
+      "answerChoices": [
+        3,
+        4,
+        5
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    },
+    {
+      "id": "ni04.a3",
+      "mechanic": "drag_drop",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni04.a3.instruction"
+        ],
+        "en": [
+          "ni04.a3.instruction"
+        ],
+        "caption": {
+          "ar": "نحط ٥ جواهر في الصندوق عشان يتفتح!",
+          "en": "Put 5 jewels in the chest to open it!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni04.a3.hint1"
+          ],
+          "en": [
+            "ni04.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نمسك جوهرة ونزحلقها للصندوق.",
+            "en": "Hold a jewel and slide it to the chest."
+          }
+        },
+        {
+          "ar": [
+            "ni04.a3.hint2"
+          ],
+          "en": [
+            "ni04.a3.hint2"
+          ],
+          "caption": {
+            "ar": "الصندوق هنا!",
+            "en": "The chest is here!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "jewel-1",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        },
+        {
+          "id": "jewel-2",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        },
+        {
+          "id": "jewel-3",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        },
+        {
+          "id": "jewel-4",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        },
+        {
+          "id": "jewel-5",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        },
+        {
+          "id": "jewel-6",
+          "asset": "objects/jewel",
+          "tags": [
+            "jewel"
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "id": "chest",
+          "asset": "objects/chest",
+          "accepts": [
+            "jewel"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "count_placed",
+        "n": 5
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ni-04",
+    "asset": "stickers/ni-04",
+    "name": {
+      "ar": [
+        "sticker.ni04.name"
+      ],
+      "en": [
+        "sticker.ni04.name"
+      ],
+      "caption": {
+        "ar": "ملصق الكنز",
+        "en": "Treasure sticker"
+      }
+    }
+  },
+  "assetPack": "pack.number-island",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": []
+}

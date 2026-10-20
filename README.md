@@ -22,6 +22,7 @@ A bilingual (Arabic / English / mixed), offline-first, installable web game for 
 | `pnpm content:validate [--release]` | Validate all content; `--release` also fails on planned or unreviewed audio and art |
 | `tsx scripts/content/sync-manifests.ts` | Add `planned` manifest entries for newly referenced audio and assets |
 | `pnpm content:schema` | Regenerate JSON Schema for editor autocomplete |
+| `pnpm content:runtime` | Regenerate the slim manifests the app ships (`src/content/runtime/`); the manifest scripts run it for you |
 | `tsx scripts/audio/gen-placeholders.ts` | Generate labelled placeholder audio for clips that are only planned |
 | `pnpm size` | After a build: JavaScript each page downloads (gzip), against the 200 KB budget |
 

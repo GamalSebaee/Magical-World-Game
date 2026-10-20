@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ni-01",
+  "worldId": "number-island",
+  "order": 1,
+  "title": {
+    "ar": "الأرقام من ١ لـ ٣",
+    "en": "Numbers 1–3"
+  },
+  "learningGoal": {
+    "ar": "يعدّ الطفل لحد ٣ ويتعرّف على الأرقام ١ و٢ و٣.",
+    "en": "The child counts to 3 and recognises the numbers 1, 2 and 3."
+  },
+  "story": {
+    "illustration": "scenes/ni-01-intro",
+    "intro": {
+      "ar": [
+        "ni01.story.intro"
+      ],
+      "en": [
+        "ni01.story.intro"
+      ],
+      "caption": {
+        "ar": "الموج جاب صدف على الشط! يلا نعدّه للكابوريا.",
+        "en": "The waves brought shells to the beach! Let's count them for Crab."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ni01.story.outro"
+      ],
+      "en": [
+        "ni01.story.outro"
+      ],
+      "caption": {
+        "ar": "الكابوريا مبسوطة! عدّينا كل الصدف.",
+        "en": "Crab is happy! We counted all the shells."
+      }
+    }
+  },
+  "background": "island/bg-beach",
+  "skills": [
+    "math.count.upto3",
+    "math.numeral.1",
+    "math.numeral.2",
+    "math.numeral.3",
+    "speak.vocab.num3"
+  ],
+  "activities": [
+    {
+      "id": "ni01.a1",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto3"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni01.a1.instruction"
+        ],
+        "en": [
+          "ni01.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نعدّ الصدف سوا!",
+          "en": "Let's count the shells together!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni01.a1.hint1"
+          ],
+          "en": [
+            "ni01.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل واحدة ونعدّ.",
+            "en": "Tap each one and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "shell-1",
+          "asset": "objects/shell"
+        },
+        {
+          "id": "shell-2",
+          "asset": "objects/shell"
+        }
+      ],
+      "target": 2,
+      "answerChoices": [
+        1,
+        2
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    },
+    {
+      "id": "ni01.a2",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto3"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni01.a2.instruction"
+        ],
+        "en": [
+          "ni01.a2.instruction"
+        ],
+        "caption": {
+          "ar": "صدف أكتر! نعدّ تاني.",
+          "en": "More shells! Let's count again."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni01.a2.hint1"
+          ],
+          "en": [
+            "ni01.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل واحدة ونعدّ.",
+            "en": "Tap each one and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "shell-1",
+          "asset": "objects/shell"
+        },
+        {
+          "id": "shell-2",
+          "asset": "objects/shell"
+        },
+        {
+          "id": "shell-3",
+          "asset": "objects/shell"
+        }
+      ],
+      "target": 3,
+      "answerChoices": [
+        2,
+        3
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    },
+    {
+      "id": "ni01.a3",
+      "mechanic": "listen_choose",
+      "skills": [
+        "math.numeral.1",
+        "math.numeral.2",
+        "math.numeral.3"
+      ],
+      "layout": "row-3",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni01.a3.instruction"
+        ],
+        "en": [
+          "ni01.a3.instruction"
+        ],
+        "caption": {
+          "ar": "نسمع الرقم، وبعدين نلمسه.",
+          "en": "Listen to the number, then tap it."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni01.a3.hint1"
+          ],
+          "en": [
+            "ni01.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع تاني؟",
+            "en": "Shall we listen again?"
+          }
+        },
+        {
+          "ar": [
+            "ni01.a3.hint2"
+          ],
+          "en": [
+            "ni01.a3.hint2"
+          ],
+          "caption": {
+            "ar": "نعدّ النقط!",
+            "en": "Let's count the dots!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "ni01.a3.where_3"
+            ],
+            "en": [
+              "ni01.a3.where_3"
+            ],
+            "caption": {
+              "ar": "فين رقم تلاتة؟",
+              "en": "Where's number three?",
+              "mixed": "فين رقم <bdi>Three</bdi>؟"
+            },
+            "mixed": [
+              "ni01.where_mixed:ar",
+              "word.numbers.3:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "n1",
+              "vocab": "numbers.1",
+              "asset": "numerals/1"
+            },
+            {
+              "id": "n2",
+              "vocab": "numbers.2",
+              "asset": "numerals/2"
+            },
+            {
+              "id": "n3",
+              "vocab": "numbers.3",
+              "asset": "numerals/3"
+            }
+          ],
+          "answer": "n3"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ni01.a3.where_1"
+            ],
+            "en": [
+              "ni01.a3.where_1"
+            ],
+            "caption": {
+              "ar": "فين رقم واحد؟",
+              "en": "Where's number one?",
+              "mixed": "فين رقم <bdi>One</bdi>؟"
+            },
+            "mixed": [
+              "ni01.where_mixed:ar",
+              "word.numbers.1:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "n1",
+              "vocab": "numbers.1",
+              "asset": "numerals/1"
+            },
+            {
+              "id": "n2",
+              "vocab": "numbers.2",
+              "asset": "numerals/2"
+            },
+            {
+              "id": "n3",
+              "vocab": "numbers.3",
+              "asset": "numerals/3"
+            }
+          ],
+          "answer": "n1"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "ni01.a4",
+      "mechanic": "speak_repeat",
+      "skills": [
+        "speak.vocab.num3"
+      ],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "numbers.3",
+      "picture": "numerals/3",
+      "instruction": {
+        "ar": [
+          "ni01.a4.instruction"
+        ],
+        "en": [
+          "ni01.a4.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نقول «تلاتة» سوا!",
+          "en": "Let's say 'three' together!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni01.a4.hint1"
+          ],
+          "en": [
+            "ni01.a4.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع نونو الأول.",
+            "en": "Listen to Nono first."
+          }
+        },
+        {
+          "ar": [
+            "ni01.a4.hint2"
+          ],
+          "en": [
+            "ni01.a4.hint2"
+          ],
+          "caption": {
+            "ar": "نلمس الميكروفون الكبير.",
+            "en": "Tap the big microphone."
+          }
+        }
+      ],
+      "model": {
+        "ar": [
+          "word.numbers.3"
+        ],
+        "en": [
+          "word.numbers.3"
+        ],
+        "mixed": [
+          "word.numbers.3:ar",
+          "word.numbers.3:en"
+        ],
+        "caption": {
+          "ar": "تلاتة",
+          "en": "three",
+          "mixed": "تلاتة… <bdi>Three</bdi>"
+        }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": {
+        "type": "any_attempt_or_skip"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ni-01",
+    "asset": "stickers/ni-01",
+    "name": {
+      "ar": [
+        "sticker.ni01.name"
+      ],
+      "en": [
+        "sticker.ni01.name"
+      ],
+      "caption": {
+        "ar": "ملصق الصدف",
+        "en": "Shells sticker"
+      }
+    }
+  },
+  "assetPack": "pack.number-island",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "ni-02"
+  ]
+}

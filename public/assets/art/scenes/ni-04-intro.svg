@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <clipPath id="r"><rect width="800" height="500" rx="40"/></clipPath>
+  <g clip-path="url(#r)"><svg x="0" y="0" width="800" height="500" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="sky_e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9b0"/><stop offset="1" stop-color="#fff0dd"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#sky_e)"/>
+  <circle cx="1300" cy="300" r="90" fill="#ffb26b"/>
+  <g fill="#a0a4ae" stroke="#2d3047" stroke-width="5"><path d="M0 640 L200 380 L420 640 Z"/><path d="M1200 640 L1420 340 L1600 640 Z"/></g>
+  <path d="M0 620 Q400 520 800 600 T1600 580 L1600 1000 L0 1000 Z" fill="#4fa8d8"/>
+  <path d="M0 720 Q500 660 900 720 T1600 700 L1600 1000 L0 1000 Z" fill="#f3dfa8"/>
+</svg></g>
+  <svg x="70" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="186" rx="80" ry="8" fill="#2d3047" opacity="0.18"/>
+  <path d="M20 176 Q14 90 70 54 Q120 26 160 60 Q194 100 184 176 Z" fill="#9ea3ad" stroke="#2d3047" stroke-width="5"/>
+  <path d="M60 80 Q80 70 96 76" fill="none" stroke="#c6cad2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="100" cy="110" r="13" fill="#ffffff" stroke="#2d3047" stroke-width="5"/>
+</svg>
+  <svg x="300" y="220" width="200" height="200" viewBox="0 0 260 200">
+  <ellipse cx="130" cy="190" rx="110" ry="8" fill="#2d3047" opacity="0.18"/>
+  <rect x="24" y="90" width="212" height="96" rx="12" fill="#a0612f" stroke="#2d3047" stroke-width="5"/>
+  <path d="M24 96 Q24 30 130 30 Q236 30 236 96 Z" fill="#c07a3e" stroke="#2d3047" stroke-width="5"/>
+  <path d="M24 96 L236 96" stroke="#ffc93c" stroke-width="10"/>
+  <rect x="114" y="84" width="32" height="40" rx="6" fill="#ffc93c" stroke="#2d3047" stroke-width="5"/>
+  <circle cx="130" cy="104" r="5" fill="#2d3047"/>
+</svg>
+  <svg x="530" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="188" rx="50" ry="8" fill="#2d3047" opacity="0.18"/>
+  <circle cx="100" cy="100" r="74" fill="#ffc93c" stroke="#2d3047" stroke-width="5"/>
+  <circle cx="100" cy="100" r="54" fill="none" stroke="#e0a800" stroke-width="8"/>
+  <path d="M86 70 L114 70 L114 130 L86 130" fill="none" stroke="#e0a800" stroke-width="10" stroke-linecap="round"/>
+</svg>
+</svg>

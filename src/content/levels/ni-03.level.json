@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ni-03",
+  "worldId": "number-island",
+  "order": 3,
+  "title": {
+    "ar": "أكتر وأقل",
+    "en": "More or Less"
+  },
+  "learningGoal": {
+    "ar": "يقارن الطفل بين مجموعتين: «أكتر» و«أقل».",
+    "en": "The child compares two groups: 'more' and 'fewer'."
+  },
+  "story": {
+    "illustration": "scenes/ni-03-intro",
+    "intro": {
+      "ar": [
+        "ni03.story.intro"
+      ],
+      "en": [
+        "ni03.story.intro"
+      ],
+      "caption": {
+        "ar": "القردين بيقسموا الموز! يلا نشوف مين عنده أكتر.",
+        "en": "Two monkeys are sharing bananas! Let's see who has more."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ni03.story.outro"
+      ],
+      "en": [
+        "ni03.story.outro"
+      ],
+      "caption": {
+        "ar": "القردين مبسوطين! برافو!",
+        "en": "The monkeys are happy! Hooray!"
+      }
+    }
+  },
+  "background": "island/bg-palms",
+  "skills": [
+    "math.compare.more_less",
+    "math.count.upto5"
+  ],
+  "activities": [
+    {
+      "id": "ni03.a1",
+      "mechanic": "listen_choose",
+      "skills": [
+        "math.compare.more_less"
+      ],
+      "layout": "row-2",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni03.a1.instruction"
+        ],
+        "en": [
+          "ni03.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نبص على الموز، ونلاقي مين عنده أكتر.",
+          "en": "Look at the bananas and find who has more."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni03.a1.hint1"
+          ],
+          "en": [
+            "ni03.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نعدّ الموز في كل ناحية.",
+            "en": "Count the bananas on each side."
+          }
+        },
+        {
+          "ar": [
+            "ni03.a1.hint2"
+          ],
+          "en": [
+            "ni03.a1.hint2"
+          ],
+          "caption": {
+            "ar": "الأكتر يعني عدد أكبر!",
+            "en": "More means a bigger number!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "ni03.a1.who_more"
+            ],
+            "en": [
+              "ni03.a1.who_more"
+            ],
+            "caption": {
+              "ar": "مين عنده موز أكتر؟",
+              "en": "Who has more bananas?"
+            }
+          },
+          "choices": [
+            {
+              "id": "b1",
+              "vocab": "numbers.1",
+              "asset": "objects/bananas-1"
+            },
+            {
+              "id": "b4",
+              "vocab": "numbers.4",
+              "asset": "objects/bananas-4"
+            }
+          ],
+          "answer": "b4",
+          "skill": "math.compare.more_less"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ni03.a1.who_more"
+            ],
+            "en": [
+              "ni03.a1.who_more"
+            ],
+            "caption": {
+              "ar": "مين عنده موز أكتر؟",
+              "en": "Who has more bananas?"
+            }
+          },
+          "choices": [
+            {
+              "id": "b2",
+              "vocab": "numbers.2",
+              "asset": "objects/bananas-2"
+            },
+            {
+              "id": "b4",
+              "vocab": "numbers.4",
+              "asset": "objects/bananas-4"
+            }
+          ],
+          "answer": "b4",
+          "skill": "math.compare.more_less"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ni03.a1.who_more"
+            ],
+            "en": [
+              "ni03.a1.who_more"
+            ],
+            "caption": {
+              "ar": "مين عنده موز أكتر؟",
+              "en": "Who has more bananas?"
+            }
+          },
+          "choices": [
+            {
+              "id": "b3",
+              "vocab": "numbers.3",
+              "asset": "objects/bananas-3"
+            },
+            {
+              "id": "b5",
+              "vocab": "numbers.5",
+              "asset": "objects/bananas-5"
+            }
+          ],
+          "answer": "b5",
+          "skill": "math.compare.more_less"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "ni03.a2",
+      "mechanic": "listen_choose",
+      "skills": [
+        "math.compare.more_less"
+      ],
+      "layout": "row-2",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni03.a2.instruction"
+        ],
+        "en": [
+          "ni03.a2.instruction"
+        ],
+        "caption": {
+          "ar": "ودلوقتي: مين عنده أقل؟",
+          "en": "And now: who has fewer?"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni03.a2.hint1"
+          ],
+          "en": [
+            "ni03.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نعدّ الموز في كل ناحية.",
+            "en": "Count the bananas on each side."
+          }
+        },
+        {
+          "ar": [
+            "ni03.a2.hint2"
+          ],
+          "en": [
+            "ni03.a2.hint2"
+          ],
+          "caption": {
+            "ar": "الأقل يعني عدد أصغر!",
+            "en": "Fewer means a smaller number!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "ni03.a2.who_fewer"
+            ],
+            "en": [
+              "ni03.a2.who_fewer"
+            ],
+            "caption": {
+              "ar": "مين عنده موز أقل؟",
+              "en": "Who has fewer bananas?"
+            }
+          },
+          "choices": [
+            {
+              "id": "b1",
+              "vocab": "numbers.1",
+              "asset": "objects/bananas-1"
+            },
+            {
+              "id": "b3",
+              "vocab": "numbers.3",
+              "asset": "objects/bananas-3"
+            }
+          ],
+          "answer": "b1",
+          "skill": "math.compare.more_less"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ni03.a2.who_fewer"
+            ],
+            "en": [
+              "ni03.a2.who_fewer"
+            ],
+            "caption": {
+              "ar": "مين عنده موز أقل؟",
+              "en": "Who has fewer bananas?"
+            }
+          },
+          "choices": [
+            {
+              "id": "b2",
+              "vocab": "numbers.2",
+              "asset": "objects/bananas-2"
+            },
+            {
+              "id": "b5",
+              "vocab": "numbers.5",
+              "asset": "objects/bananas-5"
+            }
+          ],
+          "answer": "b2",
+          "skill": "math.compare.more_less"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "ni03.a3",
+      "mechanic": "match_pairs",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "pairs",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni03.a3.instruction"
+        ],
+        "en": [
+          "ni03.a3.instruction"
+        ],
+        "caption": {
+          "ar": "كل مجموعة موز ورقمها!",
+          "en": "Each bunch of bananas and its number!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni03.a3.hint1"
+          ],
+          "en": [
+            "ni03.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نعدّ الموز، وبعدين نلاقي الرقم.",
+            "en": "Count the bananas, then find the number."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "presentation": "two-columns",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": {
+            "asset": "objects/bananas-1",
+            "vocab": "numbers.1"
+          },
+          "right": {
+            "asset": "numerals/1",
+            "vocab": "numbers.1"
+          },
+          "skill": "math.count.upto5"
+        },
+        {
+          "id": "p3",
+          "left": {
+            "asset": "objects/bananas-3",
+            "vocab": "numbers.3"
+          },
+          "right": {
+            "asset": "numerals/3",
+            "vocab": "numbers.3"
+          },
+          "skill": "math.count.upto5"
+        },
+        {
+          "id": "p5",
+          "left": {
+            "asset": "objects/bananas-5",
+            "vocab": "numbers.5"
+          },
+          "right": {
+            "asset": "numerals/5",
+            "vocab": "numbers.5"
+          },
+          "skill": "math.count.upto5"
+        }
+      ],
+      "completion": {
+        "type": "all_matched"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ni-03",
+    "asset": "stickers/ni-03",
+    "name": {
+      "ar": [
+        "sticker.ni03.name"
+      ],
+      "en": [
+        "sticker.ni03.name"
+      ],
+      "caption": {
+        "ar": "ملصق القرود",
+        "en": "Monkeys sticker"
+      }
+    }
+  },
+  "assetPack": "pack.number-island",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "ni-04"
+  ]
+}

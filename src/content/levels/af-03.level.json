@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "af-03",
+  "worldId": "animal-forest",
+  "order": 3,
+  "title": {
+    "ar": "أصوات الحيوانات",
+    "en": "Animal Sounds"
+  },
+  "learningGoal": {
+    "ar": "يربط الطفل كل حيوان بصوته، ويتعرّف على «بقرة» و«بطة».",
+    "en": "The child links each animal to its sound and learns 'cow' and 'duck'."
+  },
+  "story": {
+    "illustration": "scenes/af-03-intro",
+    "intro": {
+      "ar": [
+        "af03.story.intro"
+      ],
+      "en": [
+        "af03.story.intro"
+      ],
+      "caption": {
+        "ar": "كورال الغابة لخبط أصواته! يلا نساعد كل حيوان يلاقي صوته.",
+        "en": "The forest choir mixed up its voices! Let's help each animal find its sound."
+      }
+    },
+    "outro": {
+      "ar": [
+        "af03.story.outro"
+      ],
+      "en": [
+        "af03.story.outro"
+      ],
+      "caption": {
+        "ar": "الكورال بيغني تاني! برافو!",
+        "en": "The choir is singing again! Hooray!"
+      }
+    }
+  },
+  "background": "forest/bg-stage",
+  "skills": [
+    "listen.sounds.cat",
+    "listen.sounds.dog",
+    "listen.sounds.cow",
+    "listen.sounds.duck",
+    "vocab.animals.cow",
+    "vocab.animals.duck",
+    "speak.vocab.cow"
+  ],
+  "activities": [
+    {
+      "id": "af03.a1",
+      "mechanic": "listen_choose",
+      "skills": [
+        "listen.sounds.dog",
+        "listen.sounds.cow",
+        "listen.sounds.duck"
+      ],
+      "layout": "row-3",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af03.a1.instruction"
+        ],
+        "en": [
+          "af03.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نسمع! مين بيقول كده؟",
+          "en": "Let's listen! Who says that?"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af03.a1.hint1"
+          ],
+          "en": [
+            "af03.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع تاني؟",
+            "en": "Shall we listen again?"
+          }
+        },
+        {
+          "ar": [
+            "af03.a1.hint2"
+          ],
+          "en": [
+            "af03.a1.hint2"
+          ],
+          "caption": {
+            "ar": "البقرة بتقول مووو!",
+            "en": "The cow says moo!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "af03.a1.who_moo"
+            ],
+            "en": [
+              "af03.a1.who_moo"
+            ],
+            "caption": {
+              "ar": "مين بيقول مووو؟",
+              "en": "Who says moo?"
+            }
+          },
+          "choices": [
+            {
+              "id": "cow",
+              "vocab": "animals.cow",
+              "asset": "animals/cow"
+            },
+            {
+              "id": "duck",
+              "vocab": "animals.duck",
+              "asset": "animals/duck"
+            },
+            {
+              "id": "cat",
+              "vocab": "animals.cat",
+              "asset": "animals/cat"
+            }
+          ],
+          "answer": "cow"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "af03.a1.who_quack"
+            ],
+            "en": [
+              "af03.a1.who_quack"
+            ],
+            "caption": {
+              "ar": "مين بيقول كواك كواك؟",
+              "en": "Who says quack quack?"
+            }
+          },
+          "choices": [
+            {
+              "id": "dog",
+              "vocab": "animals.dog",
+              "asset": "animals/dog"
+            },
+            {
+              "id": "duck",
+              "vocab": "animals.duck",
+              "asset": "animals/duck"
+            },
+            {
+              "id": "cow",
+              "vocab": "animals.cow",
+              "asset": "animals/cow"
+            }
+          ],
+          "answer": "duck"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "af03.a1.who_woof"
+            ],
+            "en": [
+              "af03.a1.who_woof"
+            ],
+            "caption": {
+              "ar": "مين بيقول هو هو؟",
+              "en": "Who says woof woof?"
+            }
+          },
+          "choices": [
+            {
+              "id": "cat",
+              "vocab": "animals.cat",
+              "asset": "animals/cat"
+            },
+            {
+              "id": "dog",
+              "vocab": "animals.dog",
+              "asset": "animals/dog"
+            },
+            {
+              "id": "duck",
+              "vocab": "animals.duck",
+              "asset": "animals/duck"
+            }
+          ],
+          "answer": "dog"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "af03.a2",
+      "mechanic": "match_pairs",
+      "skills": [
+        "listen.sounds.cat",
+        "listen.sounds.dog",
+        "listen.sounds.cow",
+        "listen.sounds.duck"
+      ],
+      "layout": "pairs",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af03.a2.instruction"
+        ],
+        "en": [
+          "af03.a2.instruction"
+        ],
+        "caption": {
+          "ar": "كل حيوان وصوته! نلمس الحيوان وبعدين صوته.",
+          "en": "Each animal and its sound! Tap an animal, then its sound."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af03.a2.hint1"
+          ],
+          "en": [
+            "af03.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كارت الصوت ونسمع.",
+            "en": "Tap a sound card and listen."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "presentation": "two-columns",
+      "pairs": [
+        {
+          "id": "cat",
+          "left": {
+            "asset": "animals/cat",
+            "vocab": "animals.cat"
+          },
+          "right": {
+            "asset": "ui/sound-card",
+            "audio": "sfx.animal_cat"
+          },
+          "skill": "listen.sounds.cat"
+        },
+        {
+          "id": "dog",
+          "left": {
+            "asset": "animals/dog",
+            "vocab": "animals.dog"
+          },
+          "right": {
+            "asset": "ui/sound-card",
+            "audio": "sfx.animal_dog"
+          },
+          "skill": "listen.sounds.dog"
+        },
+        {
+          "id": "cow",
+          "left": {
+            "asset": "animals/cow",
+            "vocab": "animals.cow"
+          },
+          "right": {
+            "asset": "ui/sound-card",
+            "audio": "sfx.animal_cow"
+          },
+          "skill": "listen.sounds.cow"
+        },
+        {
+          "id": "duck",
+          "left": {
+            "asset": "animals/duck",
+            "vocab": "animals.duck"
+          },
+          "right": {
+            "asset": "ui/sound-card",
+            "audio": "sfx.animal_duck"
+          },
+          "skill": "listen.sounds.duck"
+        }
+      ],
+      "completion": {
+        "type": "all_matched"
+      }
+    },
+    {
+      "id": "af03.a3",
+      "mechanic": "speak_repeat",
+      "skills": [
+        "speak.vocab.cow"
+      ],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "animals.cow",
+      "picture": "animals/cow",
+      "instruction": {
+        "ar": [
+          "af03.a3.instruction"
+        ],
+        "en": [
+          "af03.a3.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نقول «بقرة» سوا!",
+          "en": "Let's say 'cow' together!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af03.a3.hint1"
+          ],
+          "en": [
+            "af03.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع نونو الأول.",
+            "en": "Listen to Nono first."
+          }
+        },
+        {
+          "ar": [
+            "af03.a3.hint2"
+          ],
+          "en": [
+            "af03.a3.hint2"
+          ],
+          "caption": {
+            "ar": "نلمس الميكروفون الكبير.",
+            "en": "Tap the big microphone."
+          }
+        }
+      ],
+      "model": {
+        "ar": [
+          "word.animals.cow"
+        ],
+        "en": [
+          "word.animals.cow"
+        ],
+        "mixed": [
+          "word.animals.cow:ar",
+          "word.animals.cow:en"
+        ],
+        "caption": {
+          "ar": "بقرة",
+          "en": "cow",
+          "mixed": "بقرة… <bdi>Cow</bdi>"
+        }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": {
+        "type": "any_attempt_or_skip"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.af-03",
+    "asset": "stickers/af-03",
+    "name": {
+      "ar": [
+        "sticker.af03.name"
+      ],
+      "en": [
+        "sticker.af03.name"
+      ],
+      "caption": {
+        "ar": "ملصق الكورال",
+        "en": "Choir sticker"
+      }
+    }
+  },
+  "assetPack": "pack.animal-forest",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "af-04"
+  ]
+}

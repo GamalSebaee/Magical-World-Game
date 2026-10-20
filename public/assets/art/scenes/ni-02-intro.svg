@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <clipPath id="r"><rect width="800" height="500" rx="40"/></clipPath>
+  <g clip-path="url(#r)"><svg x="0" y="0" width="800" height="500" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="sky_e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fd3f5"/><stop offset="1" stop-color="#c9ecff"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#sky_e)"/>
+  <path d="M0 620 Q400 520 800 600 T1600 580 L1600 1000 L0 1000 Z" fill="#4fa8d8"/>
+  <path d="M0 720 Q500 660 900 720 T1600 700 L1600 1000 L0 1000 Z" fill="#3b93c6"/>
+  <g fill="#ffffff" opacity="0.35"><circle cx="300" cy="850" r="12"/><circle cx="330" cy="800" r="8"/><circle cx="1300" cy="820" r="14"/></g>
+  <g fill="#5dbb63"><path d="M100 1000 Q120 820 160 1000"/><path d="M1450 1000 Q1480 800 1520 1000"/></g>
+</svg></g>
+  <svg x="70" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <path d="M150 100 L188 70 L188 130 Z" fill="#f4892f" stroke="#2d3047" stroke-width="5" stroke-linejoin="round"/>
+  <ellipse cx="96" cy="100" rx="70" ry="46" fill="#ffa94d" stroke="#2d3047" stroke-width="5"/>
+  <path d="M80 60 Q96 100 80 140" fill="none" stroke="#f4892f" stroke-width="8"/>
+  <circle cx="54" cy="90" r="9" fill="#2d3047"/><circle cx="57" cy="87" r="3" fill="#fff"/>
+  <path d="M36 112 Q46 118 54 112" fill="none" stroke="#2d3047" stroke-width="5" stroke-linecap="round"/>
+</svg>
+  <svg x="300" y="220" width="200" height="200" viewBox="0 0 260 200">
+  <ellipse cx="130" cy="190" rx="110" ry="8" fill="#2d3047" opacity="0.18"/>
+  <path d="M60 186 C40 120 60 90 50 40 M60 186 C90 120 120 100 110 30 M110 186 C140 130 180 120 200 50 M150 186 C170 150 210 140 220 100" fill="none" stroke="#f78fb3" stroke-width="26" stroke-linecap="round"/>
+  <path d="M20 160 L240 160 L222 196 L38 196 Z" fill="#f2d7b0" stroke="#2d3047" stroke-width="5" stroke-linejoin="round"/>
+</svg>
+  <svg x="530" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="188" rx="58" ry="8" fill="#2d3047" opacity="0.18"/>
+  <path d="M100 22 L122 76 L180 80 L134 114 L152 172 L100 140 L48 172 L66 114 L20 80 L78 76 Z" fill="#ffa94d" stroke="#2d3047" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#f4892f"><circle cx="100" cy="70" r="5"/><circle cx="140" cy="94" r="5"/><circle cx="60" cy="94" r="5"/><circle cx="100" cy="110" r="6"/></g>
+</svg>
+</svg>

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ni-02",
+  "worldId": "number-island",
+  "order": 2,
+  "title": {
+    "ar": "الأرقام من ١ لـ ٥",
+    "en": "Numbers 1–5"
+  },
+  "learningGoal": {
+    "ar": "يعدّ الطفل لحد ٥ ويحط عدد معيّن.",
+    "en": "The child counts to 5 and places a given number."
+  },
+  "story": {
+    "illustration": "scenes/ni-02-intro",
+    "intro": {
+      "ar": [
+        "ni02.story.intro"
+      ],
+      "en": [
+        "ni02.story.intro"
+      ],
+      "caption": {
+        "ar": "السمك في البحيرة عايز يروّح بيته في المرجان!",
+        "en": "The fish in the lagoon want to go home to their coral!"
+      }
+    },
+    "outro": {
+      "ar": [
+        "ni02.story.outro"
+      ],
+      "en": [
+        "ni02.story.outro"
+      ],
+      "caption": {
+        "ar": "كل السمك في البيت! تصبحوا على خير يا سمك!",
+        "en": "All the fish are home! Good night, fish!"
+      }
+    }
+  },
+  "background": "island/bg-lagoon",
+  "skills": [
+    "math.count.upto5",
+    "math.numeral.4",
+    "math.numeral.5"
+  ],
+  "activities": [
+    {
+      "id": "ni02.a1",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni02.a1.instruction"
+        ],
+        "en": [
+          "ni02.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نعدّ السمك!",
+          "en": "Let's count the fish!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni02.a1.hint1"
+          ],
+          "en": [
+            "ni02.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل واحدة ونعدّ.",
+            "en": "Tap each one and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "fish-1",
+          "asset": "animals/fish"
+        },
+        {
+          "id": "fish-2",
+          "asset": "animals/fish"
+        },
+        {
+          "id": "fish-3",
+          "asset": "animals/fish"
+        },
+        {
+          "id": "fish-4",
+          "asset": "animals/fish"
+        }
+      ],
+      "target": 4,
+      "answerChoices": [
+        3,
+        4,
+        5
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    },
+    {
+      "id": "ni02.a2",
+      "mechanic": "drag_drop",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni02.a2.instruction"
+        ],
+        "en": [
+          "ni02.a2.instruction"
+        ],
+        "caption": {
+          "ar": "ندخّل ٥ سمكات البيت!",
+          "en": "Let's put 5 fish in their home!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni02.a2.hint1"
+          ],
+          "en": [
+            "ni02.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نمسك سمكة ونزحلقها للمرجان.",
+            "en": "Hold a fish and slide it to the coral."
+          }
+        },
+        {
+          "ar": [
+            "ni02.a2.hint2"
+          ],
+          "en": [
+            "ni02.a2.hint2"
+          ],
+          "caption": {
+            "ar": "البيت هنا!",
+            "en": "Home is here!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "fish-1",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "fish-2",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "fish-3",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "fish-4",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "fish-5",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        },
+        {
+          "id": "fish-6",
+          "asset": "animals/fish",
+          "tags": [
+            "fish"
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "id": "coral",
+          "asset": "objects/coral-home",
+          "accepts": [
+            "fish"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "count_placed",
+        "n": 5
+      }
+    },
+    {
+      "id": "ni02.a3",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto5"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ni02.a3.instruction"
+        ],
+        "en": [
+          "ni02.a3.instruction"
+        ],
+        "caption": {
+          "ar": "نعدّ نجوم البحر!",
+          "en": "Let's count the starfish!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ni02.a3.hint1"
+          ],
+          "en": [
+            "ni02.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل واحدة ونعدّ.",
+            "en": "Tap each one and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "starfish-1",
+          "asset": "objects/starfish"
+        },
+        {
+          "id": "starfish-2",
+          "asset": "objects/starfish"
+        },
+        {
+          "id": "starfish-3",
+          "asset": "objects/starfish"
+        },
+        {
+          "id": "starfish-4",
+          "asset": "objects/starfish"
+        },
+        {
+          "id": "starfish-5",
+          "asset": "objects/starfish"
+        }
+      ],
+      "target": 5,
+      "answerChoices": [
+        4,
+        5
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ni-02",
+    "asset": "stickers/ni-02",
+    "name": {
+      "ar": [
+        "sticker.ni02.name"
+      ],
+      "en": [
+        "sticker.ni02.name"
+      ],
+      "caption": {
+        "ar": "ملصق السمك",
+        "en": "Fish sticker"
+      }
+    }
+  },
+  "assetPack": "pack.number-island",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "ni-03"
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ct-04",
+  "worldId": "color-town",
+  "order": 4,
+  "title": {
+    "ar": "نرجّع قوس قزح",
+    "en": "Rainbow Rescue"
+  },
+  "learningGoal": {
+    "ar": "مراجعة الألوان، وكلمة «أخضر».",
+    "en": "A review of colours, plus the word 'green'."
+  },
+  "story": {
+    "illustration": "scenes/ct-04-intro",
+    "intro": {
+      "ar": [
+        "ct04.story.intro"
+      ],
+      "en": [
+        "ct04.story.intro"
+      ],
+      "caption": {
+        "ar": "العاصفة مسحت قوس قزح! يلا نرجّع ألوانه.",
+        "en": "A storm washed the rainbow away! Let's bring its colours back."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ct04.story.outro"
+      ],
+      "en": [
+        "ct04.story.outro"
+      ],
+      "caption": {
+        "ar": "قوس قزح رجع! شوف الألوان!",
+        "en": "The rainbow is back! Look at the colours!"
+      }
+    }
+  },
+  "background": "town/bg-sky",
+  "skills": [
+    "color.identify.red",
+    "color.identify.blue",
+    "color.identify.yellow",
+    "color.identify.green",
+    "speak.vocab.red"
+  ],
+  "activities": [
+    {
+      "id": "ct04.a1",
+      "mechanic": "tap_discover",
+      "skills": [
+        "color.identify.red",
+        "color.identify.yellow",
+        "color.identify.green",
+        "color.identify.blue"
+      ],
+      "layout": "scatter-4-hide",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct04.a1.instruction"
+        ],
+        "en": [
+          "ct04.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نلمس السحاب واحدة واحدة عشان نطلّع النقط الملونة!",
+          "en": "Tap the clouds one by one to let the colour drops out!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct04.a1.hint1"
+          ],
+          "en": [
+            "ct04.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نبدأ بالسحابة الأولى!",
+            "en": "Let's start with the first cloud!"
+          }
+        },
+        {
+          "ar": [
+            "ct04.a1.hint2"
+          ],
+          "en": [
+            "ct04.a1.hint2"
+          ],
+          "caption": {
+            "ar": "السحابة دي بتتحرك!",
+            "en": "This cloud is wiggling!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "mode": "sequence",
+      "items": [
+        {
+          "id": "drop-red",
+          "vocab": "colors.red",
+          "asset": "objects/drop-red",
+          "hiddenBehind": "objects/cloud",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "drop-yellow",
+          "vocab": "colors.yellow",
+          "asset": "objects/drop-yellow",
+          "hiddenBehind": "objects/cloud",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "drop-green",
+          "vocab": "colors.green",
+          "asset": "objects/drop-green",
+          "hiddenBehind": "objects/cloud",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "drop-blue",
+          "vocab": "colors.blue",
+          "asset": "objects/drop-blue",
+          "hiddenBehind": "objects/cloud",
+          "revealAnimation": "pop"
+        }
+      ],
+      "completion": {
+        "type": "all_found"
+      }
+    },
+    {
+      "id": "ct04.a2",
+      "mechanic": "drag_drop",
+      "skills": [
+        "color.identify.red",
+        "color.identify.yellow",
+        "color.identify.green",
+        "color.identify.blue"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct04.a2.instruction"
+        ],
+        "en": [
+          "ct04.a2.instruction"
+        ],
+        "caption": {
+          "ar": "كل نقطة على خط لونها في قوس قزح!",
+          "en": "Each drop goes on its colour in the rainbow!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct04.a2.hint1"
+          ],
+          "en": [
+            "ct04.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نمسك نقطة ونزحلقها.",
+            "en": "Hold a drop and slide it."
+          }
+        },
+        {
+          "ar": [
+            "ct04.a2.hint2"
+          ],
+          "en": [
+            "ct04.a2.hint2"
+          ],
+          "caption": {
+            "ar": "الأخضر مع الأخضر!",
+            "en": "Green goes with green!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "drop-red",
+          "asset": "objects/drop-red",
+          "tags": [
+            "color:red"
+          ],
+          "vocab": "colors.red"
+        },
+        {
+          "id": "drop-yellow",
+          "asset": "objects/drop-yellow",
+          "tags": [
+            "color:yellow"
+          ],
+          "vocab": "colors.yellow"
+        },
+        {
+          "id": "drop-green",
+          "asset": "objects/drop-green",
+          "tags": [
+            "color:green"
+          ],
+          "vocab": "colors.green"
+        },
+        {
+          "id": "drop-blue",
+          "asset": "objects/drop-blue",
+          "tags": [
+            "color:blue"
+          ],
+          "vocab": "colors.blue"
+        }
+      ],
+      "targets": [
+        {
+          "id": "band-red",
+          "asset": "objects/band-red",
+          "accepts": [
+            "color:red"
+          ]
+        },
+        {
+          "id": "band-yellow",
+          "asset": "objects/band-yellow",
+          "accepts": [
+            "color:yellow"
+          ]
+        },
+        {
+          "id": "band-green",
+          "asset": "objects/band-green",
+          "accepts": [
+            "color:green"
+          ]
+        },
+        {
+          "id": "band-blue",
+          "asset": "objects/band-blue",
+          "accepts": [
+            "color:blue"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "all_placed"
+      }
+    },
+    {
+      "id": "ct04.a3",
+      "mechanic": "speak_repeat",
+      "skills": [
+        "speak.vocab.red"
+      ],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "colors.red",
+      "picture": "objects/drop-red",
+      "instruction": {
+        "ar": [
+          "ct04.a3.instruction"
+        ],
+        "en": [
+          "ct04.a3.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نقول «أحمر» عشان قوس قزح ينوّر!",
+          "en": "Let's say 'red' to light up the rainbow!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct04.a3.hint1"
+          ],
+          "en": [
+            "ct04.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع نونو الأول.",
+            "en": "Listen to Nono first."
+          }
+        },
+        {
+          "ar": [
+            "ct04.a3.hint2"
+          ],
+          "en": [
+            "ct04.a3.hint2"
+          ],
+          "caption": {
+            "ar": "نلمس الميكروفون الكبير.",
+            "en": "Tap the big microphone."
+          }
+        }
+      ],
+      "model": {
+        "ar": [
+          "word.colors.red"
+        ],
+        "en": [
+          "word.colors.red"
+        ],
+        "mixed": [
+          "word.colors.red:ar",
+          "word.colors.red:en"
+        ],
+        "caption": {
+          "ar": "أحمر",
+          "en": "red",
+          "mixed": "أحمر… <bdi>Red</bdi>"
+        }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": {
+        "type": "any_attempt_or_skip"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ct-04",
+    "asset": "stickers/ct-04",
+    "name": {
+      "ar": [
+        "sticker.ct04.name"
+      ],
+      "en": [
+        "sticker.ct04.name"
+      ],
+      "caption": {
+        "ar": "ملصق قوس قزح",
+        "en": "Rainbow sticker"
+      }
+    }
+  },
+  "assetPack": "pack.color-town",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "ni-01"
+  ]
+}

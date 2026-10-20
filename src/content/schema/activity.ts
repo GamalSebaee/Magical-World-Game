@@ -46,6 +46,8 @@ export const ListenChooseDef = ActivityBase.extend({
           prompt: LocalizedAudioRef,
           choices: z.array(Choice).min(2).max(4),
           answer: z.string(),
+          /** Skill this round evidences when it is not the answer's word (e.g. math.compare.more_less). */
+          skill: SkillId.optional(),
         })
         .refine((r) => r.choices.some((c) => c.id === r.answer), 'answer must be one of choices'),
     )
@@ -63,7 +65,7 @@ export const DragDropDef = ActivityBase.extend({
   targets: z
     .array(z.object({ id: z.string(), asset: AssetRef, accepts: z.array(z.string()).min(1) }))
     .min(1)
-    .max(3),
+    .max(4),
   magnetAssist: z.boolean(),
   completion: z.discriminatedUnion('type', [
     z.object({ type: z.literal('all_placed') }),

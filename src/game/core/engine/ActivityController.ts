@@ -49,6 +49,18 @@ export interface ControllerOptions<M> {
   onEnd?: (result: 'completed' | 'skipped', snap: ActivitySnapshot<M>) => void;
 }
 
+/** Skills a vocabulary word can evidence, in order of preference (the activity's own list decides). */
+export function skillCandidates(vocabId: string): string[] {
+  const [domain, name] = vocabId.split('.') as [string, string];
+  const byDomain: Record<string, string[]> = {
+    colors: [`color.identify.${name}`],
+    shapes: [`shape.identify.${name}`],
+    numbers: [`math.numeral.${name}`],
+    animals: [`listen.sounds.${name}`],
+  };
+  return [`vocab.${vocabId}`, ...(byDomain[domain] ?? [])];
+}
+
 /** Waiting lines beyond which the playing one is cut short, so fast counting never lags far behind (04 §4.5). */
 const MAX_QUEUED_LINES = 2;
 
@@ -135,10 +147,7 @@ export class ActivityController<M = unknown> {
     if (this.snap.phase !== 'intro' && this.snap.phase !== 'ready') return;
     const r = this.o.logic.apply(this.o.def, this.snap.m, input, {
       hintLevel: this.snap.hintLevel,
-      skillForVocab: (v) => {
-        const skill = `vocab.${v}`;
-        return this.o.def.skills.includes(skill) ? skill : undefined;
-      },
+      skillForVocab: (v) => skillCandidates(v).find((s) => this.o.def.skills.includes(s)),
     });
     if (!r) return;
 

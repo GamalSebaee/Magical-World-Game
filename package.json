@@ -20,6 +20,7 @@
     "test:e2e": "playwright test",
     "content:validate": "tsx scripts/content/validate.ts",
     "content:schema": "tsx scripts/content/gen-json-schema.ts",
+    "content:runtime": "tsx scripts/content/write-runtime.ts",
     "size": "tsx scripts/perf/bundle-size.ts",
     "check": "pnpm lint && pnpm typecheck && pnpm content:validate && pnpm test"
   },

@@ -218,7 +218,7 @@ function Play({
     <main className="relative h-[100dvh] w-full select-none overflow-hidden" data-testid="play" data-activity={snap?.activityId} data-phase={snap?.phase}>
       <div className="absolute inset-0">
         {sceneData && (
-          <GameHost scene={ACTIVITY_SCENE} data={sceneData} dataKey={`${state?.runId}:${index}:${snap?.activityId ?? ''}`} />
+          <GameHost scene={ACTIVITY_SCENE} data={sceneData} dataKey={`${state?.runId}:${index}:${controller?.definition.id ?? ''}`} />
         )}
       </div>
 

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "af-02",
+  "worldId": "animal-forest",
+  "order": 2,
+  "title": {
+    "ar": "الأرنب والجزرة",
+    "en": "Rabbit & Carrot"
+  },
+  "learningGoal": {
+    "ar": "يتعرّف الطفل على «أرنب» و«جزرة» ويعدّ لحد ٣.",
+    "en": "The child learns 'rabbit' and 'carrot' and counts to 3."
+  },
+  "story": {
+    "illustration": "scenes/af-02-intro",
+    "intro": {
+      "ar": [
+        "af02.story.intro"
+      ],
+      "en": [
+        "af02.story.intro"
+      ],
+      "caption": {
+        "ar": "الأرنب جعان! يلا نأكّله جزر.",
+        "en": "Rabbit is hungry! Let's give Rabbit some carrots."
+      }
+    },
+    "outro": {
+      "ar": [
+        "af02.story.outro"
+      ],
+      "en": [
+        "af02.story.outro"
+      ],
+      "caption": {
+        "ar": "الأرنب شبعان! شكراً!",
+        "en": "Rabbit is full! Thank you!"
+      }
+    }
+  },
+  "background": "forest/bg-garden",
+  "skills": [
+    "vocab.animals.rabbit",
+    "vocab.food.carrot",
+    "math.count.upto3"
+  ],
+  "activities": [
+    {
+      "id": "af02.a1",
+      "mechanic": "tap_discover",
+      "skills": [
+        "vocab.animals.rabbit",
+        "vocab.food.carrot"
+      ],
+      "layout": "scatter-2-hide",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af02.a1.instruction"
+        ],
+        "en": [
+          "af02.a1.instruction"
+        ],
+        "caption": {
+          "ar": "مين في الجحر؟ وإيه تحت التراب؟ يلا نلمس!",
+          "en": "Who's in the burrow? What's under the soil? Let's tap!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af02.a1.hint1"
+          ],
+          "en": [
+            "af02.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس الجحر الأول!",
+            "en": "Let's tap the burrow first!"
+          }
+        },
+        {
+          "ar": [
+            "af02.a1.hint2"
+          ],
+          "en": [
+            "af02.a1.hint2"
+          ],
+          "caption": {
+            "ar": "شوف الجحر بيتحرك!",
+            "en": "Look, the burrow is wiggling!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "mode": "sequence",
+      "items": [
+        {
+          "id": "rabbit",
+          "vocab": "animals.rabbit",
+          "asset": "animals/rabbit",
+          "hiddenBehind": "forest/burrow",
+          "revealAnimation": "hop"
+        },
+        {
+          "id": "carrot",
+          "vocab": "food.carrot",
+          "asset": "objects/carrot",
+          "hiddenBehind": "forest/soil",
+          "revealAnimation": "pop"
+        }
+      ],
+      "completion": {
+        "type": "all_found"
+      }
+    },
+    {
+      "id": "af02.a2",
+      "mechanic": "drag_drop",
+      "skills": [
+        "math.count.upto3",
+        "vocab.food.carrot"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af02.a2.instruction"
+        ],
+        "en": [
+          "af02.a2.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نِدّي الأرنب جزرتين! نحطهم في السلة.",
+          "en": "Let's give Rabbit 2 carrots! Put them in the basket."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af02.a2.hint1"
+          ],
+          "en": [
+            "af02.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نمسك جزرة ونزحلقها للسلة.",
+            "en": "Hold a carrot and slide it to the basket."
+          }
+        },
+        {
+          "ar": [
+            "af02.a2.hint2"
+          ],
+          "en": [
+            "af02.a2.hint2"
+          ],
+          "caption": {
+            "ar": "السلة هنا!",
+            "en": "The basket is here!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "carrot-1",
+          "asset": "objects/carrot",
+          "tags": [
+            "carrot"
+          ],
+          "vocab": "food.carrot"
+        },
+        {
+          "id": "carrot-2",
+          "asset": "objects/carrot",
+          "tags": [
+            "carrot"
+          ],
+          "vocab": "food.carrot"
+        },
+        {
+          "id": "carrot-3",
+          "asset": "objects/carrot",
+          "tags": [
+            "carrot"
+          ],
+          "vocab": "food.carrot"
+        },
+        {
+          "id": "carrot-4",
+          "asset": "objects/carrot",
+          "tags": [
+            "carrot"
+          ],
+          "vocab": "food.carrot"
+        }
+      ],
+      "targets": [
+        {
+          "id": "basket",
+          "asset": "objects/basket",
+          "accepts": [
+            "carrot"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "count_placed",
+        "n": 2
+      }
+    },
+    {
+      "id": "af02.a3",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto3"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af02.a3.instruction"
+        ],
+        "en": [
+          "af02.a3.instruction"
+        ],
+        "caption": {
+          "ar": "الأرنب لسه جعان! نلمس ٣ جزرات.",
+          "en": "Rabbit is still hungry! Let's tap 3 carrots."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af02.a3.hint1"
+          ],
+          "en": [
+            "af02.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس جزرة ونعدّ: واحد!",
+            "en": "Tap a carrot and count: one!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "tap_n",
+      "objects": [
+        {
+          "id": "carrot-1",
+          "asset": "objects/carrot"
+        },
+        {
+          "id": "carrot-2",
+          "asset": "objects/carrot"
+        },
+        {
+          "id": "carrot-3",
+          "asset": "objects/carrot"
+        },
+        {
+          "id": "carrot-4",
+          "asset": "objects/carrot"
+        },
+        {
+          "id": "carrot-5",
+          "asset": "objects/carrot"
+        }
+      ],
+      "target": 3,
+      "basket": "objects/basket",
+      "completion": {
+        "type": "reached_target"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.af-02",
+    "asset": "stickers/af-02",
+    "name": {
+      "ar": [
+        "sticker.af02.name"
+      ],
+      "en": [
+        "sticker.af02.name"
+      ],
+      "caption": {
+        "ar": "ملصق الأرنب",
+        "en": "Rabbit sticker"
+      }
+    }
+  },
+  "assetPack": "pack.animal-forest",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "af-03"
+  ]
+}

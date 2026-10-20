@@ -1,5 +1,6 @@
 import * as Phaser from 'phaser';
 import type { AssetTable } from '../sceneTypes';
+import { formatDigits, type DigitStyle } from '@shared/i18n/language';
 import type { Rect, Viewport } from '../viewport';
 
 export const textureKey = (assetId: string) => `asset:${assetId}`;
@@ -104,3 +105,25 @@ export function placeZone(zone: Phaser.GameObjects.Zone, r: Rect, s: number) {
 }
 
 export const centreOf = (r: Rect) => ({ x: r.x + r.width / 2, y: r.y + r.height / 2 });
+
+const NUMERAL_FONT = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+/** The number a vocabulary word stands for (`numbers.3` → 3), if any. */
+export const numberOf = (vocab: string | undefined) => (vocab?.startsWith('numbers.') ? Number(vocab.slice(8)) : undefined);
+
+/**
+ * Numeral cards: the digit (in the chosen digit style, 12 Q7) in the top part of the card, the
+ * picture (a dot pattern) below. Returns the rect left for the picture.
+ */
+export function placeNumeral(text: Phaser.GameObjects.Text, n: number, digits: DigitStyle, r: Rect, s: number): Rect {
+  text
+    .setText(formatDigits(n, digits))
+    .setFontSize(Math.round(r.height * 0.42 * s))
+    .setPosition((r.x + r.width / 2) * s, (r.y + r.height * 0.3) * s)
+    .setVisible(true);
+  return { x: r.x, y: r.y + r.height * 0.52, width: r.width, height: r.height * 0.46 };
+}
+
+export function numeralText(scene: Phaser.Scene): Phaser.GameObjects.Text {
+  return scene.add.text(0, 0, '', { fontFamily: NUMERAL_FONT, fontStyle: 'bold', color: '#2d3047' }).setOrigin(0.5).setDepth(7).setVisible(false);
+}

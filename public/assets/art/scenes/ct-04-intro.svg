@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <clipPath id="r"><rect width="800" height="500" rx="40"/></clipPath>
+  <g clip-path="url(#r)"><svg x="0" y="0" width="800" height="500" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="sky_e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d8f5"/><stop offset="1" stop-color="#dff3ff"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#sky_e)"/>
+  <circle cx="1350" cy="160" r="80" fill="#ffe08a"/>
+  <g fill="#ffffff" opacity="0.95"><ellipse cx="400" cy="220" rx="160" ry="50"/><ellipse cx="1100" cy="200" rx="180" ry="56"/></g>
+  <path d="M0 620 Q400 520 800 600 T1600 580 L1600 1000 L0 1000 Z" fill="#b9e4a8"/>
+  <path d="M0 720 Q500 660 900 720 T1600 700 L1600 1000 L0 1000 Z" fill="#a6d98f"/>
+</svg></g>
+  <svg x="70" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="188" rx="40" ry="8" fill="#2d3047" opacity="0.18"/>
+  <path d="M100 20 C130 70 160 100 160 134 A60 60 0 0 1 40 134 C40 100 70 70 100 20 Z" fill="#e4572e" stroke="#2d3047" stroke-width="5"/>
+  <ellipse cx="78" cy="126" rx="10" ry="18" fill="#f28b6d"/>
+</svg>
+  <svg x="300" y="220" width="200" height="200" viewBox="0 0 240 180">
+  <g fill="#ffffff" stroke="#2d3047" stroke-width="5"><ellipse cx="70" cy="112" rx="50" ry="40"/><ellipse cx="130" cy="96" rx="60" ry="52"/><ellipse cx="180" cy="118" rx="44" ry="36"/></g>
+  <rect x="44" y="110" width="160" height="40" rx="20" fill="#ffffff"/>
+  <path d="M60 156 L190 156" stroke="#2d3047" stroke-width="5" stroke-linecap="round"/>
+</svg>
+  <svg x="530" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <ellipse cx="100" cy="188" rx="40" ry="8" fill="#2d3047" opacity="0.18"/>
+  <path d="M100 20 C130 70 160 100 160 134 A60 60 0 0 1 40 134 C40 100 70 70 100 20 Z" fill="#5dbb63" stroke="#2d3047" stroke-width="5"/>
+  <ellipse cx="78" cy="126" rx="10" ry="18" fill="#8fd694"/>
+</svg>
+</svg>

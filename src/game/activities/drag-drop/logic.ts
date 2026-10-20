@@ -1,5 +1,5 @@
 import type { ActivityDefinition } from '@content/schema';
-import type { MechanicLogic, Outcome, SayItem } from '@game/core/engine/types';
+import type { EvidenceItem, MechanicLogic, Outcome, SayItem } from '@game/core/engine/types';
 import type { Rect } from '@game/core/viewport';
 
 type Def = Extract<ActivityDefinition, { mechanic: 'drag_drop' }>;
@@ -94,9 +94,11 @@ export const dragDropLogic: MechanicLogic<Def, DragDropState> = {
     const done = count >= n;
     const counting = def.completion.type === 'count_placed';
     const say: SayItem[] = counting ? [numberWord(count)] : item.vocab ? [{ vocab: item.vocab }] : [];
+    // Placing exactly n is evidence for the activity's counting skills (math.*).
+    const countEvidence: EvidenceItem[] = counting && done ? def.skills.filter((sk) => sk.startsWith('math.')).map((skillId) => ({ skillId, kind: 'choice_correct', firstTry: true })) : [];
     const outcome: Outcome = {
       kind: done ? 'correct' : 'partial',
-      evidence: skill ? [{ skillId: skill, kind: 'choice_correct', firstTry: true }] : [],
+      evidence: [...(skill ? [{ skillId: skill, kind: 'choice_correct' as const, firstTry: true }] : []), ...countEvidence],
       say: done ? [...say, { praise: true }] : say,
       sfx: done ? 'sfx.sparkle' : 'sfx.pop',
       targetId: item.id,

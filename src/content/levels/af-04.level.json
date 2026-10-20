@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "af-04",
+  "worldId": "animal-forest",
+  "order": 4,
+  "title": {
+    "ar": "مغامرة الغابة",
+    "en": "Forest Adventure"
+  },
+  "learningGoal": {
+    "ar": "مراجعة الحيوانات والأصوات والعدّ لحد ٣، وكلمة «عصفورة».",
+    "en": "A review of animals, sounds and counting to 3, plus the word 'bird'."
+  },
+  "story": {
+    "illustration": "scenes/af-04-intro",
+    "intro": {
+      "ar": [
+        "af04.story.intro"
+      ],
+      "en": [
+        "af04.story.intro"
+      ],
+      "caption": {
+        "ar": "خريطة نونو طارت! يلا نمشي في الغابة والحيوانات تساعدنا نلاقيها.",
+        "en": "Nono's map blew away! Let's walk through the forest; the animals will help us find it."
+      }
+    },
+    "outro": {
+      "ar": [
+        "af04.story.outro"
+      ],
+      "en": [
+        "af04.story.outro"
+      ],
+      "caption": {
+        "ar": "لقينا الخريطة! شكراً يا أصحابنا!",
+        "en": "We found the map! Thank you, friends!"
+      }
+    }
+  },
+  "background": "forest/bg-path",
+  "skills": [
+    "vocab.animals.bird",
+    "vocab.animals.rabbit",
+    "vocab.animals.duck",
+    "vocab.animals.dog",
+    "listen.sounds.dog",
+    "math.count.upto3",
+    "speak.vocab.dog"
+  ],
+  "activities": [
+    {
+      "id": "af04.a1",
+      "mechanic": "tap_discover",
+      "skills": [
+        "vocab.animals.bird",
+        "vocab.animals.rabbit",
+        "vocab.animals.duck"
+      ],
+      "layout": "scatter-3-hide",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af04.a1.instruction"
+        ],
+        "en": [
+          "af04.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نمشي ورا آثار الرجلين! مين مستخبي؟",
+          "en": "Let's follow the footprints! Who's hiding?"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af04.a1.hint1"
+          ],
+          "en": [
+            "af04.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نبدأ بالشجرة!",
+            "en": "Let's start with the tree!"
+          }
+        },
+        {
+          "ar": [
+            "af04.a1.hint2"
+          ],
+          "en": [
+            "af04.a1.hint2"
+          ],
+          "caption": {
+            "ar": "شوف! حاجة بتتحرك.",
+            "en": "Look! Something is moving."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "mode": "sequence",
+      "items": [
+        {
+          "id": "bird",
+          "vocab": "animals.bird",
+          "asset": "animals/bird",
+          "hiddenBehind": "forest/tree",
+          "revealAnimation": "hop"
+        },
+        {
+          "id": "rabbit",
+          "vocab": "animals.rabbit",
+          "asset": "animals/rabbit",
+          "hiddenBehind": "forest/burrow",
+          "revealAnimation": "peek"
+        },
+        {
+          "id": "duck",
+          "vocab": "animals.duck",
+          "asset": "animals/duck",
+          "hiddenBehind": "forest/bush",
+          "revealAnimation": "pop"
+        }
+      ],
+      "completion": {
+        "type": "all_found"
+      }
+    },
+    {
+      "id": "af04.a2",
+      "mechanic": "listen_choose",
+      "skills": [
+        "listen.sounds.dog",
+        "vocab.animals.rabbit"
+      ],
+      "layout": "row-3",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af04.a2.instruction"
+        ],
+        "en": [
+          "af04.a2.instruction"
+        ],
+        "caption": {
+          "ar": "نسمع كويس، وبعدين نلمس.",
+          "en": "Listen carefully, then tap."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af04.a2.hint1"
+          ],
+          "en": [
+            "af04.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع تاني؟",
+            "en": "Shall we listen again?"
+          }
+        },
+        {
+          "ar": [
+            "af04.a2.hint2"
+          ],
+          "en": [
+            "af04.a2.hint2"
+          ],
+          "caption": {
+            "ar": "الكلب بيقول هو هو!",
+            "en": "The dog says woof woof!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "af04.a2.who_woof"
+            ],
+            "en": [
+              "af04.a2.who_woof"
+            ],
+            "caption": {
+              "ar": "مين بيقول هو هو؟",
+              "en": "Who says woof woof?"
+            }
+          },
+          "choices": [
+            {
+              "id": "cat",
+              "vocab": "animals.cat",
+              "asset": "animals/cat"
+            },
+            {
+              "id": "dog",
+              "vocab": "animals.dog",
+              "asset": "animals/dog"
+            },
+            {
+              "id": "cow",
+              "vocab": "animals.cow",
+              "asset": "animals/cow"
+            }
+          ],
+          "answer": "dog"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "af04.a2.where_rabbit"
+            ],
+            "en": [
+              "af04.a2.where_rabbit"
+            ],
+            "caption": {
+              "ar": "فين الأرنب؟",
+              "en": "Where's the rabbit?",
+              "mixed": "فين الـ <bdi>Rabbit</bdi>؟"
+            },
+            "mixed": [
+              "af04.where_mixed:ar",
+              "word.animals.rabbit:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "bird",
+              "vocab": "animals.bird",
+              "asset": "animals/bird"
+            },
+            {
+              "id": "rabbit",
+              "vocab": "animals.rabbit",
+              "asset": "animals/rabbit"
+            },
+            {
+              "id": "duck",
+              "vocab": "animals.duck",
+              "asset": "animals/duck"
+            }
+          ],
+          "answer": "rabbit"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "af04.a3",
+      "mechanic": "count_objects",
+      "skills": [
+        "math.count.upto3"
+      ],
+      "layout": "count",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "af04.a3.instruction"
+        ],
+        "en": [
+          "af04.a3.instruction"
+        ],
+        "caption": {
+          "ar": "حتت الخريطة في العش! نعدّها سوا.",
+          "en": "The map pieces are in the nest! Let's count them."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af04.a3.hint1"
+          ],
+          "en": [
+            "af04.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس كل حتة ونعدّ.",
+            "en": "Tap each piece and count."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "ask": "how_many",
+      "objects": [
+        {
+          "id": "piece-1",
+          "asset": "objects/map-piece"
+        },
+        {
+          "id": "piece-2",
+          "asset": "objects/map-piece"
+        },
+        {
+          "id": "piece-3",
+          "asset": "objects/map-piece"
+        }
+      ],
+      "target": 3,
+      "answerChoices": [
+        2,
+        3
+      ],
+      "question": {
+        "ar": [
+          "play.count.how_many"
+        ],
+        "en": [
+          "play.count.how_many"
+        ],
+        "caption": {
+          "ar": "كام؟",
+          "en": "How many?"
+        }
+      },
+      "completion": {
+        "type": "answered"
+      }
+    },
+    {
+      "id": "af04.a4",
+      "mechanic": "speak_repeat",
+      "skills": [
+        "speak.vocab.dog"
+      ],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "animals.dog",
+      "picture": "animals/dog",
+      "instruction": {
+        "ar": [
+          "af04.a4.instruction"
+        ],
+        "en": [
+          "af04.a4.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نقول «كلب» عشان نشكر الكلب!",
+          "en": "Let's say 'dog' to thank Dog!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "af04.a4.hint1"
+          ],
+          "en": [
+            "af04.a4.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع نونو الأول.",
+            "en": "Listen to Nono first."
+          }
+        },
+        {
+          "ar": [
+            "af04.a4.hint2"
+          ],
+          "en": [
+            "af04.a4.hint2"
+          ],
+          "caption": {
+            "ar": "نلمس الميكروفون الكبير.",
+            "en": "Tap the big microphone."
+          }
+        }
+      ],
+      "model": {
+        "ar": [
+          "word.animals.dog"
+        ],
+        "en": [
+          "word.animals.dog"
+        ],
+        "mixed": [
+          "word.animals.dog:ar",
+          "word.animals.dog:en"
+        ],
+        "caption": {
+          "ar": "كلب",
+          "en": "dog",
+          "mixed": "كلب… <bdi>Dog</bdi>"
+        }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": {
+        "type": "any_attempt_or_skip"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.af-04",
+    "asset": "stickers/af-04",
+    "name": {
+      "ar": [
+        "sticker.af04.name"
+      ],
+      "en": [
+        "sticker.af04.name"
+      ],
+      "caption": {
+        "ar": "ملصق الخريطة",
+        "en": "Map sticker"
+      }
+    }
+  },
+  "assetPack": "pack.animal-forest",
+  "estimatedMinutes": [
+    5,
+    8
+  ],
+  "suggestedNext": [
+    "ct-01"
+  ]
+}

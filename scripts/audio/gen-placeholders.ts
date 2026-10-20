@@ -16,6 +16,7 @@ import os from 'node:os';
 import path from 'node:path';
 import type { AudioManifest } from '../../src/content/schema';
 import { PUBLIC_DIR, readJson, writeJson } from '../content/lib';
+import { writeRuntimeManifests } from '../content/write-runtime';
 
 const force = process.argv.includes('--force');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'mwg-audio-'));
@@ -42,6 +43,12 @@ const SFX: Record<string, { expr: string; d: number }> = {
   'sfx.animal_dog': {
     expr: '0.45*(lt(t,0.18)*sin(2*PI*(220-200*t)*t)*sin(PI*t/0.18)+between(t,0.3,0.48)*sin(2*PI*(220-200*(t-0.3))*(t-0.3))*sin(PI*(t-0.3)/0.18))',
     d: 0.55,
+  },
+  // A long low "moo" and two nasal "quack" bursts.
+  'sfx.animal_cow': { expr: '0.45*sin(2*PI*(140+30*sin(PI*t/1.1))*t)*sin(PI*t/1.1)*(0.8+0.2*sin(2*PI*5*t))', d: 1.1 },
+  'sfx.animal_duck': {
+    expr: '0.3*(lt(t,0.16)*sgn(sin(2*PI*480*t))*sin(PI*t/0.16)+between(t,0.26,0.42)*sgn(sin(2*PI*460*t))*sin(PI*(t-0.26)/0.16))',
+    d: 0.45,
   },
 };
 
@@ -118,5 +125,6 @@ for (const clip of manifest.clips) {
   }
 }
 writeJson('audio-manifest.json', manifest);
+writeRuntimeManifests();
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(`audio: generated ${made} placeholder file(s)`);

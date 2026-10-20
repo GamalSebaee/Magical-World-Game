@@ -146,7 +146,7 @@ export function Playground({ services }: { services: AppServices }) {
       data-problems={problems.join(' | ')}
       dir={mode === 'en' ? 'ltr' : 'rtl'}
     >
-      {sceneData && <GameHost scene={ACTIVITY_SCENE} data={sceneData} dataKey={`${snap?.activityId}:${run}:${magnet}:${digits}:${reducedMotion}`} />}
+      {sceneData && <GameHost scene={ACTIVITY_SCENE} data={sceneData} dataKey={`${controller?.definition.id}:${run}:${magnet}:${digits}:${reducedMotion}`} />}
       {controller && snap?.mechanic === 'speak_repeat' && (
         <div className="pointer-events-none absolute inset-x-0 bottom-4 z-30 flex justify-center px-4">
           <SpeechPanel key={`${snap.activityId}:${run}:${mic}`} services={micServices} controller={controller} snap={snap} micEnabled={mic !== 'off'} lang={lang} onMicState={setMicState} />

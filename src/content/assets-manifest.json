@@ -2,6 +2,32 @@
   "schemaVersion": 1,
   "assets": [
     {
+      "id": "animals/bird",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/animals/bird.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "animals/cat",
       "type": "image",
       "pack": "pack.common",
@@ -28,11 +54,89 @@
       }
     },
     {
+      "id": "animals/cow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/animals/cow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "animals/dog",
       "type": "image",
       "pack": "pack.common",
       "files": [
         "assets/art/animals/dog.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "animals/duck",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/animals/duck.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "animals/fish",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/animals/fish.svg"
       ],
       "displaySize1x": {
         "w": 180,
@@ -106,11 +210,141 @@
       }
     },
     {
+      "id": "forest/bg-garden",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/bg-garden.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "forest/bg-path",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/bg-path.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "forest/bg-stage",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/bg-stage.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "forest/burrow",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/burrow.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "forest/bush",
       "type": "image",
       "pack": "pack.animal-forest",
       "files": [
         "assets/art/forest/bush.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "forest/soil",
+      "type": "image",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/forest/soil.svg"
       ],
       "displaySize1x": {
         "w": 240,
@@ -141,6 +375,110 @@
       "displaySize1x": {
         "w": 220,
         "h": 300
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "island/bg-beach",
+      "type": "image",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/island/bg-beach.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "island/bg-cove",
+      "type": "image",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/island/bg-cove.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "island/bg-lagoon",
+      "type": "image",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/island/bg-lagoon.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "island/bg-palms",
+      "type": "image",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/island/bg-palms.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
       },
       "source": "custom-vector",
       "creator": "project (placeholder)",
@@ -418,6 +756,32 @@
       }
     },
     {
+      "id": "objects/apple-grey",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/apple-grey.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "objects/ball-blue",
       "type": "image",
       "pack": "pack.common",
@@ -496,6 +860,240 @@
       }
     },
     {
+      "id": "objects/bananas-1",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/bananas-1.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/bananas-2",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/bananas-2.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/bananas-3",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/bananas-3.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/bananas-4",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/bananas-4.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/bananas-5",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/bananas-5.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/band-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/band-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 142
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/band-green",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/band-green.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 142
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/band-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/band-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 142
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/band-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/band-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 142
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "objects/basket",
       "type": "image",
       "pack": "pack.common",
@@ -505,6 +1103,84 @@
       "displaySize1x": {
         "w": 260,
         "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/block-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/block-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/block-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/block-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/block-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/block-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
       },
       "source": "custom-vector",
       "creator": "project (placeholder)",
@@ -600,11 +1276,609 @@
       }
     },
     {
+      "id": "objects/car-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/car-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/car-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/car-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/car-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/car-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "objects/carrot",
       "type": "image",
       "pack": "pack.common",
       "files": [
         "assets/art/objects/carrot.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/chest",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/chest.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/cloud",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/cloud.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/clue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/clue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/coin",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/coin.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/coral-home",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/coral-home.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/drop-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/drop-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/drop-green",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/drop-green.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/drop-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/drop-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/drop-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/drop-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/jewel",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/jewel.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/map-piece",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/map-piece.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/rock-1",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/rock-1.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/rock-2",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/rock-2.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/rock-3",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/rock-3.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/sea",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/sea.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/sea-grey",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/sea-grey.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/shell",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/shell.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/starfish",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/starfish.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/sun",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/sun.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/sun-grey",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/sun-grey.svg"
       ],
       "displaySize1x": {
         "w": 180,
@@ -652,6 +1926,500 @@
       }
     },
     {
+      "id": "scenes/af-02-intro",
+      "type": "background",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/scenes/af-02-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/af-03-intro",
+      "type": "background",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/scenes/af-03-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/af-04-intro",
+      "type": "background",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/scenes/af-04-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ct-01-intro",
+      "type": "background",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/scenes/ct-01-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ct-02-intro",
+      "type": "background",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/scenes/ct-02-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ct-03-intro",
+      "type": "background",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/scenes/ct-03-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ct-04-intro",
+      "type": "background",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/scenes/ct-04-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ni-01-intro",
+      "type": "background",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/scenes/ni-01-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ni-02-intro",
+      "type": "background",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/scenes/ni-02-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ni-03-intro",
+      "type": "background",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/scenes/ni-03-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "scenes/ni-04-intro",
+      "type": "background",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/scenes/ni-04-intro.svg"
+      ],
+      "displaySize1x": {
+        "w": 800,
+        "h": 500
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/circle-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/circle-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/circle-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/circle-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/outline-circle-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/outline-circle-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/outline-square-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/outline-square-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/outline-triangle-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/outline-triangle-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/square-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/square-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/triangle-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/triangle-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "shapes/triangle-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/shapes/triangle-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "stickers/af-01-cat-dog",
       "type": "sticker",
       "pack": "pack.animal-forest",
@@ -661,6 +2429,396 @@
       "displaySize1x": {
         "w": 240,
         "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/af-02",
+      "type": "sticker",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/stickers/af-02.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/af-03",
+      "type": "sticker",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/stickers/af-03.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/af-04",
+      "type": "sticker",
+      "pack": "pack.animal-forest",
+      "files": [
+        "assets/art/stickers/af-04.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ct-01",
+      "type": "sticker",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/stickers/ct-01.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ct-02",
+      "type": "sticker",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/stickers/ct-02.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ct-03",
+      "type": "sticker",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/stickers/ct-03.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ct-04",
+      "type": "sticker",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/stickers/ct-04.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ni-01",
+      "type": "sticker",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/stickers/ni-01.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ni-02",
+      "type": "sticker",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/stickers/ni-02.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ni-03",
+      "type": "sticker",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/stickers/ni-03.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "stickers/ni-04",
+      "type": "sticker",
+      "pack": "pack.number-island",
+      "files": [
+        "assets/art/stickers/ni-04.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "town/bg-sky",
+      "type": "image",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/town/bg-sky.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "town/bg-square",
+      "type": "image",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/town/bg-square.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "town/bg-street",
+      "type": "image",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/town/bg-street.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "town/bg-toyshop",
+      "type": "image",
+      "pack": "pack.color-town",
+      "files": [
+        "assets/art/town/bg-toyshop.svg"
+      ],
+      "displaySize1x": {
+        "w": 1600,
+        "h": 1000
       },
       "source": "custom-vector",
       "creator": "project (placeholder)",

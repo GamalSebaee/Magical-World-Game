@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ct-02",
+  "worldId": "color-town",
+  "order": 2,
+  "title": {
+    "ar": "نرتّب الألوان",
+    "en": "Color Matching"
+  },
+  "learningGoal": {
+    "ar": "يحط الطفل كل لعبة في الصندوق اللي بلونها.",
+    "en": "The child puts each toy in the box of the same colour."
+  },
+  "story": {
+    "illustration": "scenes/ct-02-intro",
+    "intro": {
+      "ar": [
+        "ct02.story.intro"
+      ],
+      "en": [
+        "ct02.story.intro"
+      ],
+      "caption": {
+        "ar": "لعب المحل وقعت من الصناديق! يلا نرجّعها.",
+        "en": "The toy shop's toys fell out of their boxes! Let's put them back."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ct02.story.outro"
+      ],
+      "en": [
+        "ct02.story.outro"
+      ],
+      "caption": {
+        "ar": "كل لعبة في صندوقها! شكراً!",
+        "en": "Every toy is in its box! Thank you!"
+      }
+    }
+  },
+  "background": "town/bg-toyshop",
+  "skills": [
+    "color.identify.red",
+    "color.identify.blue",
+    "color.identify.yellow"
+  ],
+  "activities": [
+    {
+      "id": "ct02.a1",
+      "mechanic": "drag_drop",
+      "skills": [
+        "color.identify.red",
+        "color.identify.blue",
+        "color.identify.yellow"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct02.a1.instruction"
+        ],
+        "en": [
+          "ct02.a1.instruction"
+        ],
+        "caption": {
+          "ar": "كل لعبة في الصندوق اللي بلونها!",
+          "en": "Each toy goes in the box of its colour!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct02.a1.hint1"
+          ],
+          "en": [
+            "ct02.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نمسك لعبة ونزحلقها.",
+            "en": "Hold a toy and slide it."
+          }
+        },
+        {
+          "ar": [
+            "ct02.a1.hint2"
+          ],
+          "en": [
+            "ct02.a1.hint2"
+          ],
+          "caption": {
+            "ar": "الأحمر مع الأحمر!",
+            "en": "Red goes with red!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "car-red",
+          "asset": "objects/car-red",
+          "tags": [
+            "color:red"
+          ],
+          "vocab": "colors.red"
+        },
+        {
+          "id": "ball-blue",
+          "asset": "objects/ball-blue",
+          "tags": [
+            "color:blue"
+          ],
+          "vocab": "colors.blue"
+        },
+        {
+          "id": "block-yellow",
+          "asset": "objects/block-yellow",
+          "tags": [
+            "color:yellow"
+          ],
+          "vocab": "colors.yellow"
+        }
+      ],
+      "targets": [
+        {
+          "id": "box-red",
+          "asset": "objects/box-red",
+          "accepts": [
+            "color:red"
+          ]
+        },
+        {
+          "id": "box-blue",
+          "asset": "objects/box-blue",
+          "accepts": [
+            "color:blue"
+          ]
+        },
+        {
+          "id": "box-yellow",
+          "asset": "objects/box-yellow",
+          "accepts": [
+            "color:yellow"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "all_placed"
+      }
+    },
+    {
+      "id": "ct02.a2",
+      "mechanic": "drag_drop",
+      "skills": [
+        "color.identify.red",
+        "color.identify.blue",
+        "color.identify.yellow"
+      ],
+      "layout": "items-and-targets",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct02.a2.instruction"
+        ],
+        "en": [
+          "ct02.a2.instruction"
+        ],
+        "caption": {
+          "ar": "لعب أكتر! كل واحدة في صندوق لونها.",
+          "en": "More toys! Each one in the box of its colour."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct02.a2.hint1"
+          ],
+          "en": [
+            "ct02.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نبص على اللون الأول.",
+            "en": "Look at the colour first."
+          }
+        },
+        {
+          "ar": [
+            "ct02.a2.hint2"
+          ],
+          "en": [
+            "ct02.a2.hint2"
+          ],
+          "caption": {
+            "ar": "الأزرق مع الأزرق!",
+            "en": "Blue goes with blue!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "draggables": [
+        {
+          "id": "ball-red",
+          "asset": "objects/ball-red",
+          "tags": [
+            "color:red"
+          ],
+          "vocab": "colors.red"
+        },
+        {
+          "id": "car-red",
+          "asset": "objects/car-red",
+          "tags": [
+            "color:red"
+          ],
+          "vocab": "colors.red"
+        },
+        {
+          "id": "ball-blue",
+          "asset": "objects/ball-blue",
+          "tags": [
+            "color:blue"
+          ],
+          "vocab": "colors.blue"
+        },
+        {
+          "id": "car-blue",
+          "asset": "objects/car-blue",
+          "tags": [
+            "color:blue"
+          ],
+          "vocab": "colors.blue"
+        },
+        {
+          "id": "ball-yellow",
+          "asset": "objects/ball-yellow",
+          "tags": [
+            "color:yellow"
+          ],
+          "vocab": "colors.yellow"
+        },
+        {
+          "id": "car-yellow",
+          "asset": "objects/car-yellow",
+          "tags": [
+            "color:yellow"
+          ],
+          "vocab": "colors.yellow"
+        }
+      ],
+      "targets": [
+        {
+          "id": "box-red",
+          "asset": "objects/box-red",
+          "accepts": [
+            "color:red"
+          ]
+        },
+        {
+          "id": "box-blue",
+          "asset": "objects/box-blue",
+          "accepts": [
+            "color:blue"
+          ]
+        },
+        {
+          "id": "box-yellow",
+          "asset": "objects/box-yellow",
+          "accepts": [
+            "color:yellow"
+          ]
+        }
+      ],
+      "magnetAssist": true,
+      "completion": {
+        "type": "all_placed"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ct-02",
+    "asset": "stickers/ct-02",
+    "name": {
+      "ar": [
+        "sticker.ct02.name"
+      ],
+      "en": [
+        "sticker.ct02.name"
+      ],
+      "caption": {
+        "ar": "ملصق اللعب",
+        "en": "Toys sticker"
+      }
+    }
+  },
+  "assetPack": "pack.color-town",
+  "estimatedMinutes": [
+    3,
+    6
+  ],
+  "suggestedNext": [
+    "ct-03"
+  ]
+}

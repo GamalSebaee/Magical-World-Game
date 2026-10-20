@@ -24,6 +24,7 @@ import {
   emptyRefs,
 } from '../../src/services/content/references';
 import { readJson, writeJson } from './lib';
+import { writeRuntimeManifests } from './write-runtime';
 
 const PACK_BY_CODE: Record<string, string> = {
   af: 'pack.animal-forest',
@@ -50,6 +51,10 @@ function packForAsset(id: string): string {
 const MANUAL_TRANSCRIPTS: Record<string, { ar?: string; en?: string }> = {
   'af01.story.outro_mixed': { ar: 'برافو! عرفنا القطة والكلب…' },
   'af01.a2.where_mixed': { ar: 'فين الـ…' },
+  'af04.where_mixed': { ar: 'فين الـ…' },
+  'ct01.where_mixed': { ar: 'فين الحاجة الـ…' },
+  'ct03.where_mixed': { ar: 'فين الـ…' },
+  'ni01.where_mixed': { ar: 'فين رقم…' },
 };
 
 const refs = emptyRefs();
@@ -146,6 +151,7 @@ for (const id of [...refs.assets].sort()) {
 }
 assets.assets.sort((a, b) => a.id.localeCompare(b.id));
 writeJson('assets-manifest.json', assets);
+writeRuntimeManifests();
 
 console.log(
   `manifests: +${addedClips} clip(s), +${addedSlots} language file slot(s), +${addedAssets} asset(s) marked planned`,

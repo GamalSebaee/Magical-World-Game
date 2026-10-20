@@ -12,6 +12,7 @@ import {
 } from '@content/schema';
 import type { RawContentBundle } from '@content/bundle';
 import { addClip, collectLevelRefs, collectUiAudioRefs, collectWorldRefs, emptyRefs } from './references';
+import { nonStandardClipPaths, runtimeAssets, runtimeAudio } from './runtimeManifests';
 
 export interface ValidateOptions {
   /** Release builds require every clip/asset to exist and be approved. */
@@ -54,6 +55,16 @@ export function validateContent(raw: RawContentBundle, opts: ValidateOptions): V
   const uiAudio = check(UiAudioFile, raw.uiAudio, 'ui-audio.json', errors);
   const audio = check(AudioManifest, raw.audioManifest, 'audio-manifest.json', errors);
   const assets = check(AssetManifest, raw.assetsManifest, 'assets-manifest.json', errors);
+
+  // The app ships slim manifests derived from these (D23): they must be current, and clip files
+  // must sit at the fixed path the runtime relies on.
+  if (audio) {
+    for (const p of nonStandardClipPaths(audio)) errors.push(`audio file path must be assets/audio/<slot>/<id>.mp3: ${p}`);
+    if (JSON.stringify(runtimeAudio(audio)) !== JSON.stringify(raw.runtimeAudio)) errors.push('runtime/audio.json is stale: run `pnpm content:runtime`');
+  }
+  if (assets && JSON.stringify(runtimeAssets(assets)) !== JSON.stringify(raw.runtimeAssets)) {
+    errors.push('runtime/assets.json is stale: run `pnpm content:runtime`');
+  }
 
   const refs = emptyRefs();
   if (uiAudio) collectUiAudioRefs(uiAudio, refs);

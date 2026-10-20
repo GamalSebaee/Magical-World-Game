@@ -2,7 +2,7 @@ import * as Phaser from 'phaser';
 import type { ActivityDefinition } from '@content/schema';
 import type { ActivitySnapshot } from '@game/core/engine/ActivityController';
 import type { ActivitySceneAdapter, AdapterContext } from '@game/core/sceneTypes';
-import { fitInto, sparkle, textureFor, wiggle } from '@game/core/scenes/common';
+import { fitInto, numberOf, numeralText, placeNumeral, sparkle, textureFor, wiggle } from '@game/core/scenes/common';
 import { distributeTargets, type Rect, type Viewport } from '@game/core/viewport';
 import type { ListenChooseState } from './logic';
 
@@ -12,6 +12,8 @@ interface Card {
   id: string;
   box: Phaser.GameObjects.Graphics;
   pic: Phaser.GameObjects.Image;
+  /** Numeral cards show the digit in the chosen style above their dots. */
+  digit?: { text: Phaser.GameObjects.Text; n: number };
   zone: Phaser.GameObjects.Zone;
   rect: Rect;
 }
@@ -31,6 +33,7 @@ export function listenChooseScene(scene: Phaser.Scene): ActivitySceneAdapter {
     for (const c of cards) {
       c.box.destroy();
       c.pic.destroy();
+      c.digit?.text.destroy();
       c.zone.destroy();
     }
     cards = [];
@@ -44,7 +47,10 @@ export function listenChooseScene(scene: Phaser.Scene): ActivitySceneAdapter {
       const pic = scene.add.image(0, 0, textureFor(scene, choice.asset)).setDepth(6);
       const zone = scene.add.zone(0, 0, 10, 10).setInteractive({ useHandCursor: true }).setDepth(20);
       zone.on('pointerup', () => ctx.controller.input({ type: 'tap', targetId: id }));
-      cards.push({ id, box, pic, zone, rect: { x: 0, y: 0, width: 0, height: 0 } });
+      const n = numberOf(choice.vocab);
+      // Only numeral cards get a digit (a banana group must be counted, not read).
+      const digit = n !== undefined && choice.asset.startsWith('numerals/') ? { text: numeralText(scene), n } : undefined;
+      cards.push({ id, box, pic, digit, zone, rect: { x: 0, y: 0, width: 0, height: 0 } });
     }
   };
 
@@ -58,12 +64,13 @@ export function listenChooseScene(scene: Phaser.Scene): ActivitySceneAdapter {
       c.box.clear();
       c.box.fillStyle(0xffffff, 0.95).fillRoundedRect(x * s, y * s, width * s, height * s, 28 * s);
       c.box.lineStyle(6 * s, 0x2d3047).strokeRoundedRect(x * s, y * s, width * s, height * s, 28 * s);
-      fitInto(c.pic, c.rect, s, 18);
+      fitInto(c.pic, c.digit ? placeNumeral(c.digit.text, c.digit.n, ctx.digits, c.rect, s) : c.rect, s, 18);
       c.zone.setPosition((x + width / 2) * s, (y + height / 2) * s).setSize(width * s, height * s);
       c.zone.input?.hitArea.setTo(0, 0, width * s, height * s);
       const dim = dimOthers && c.id !== answer;
       c.box.setAlpha(dim ? 0.45 : 1);
       c.pic.setAlpha(dim ? 0.45 : 1);
+      c.digit?.text.setAlpha(dim ? 0.45 : 1);
     });
   };
 

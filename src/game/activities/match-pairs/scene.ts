@@ -3,7 +3,7 @@ import type { ActivityDefinition } from '@content/schema';
 import type { ActivitySnapshot } from '@game/core/engine/ActivityController';
 import { clearOfCorners, pairsLayout } from '@game/core/layout';
 import type { ActivitySceneAdapter, AdapterContext } from '@game/core/sceneTypes';
-import { centreOf, drawCard, fitInto, placeZone, sparkle, SUN, textureFor, wiggle } from '@game/core/scenes/common';
+import { centreOf, drawCard, fitInto, numberOf, numeralText, placeNumeral, placeZone, sparkle, SUN, textureFor, wiggle } from '@game/core/scenes/common';
 import type { Rect, Viewport } from '@game/core/viewport';
 import { cardId, parseCard, type MatchPairsState } from './logic';
 
@@ -13,6 +13,7 @@ interface Card {
   id: string;
   box: Phaser.GameObjects.Graphics;
   pic: Phaser.GameObjects.Image;
+  digit?: { text: Phaser.GameObjects.Text; n: number };
   zone: Phaser.GameObjects.Zone;
   rect: Rect;
 }
@@ -40,8 +41,9 @@ export function matchPairsScene(scene: Phaser.Scene): ActivitySceneAdapter {
     for (const c of cards.values()) {
       const done = m.matched.includes(parseCard(c.id)!.pairId);
       drawCard(c.box, c.rect, k, { selected: live && m.selected === c.id, alpha: done ? 0.55 : 1, fill: done ? 0xe8f6e9 : undefined });
-      fitInto(c.pic, c.rect, k, 14);
+      fitInto(c.pic, c.digit ? placeNumeral(c.digit.text, c.digit.n, ctx.digits, c.rect, k) : c.rect, k, 14);
       c.pic.setAlpha(done ? 0.75 : 1);
+      c.digit?.text.setAlpha(done ? 0.75 : 1);
       placeZone(c.zone, c.rect, k);
     }
     lines.clear();
@@ -63,10 +65,15 @@ export function matchPairsScene(scene: Phaser.Scene): ActivitySceneAdapter {
         for (const side of ['L', 'R'] as const) {
           const id = cardId(p.id, side);
           const box = scene.add.graphics().setDepth(5);
-          const pic = scene.add.image(0, 0, textureFor(scene, (side === 'L' ? p.left : p.right).asset)).setDepth(6);
+          const sideDef = side === 'L' ? p.left : p.right;
+          const pic = scene.add.image(0, 0, textureFor(scene, sideDef.asset)).setDepth(6);
+          // Numeral cards show their digit; other pictures of a number (a banana group) do not.
+          const n = numberOf(sideDef.vocab);
+          const showDigit = n !== undefined && sideDef.asset.startsWith('numerals/');
+          const digit = showDigit ? { text: numeralText(scene), n } : undefined;
           const zone = scene.add.zone(0, 0, 10, 10).setInteractive({ useHandCursor: true }).setDepth(20);
           zone.on('pointerup', () => ctx.controller.input({ type: 'tap', targetId: id }));
-          cards.set(id, { id, box, pic, zone, rect: { x: 0, y: 0, width: 0, height: 0 } });
+          cards.set(id, { id, box, pic, digit, zone, rect: { x: 0, y: 0, width: 0, height: 0 } });
         }
       }
     },

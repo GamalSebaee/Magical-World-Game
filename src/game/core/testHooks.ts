@@ -42,7 +42,9 @@ export function installTestHooks(deps: HookDeps) {
     activity: () => activityProbe?.() as
       | {
           activityId: string;
+          mechanic: string;
           phase: string;
+          hintTarget?: string;
           paused: boolean;
           hintLevel: number;
           notYetCount: number;

@@ -30,7 +30,7 @@ export const listenChooseLogic: MechanicLogic<Def, ListenChooseState> = {
     const choice = round.choices.find((c) => c.id === input.targetId);
     if (!choice) return null;
     const answer = round.choices.find((c) => c.id === round.answer)!;
-    const skill = ctx.skillForVocab(answer.vocab);
+    const skill = round.skill && def.skills.includes(round.skill) ? round.skill : ctx.skillForVocab(answer.vocab);
 
     if (choice.id === round.answer) {
       const next = m.round + 1;

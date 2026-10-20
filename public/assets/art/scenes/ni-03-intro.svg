@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <clipPath id="r"><rect width="800" height="500" rx="40"/></clipPath>
+  <g clip-path="url(#r)"><svg x="0" y="0" width="800" height="500" viewBox="0 0 1600 1000">
+  <defs><linearGradient id="sky_e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe8ff"/><stop offset="1" stop-color="#e8f7ff"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#sky_e)"/>
+  <circle cx="1350" cy="160" r="80" fill="#ffe08a"/>
+  <g stroke="#2d3047" stroke-width="5"><path d="M200 640 Q230 400 260 280" fill="none" stroke-width="30" stroke="#8d5a3b"/><path d="M1380 640 Q1350 400 1320 280" fill="none" stroke-width="30" stroke="#8d5a3b"/></g>
+  <g fill="#5dbb63"><ellipse cx="260" cy="270" rx="140" ry="40"/><ellipse cx="1320" cy="270" rx="140" ry="40"/></g>
+  <path d="M0 620 Q400 520 800 600 T1600 580 L1600 1000 L0 1000 Z" fill="#f3dfa8"/>
+  <path d="M0 720 Q500 660 900 720 T1600 700 L1600 1000 L0 1000 Z" fill="#ead09a"/>
+</svg></g>
+  <svg x="70" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <rect x="8" y="8" width="184" height="184" rx="30" fill="#fff8e1" stroke="#2d3047" stroke-width="5"/>
+  <path d="M78 80 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+  <svg x="300" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <rect x="8" y="8" width="184" height="184" rx="30" fill="#fff8e1" stroke="#2d3047" stroke-width="5"/>
+  <path d="M48 50 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M108 50 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M48 110 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M108 110 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+  <svg x="530" y="220" width="200" height="200" viewBox="0 0 200 200">
+  <rect x="8" y="8" width="184" height="184" rx="30" fill="#fff8e1" stroke="#2d3047" stroke-width="5"/>
+  <path d="M30 80 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M78 80 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M126 80 q14 30 44 30 q-8 10 -24 8 q-26 -6 -28 -36 Z" fill="#ffe08a" stroke="#2d3047" stroke-width="4" stroke-linejoin="round"/>
+</svg>
+</svg>

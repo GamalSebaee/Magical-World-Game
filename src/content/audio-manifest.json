@@ -479,6 +479,1284 @@
       }
     },
     {
+      "id": "af02.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a1.hint1.mp3",
+        "en": "assets/audio/en/af02.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الجحر الأول!",
+        "en": "Let's tap the burrow first!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1881
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a1.hint2.mp3",
+        "en": "assets/audio/en/af02.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "شوف الجحر بيتحرك!",
+        "en": "Look, the burrow is wiggling!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1959
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a1.instruction.mp3",
+        "en": "assets/audio/en/af02.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "مين في الجحر؟ وإيه تحت التراب؟ يلا نلمس!",
+        "en": "Who's in the burrow? What's under the soil? Let's tap!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3030,
+        "en": 3344
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a2.hint1.mp3",
+        "en": "assets/audio/en/af02.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسك جزرة ونزحلقها للسلة.",
+        "en": "Hold a carrot and slide it to the basket."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1907,
+        "en": 2926
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a2.hint2.mp3",
+        "en": "assets/audio/en/af02.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "السلة هنا!",
+        "en": "The basket is here!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1567
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a2.instruction.mp3",
+        "en": "assets/audio/en/af02.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نِدّي الأرنب جزرتين! نحطهم في السلة.",
+        "en": "Let's give Rabbit 2 carrots! Put them in the basket."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3030,
+        "en": 3239
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a3.hint1.mp3",
+        "en": "assets/audio/en/af02.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس جزرة ونعدّ: واحد!",
+        "en": "Tap a carrot and count: one!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1698,
+        "en": 2299
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.a3.instruction.mp3",
+        "en": "assets/audio/en/af02.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "الأرنب لسه جعان! نلمس ٣ جزرات.",
+        "en": "Rabbit is still hungry! Let's tap 3 carrots."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2299,
+        "en": 3135
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.story.intro.mp3",
+        "en": "assets/audio/en/af02.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "الأرنب جعان! يلا نأكّله جزر.",
+        "en": "Rabbit is hungry! Let's give Rabbit some carrots."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2142,
+        "en": 3056
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af02.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af02.story.outro.mp3",
+        "en": "assets/audio/en/af02.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "الأرنب شبعان! شكراً!",
+        "en": "Rabbit is full! Thank you!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2011
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.hint1.mp3",
+        "en": "assets/audio/en/af03.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع تاني؟",
+        "en": "Shall we listen again?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1724
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.hint2.mp3",
+        "en": "assets/audio/en/af03.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "البقرة بتقول مووو!",
+        "en": "The cow says moo!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1463
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.instruction.mp3",
+        "en": "assets/audio/en/af03.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع! مين بيقول كده؟",
+        "en": "Let's listen! Who says that?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2090
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.who_moo",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.who_moo.mp3",
+        "en": "assets/audio/en/af03.a1.who_moo.mp3"
+      },
+      "transcript": {
+        "ar": "مين بيقول مووو؟",
+        "en": "Who says moo?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1176,
+        "en": 1254
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.who_quack",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.who_quack.mp3",
+        "en": "assets/audio/en/af03.a1.who_quack.mp3"
+      },
+      "transcript": {
+        "ar": "مين بيقول كواك كواك؟",
+        "en": "Who says quack quack?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1567
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a1.who_woof",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a1.who_woof.mp3",
+        "en": "assets/audio/en/af03.a1.who_woof.mp3"
+      },
+      "transcript": {
+        "ar": "مين بيقول هو هو؟",
+        "en": "Who says woof woof?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1541
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a2.hint1.mp3",
+        "en": "assets/audio/en/af03.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كارت الصوت ونسمع.",
+        "en": "Tap a sound card and listen."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1698,
+        "en": 1985
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a2.instruction.mp3",
+        "en": "assets/audio/en/af03.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "كل حيوان وصوته! نلمس الحيوان وبعدين صوته.",
+        "en": "Each animal and its sound! Tap an animal, then its sound."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3109,
+        "en": 3918
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a3.hint1.mp3",
+        "en": "assets/audio/en/af03.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع نونو الأول.",
+        "en": "Listen to Nono first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a3.hint2.mp3",
+        "en": "assets/audio/en/af03.a3.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الميكروفون الكبير.",
+        "en": "Tap the big microphone."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 1802
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.a3.instruction.mp3",
+        "en": "assets/audio/en/af03.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نقول «بقرة» سوا!",
+        "en": "Let's say 'cow' together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.story.intro.mp3",
+        "en": "assets/audio/en/af03.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "كورال الغابة لخبط أصواته! يلا نساعد كل حيوان يلاقي صوته.",
+        "en": "The forest choir mixed up its voices! Let's help each animal find its sound."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 4232,
+        "en": 4650
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af03.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af03.story.outro.mp3",
+        "en": "assets/audio/en/af03.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "الكورال بيغني تاني! برافو!",
+        "en": "The choir is singing again! Hooray!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1985,
+        "en": 2403
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a1.hint1.mp3",
+        "en": "assets/audio/en/af04.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نبدأ بالشجرة!",
+        "en": "Let's start with the tree!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1019,
+        "en": 2011
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a1.hint2.mp3",
+        "en": "assets/audio/en/af04.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "شوف! حاجة بتتحرك.",
+        "en": "Look! Something is moving."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1933
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a1.instruction.mp3",
+        "en": "assets/audio/en/af04.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نمشي ورا آثار الرجلين! مين مستخبي؟",
+        "en": "Let's follow the footprints! Who's hiding?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2586,
+        "en": 2847
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a2.hint1.mp3",
+        "en": "assets/audio/en/af04.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع تاني؟",
+        "en": "Shall we listen again?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1724
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a2.hint2.mp3",
+        "en": "assets/audio/en/af04.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الكلب بيقول هو هو!",
+        "en": "The dog says woof woof!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1593
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a2.instruction.mp3",
+        "en": "assets/audio/en/af04.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع كويس، وبعدين نلمس.",
+        "en": "Listen carefully, then tap."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 2090
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a2.where_rabbit",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a2.where_rabbit.mp3",
+        "en": "assets/audio/en/af04.a2.where_rabbit.mp3"
+      },
+      "transcript": {
+        "ar": "فين الأرنب؟",
+        "en": "Where's the rabbit?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1071
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a2.who_woof",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a2.who_woof.mp3",
+        "en": "assets/audio/en/af04.a2.who_woof.mp3"
+      },
+      "transcript": {
+        "ar": "مين بيقول هو هو؟",
+        "en": "Who says woof woof?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1541
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a3.hint1.mp3",
+        "en": "assets/audio/en/af04.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل حتة ونعدّ.",
+        "en": "Tap each piece and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 2011
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a3.instruction.mp3",
+        "en": "assets/audio/en/af04.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "حتت الخريطة في العش! نعدّها سوا.",
+        "en": "The map pieces are in the nest! Let's count them."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2429,
+        "en": 3030
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a4.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a4.hint1.mp3",
+        "en": "assets/audio/en/af04.a4.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع نونو الأول.",
+        "en": "Listen to Nono first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a4.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a4.hint2.mp3",
+        "en": "assets/audio/en/af04.a4.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الميكروفون الكبير.",
+        "en": "Tap the big microphone."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 1802
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.a4.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.a4.instruction.mp3",
+        "en": "assets/audio/en/af04.a4.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نقول «كلب» عشان نشكر الكلب!",
+        "en": "Let's say 'dog' to thank Dog!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2351,
+        "en": 2508
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.story.intro.mp3",
+        "en": "assets/audio/en/af04.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "خريطة نونو طارت! يلا نمشي في الغابة والحيوانات تساعدنا نلاقيها.",
+        "en": "Nono's map blew away! Let's walk through the forest; the animals will help us find it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 4545,
+        "en": 5198
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.story.outro.mp3",
+        "en": "assets/audio/en/af04.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "لقينا الخريطة! شكراً يا أصحابنا!",
+        "en": "We found the map! Thank you, friends!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2429,
+        "en": 2795
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "af04.where_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/af04.where_mixed.mp3"
+      },
+      "transcript": {
+        "ar": "فين الـ…"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
       "id": "avatar.bottom",
       "kind": "voice",
       "files": {
@@ -675,6 +1953,2982 @@
         "en": 836
       },
       "pack": "pack.common"
+    },
+    {
+      "id": "ct01.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a1.hint1.mp3",
+        "en": "assets/audio/en/ct01.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس التفاحة!",
+        "en": "Let's tap the apple!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1019,
+        "en": 1802
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a1.hint2.mp3",
+        "en": "assets/audio/en/ct01.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الشمس مستنية!",
+        "en": "The sun is waiting!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1019,
+        "en": 1437
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a1.instruction.mp3",
+        "en": "assets/audio/en/ct01.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس التفاحة والبحر والشمس عشان نرجّع ألوانهم!",
+        "en": "Tap the apple, the sea and the sun to bring their colours back!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3500,
+        "en": 3631
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.hint1.mp3",
+        "en": "assets/audio/en/ct01.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع تاني؟",
+        "en": "Shall we listen again?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1724
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.hint2.mp3",
+        "en": "assets/audio/en/ct01.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نبص على الألوان كويس.",
+        "en": "Let's look at the colours carefully."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 2351
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.instruction.mp3",
+        "en": "assets/audio/en/ct01.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع اللون، وبعدين نلمس.",
+        "en": "Listen for the colour, then tap."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1829,
+        "en": 2299
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.where_blue",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.where_blue.mp3",
+        "en": "assets/audio/en/ct01.a2.where_blue.mp3"
+      },
+      "transcript": {
+        "ar": "فين الحاجة الزرقا؟",
+        "en": "Where's something blue?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1646
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.where_red",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.where_red.mp3",
+        "en": "assets/audio/en/ct01.a2.where_red.mp3"
+      },
+      "transcript": {
+        "ar": "فين الحاجة الحمرا؟",
+        "en": "Where's something red?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1384
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.a2.where_yellow",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.a2.where_yellow.mp3",
+        "en": "assets/audio/en/ct01.a2.where_yellow.mp3"
+      },
+      "transcript": {
+        "ar": "فين الحاجة الصفرا؟",
+        "en": "Where's something yellow?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1593
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.story.intro.mp3",
+        "en": "assets/audio/en/ct01.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "ألوان الرسّام راحت! لما نلمس الحاجات، الألوان بترجع.",
+        "en": "The painter's colours are gone! When we touch things, the colours come back."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3944,
+        "en": 4467
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.story.outro.mp3",
+        "en": "assets/audio/en/ct01.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "المدينة رجعت ملونة! برافو!",
+        "en": "The town is colourful again! Hooray!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1985,
+        "en": 2534
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct01.where_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct01.where_mixed.mp3"
+      },
+      "transcript": {
+        "ar": "فين الحاجة الـ…"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 1176
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a1.hint1.mp3",
+        "en": "assets/audio/en/ct02.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسك لعبة ونزحلقها.",
+        "en": "Hold a toy and slide it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1463,
+        "en": 2064
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a1.hint2.mp3",
+        "en": "assets/audio/en/ct02.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الأحمر مع الأحمر!",
+        "en": "Red goes with red!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1332
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a1.instruction.mp3",
+        "en": "assets/audio/en/ct02.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "كل لعبة في الصندوق اللي بلونها!",
+        "en": "Each toy goes in the box of its colour!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2351,
+        "en": 2717
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a2.hint1.mp3",
+        "en": "assets/audio/en/ct02.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نبص على اللون الأول.",
+        "en": "Look at the colour first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1855
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a2.hint2.mp3",
+        "en": "assets/audio/en/ct02.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الأزرق مع الأزرق!",
+        "en": "Blue goes with blue!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1541
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.a2.instruction.mp3",
+        "en": "assets/audio/en/ct02.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "لعب أكتر! كل واحدة في صندوق لونها.",
+        "en": "More toys! Each one in the box of its colour."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2586,
+        "en": 3213
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.story.intro.mp3",
+        "en": "assets/audio/en/ct02.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "لعب المحل وقعت من الصناديق! يلا نرجّعها.",
+        "en": "The toy shop's toys fell out of their boxes! Let's put them back."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3030,
+        "en": 3683
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct02.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct02.story.outro.mp3",
+        "en": "assets/audio/en/ct02.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "كل لعبة في صندوقها! شكراً!",
+        "en": "Every toy is in its box! Thank you!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1985,
+        "en": 2847
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.hint1.mp3",
+        "en": "assets/audio/en/ct03.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع تاني؟",
+        "en": "Shall we listen again?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1724
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.hint2.mp3",
+        "en": "assets/audio/en/ct03.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الدايرة مدوّرة زي الكورة!",
+        "en": "A circle is round like a ball!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1907,
+        "en": 2377
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.instruction.mp3",
+        "en": "assets/audio/en/ct03.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع اسم الشكل، وبعدين نلمسه.",
+        "en": "Listen to the shape's name, then tap it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2220,
+        "en": 2743
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.where_circle",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.where_circle.mp3",
+        "en": "assets/audio/en/ct03.a1.where_circle.mp3"
+      },
+      "transcript": {
+        "ar": "فين الدايرة؟",
+        "en": "Where's the circle?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1437
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.where_square",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.where_square.mp3",
+        "en": "assets/audio/en/ct03.a1.where_square.mp3"
+      },
+      "transcript": {
+        "ar": "فين المربع؟",
+        "en": "Where's the square?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1202
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a1.where_triangle",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a1.where_triangle.mp3",
+        "en": "assets/audio/en/ct03.a1.where_triangle.mp3"
+      },
+      "transcript": {
+        "ar": "فين المثلث؟",
+        "en": "Where's the triangle?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1593
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a2.hint1.mp3",
+        "en": "assets/audio/en/ct03.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس شكل، وبعدين الشباك اللي زيه.",
+        "en": "Tap a shape, then the window that looks like it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2508,
+        "en": 2978
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a2.instruction.mp3",
+        "en": "assets/audio/en/ct03.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "كل شكل وشباكه! نفس الشكل ونفس اللون.",
+        "en": "Each shape and its window! Same shape, same colour."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2743,
+        "en": 3579
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a3.hint1.mp3",
+        "en": "assets/audio/en/ct03.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع نونو الأول.",
+        "en": "Listen to Nono first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a3.hint2.mp3",
+        "en": "assets/audio/en/ct03.a3.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الميكروفون الكبير.",
+        "en": "Tap the big microphone."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 1802
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.a3.instruction.mp3",
+        "en": "assets/audio/en/ct03.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نقول «دايرة» سوا!",
+        "en": "Let's say 'circle' together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 2194
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.story.intro.mp3",
+        "en": "assets/audio/en/ct03.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "شبابيك المدينة على شكل دواير ومربعات ومثلثات! يلا نساعد الأشكال تلاقي شبابيكها.",
+        "en": "The town's windows are circles, squares and triangles! Let's help the shapes find their windows."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 4545,
+        "en": 6060
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.story.outro.mp3",
+        "en": "assets/audio/en/ct03.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "كل شكل لقى شباكه! برافو!",
+        "en": "Every shape found its window! Hooray!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1829,
+        "en": 2900
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct03.where_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct03.where_mixed.mp3"
+      },
+      "transcript": {
+        "ar": "فين الـ…"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a1.hint1.mp3",
+        "en": "assets/audio/en/ct04.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نبدأ بالسحابة الأولى!",
+        "en": "Let's start with the first cloud!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 2247
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a1.hint2.mp3",
+        "en": "assets/audio/en/ct04.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "السحابة دي بتتحرك!",
+        "en": "This cloud is wiggling!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1541
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a1.instruction.mp3",
+        "en": "assets/audio/en/ct04.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس السحاب واحدة واحدة عشان نطلّع النقط الملونة!",
+        "en": "Tap the clouds one by one to let the colour drops out!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3709,
+        "en": 3553
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a2.hint1.mp3",
+        "en": "assets/audio/en/ct04.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسك نقطة ونزحلقها.",
+        "en": "Hold a drop and slide it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1463,
+        "en": 2194
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a2.hint2.mp3",
+        "en": "assets/audio/en/ct04.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الأخضر مع الأخضر!",
+        "en": "Green goes with green!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1437
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a2.instruction.mp3",
+        "en": "assets/audio/en/ct04.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "كل نقطة على خط لونها في قوس قزح!",
+        "en": "Each drop goes on its colour in the rainbow!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2429,
+        "en": 2978
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a3.hint1.mp3",
+        "en": "assets/audio/en/ct04.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع نونو الأول.",
+        "en": "Listen to Nono first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a3.hint2.mp3",
+        "en": "assets/audio/en/ct04.a3.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الميكروفون الكبير.",
+        "en": "Tap the big microphone."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 1802
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.a3.instruction.mp3",
+        "en": "assets/audio/en/ct04.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نقول «أحمر» عشان قوس قزح ينوّر!",
+        "en": "Let's say 'red' to light up the rainbow!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2664,
+        "en": 2821
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.story.intro.mp3",
+        "en": "assets/audio/en/ct04.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "العاصفة مسحت قوس قزح! يلا نرجّع ألوانه.",
+        "en": "A storm washed the rainbow away! Let's bring its colours back."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2952,
+        "en": 3866
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ct04.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ct04.story.outro.mp3",
+        "en": "assets/audio/en/ct04.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "قوس قزح رجع! شوف الألوان!",
+        "en": "The rainbow is back! Look at the colours!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1907,
+        "en": 2586
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "ni01.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a1.hint1.mp3",
+        "en": "assets/audio/en/ni01.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ.",
+        "en": "Tap each one and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a1.instruction.mp3",
+        "en": "assets/audio/en/ni01.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ الصدف سوا!",
+        "en": "Let's count the shells together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1176,
+        "en": 1985
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a2.hint1.mp3",
+        "en": "assets/audio/en/ni01.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ.",
+        "en": "Tap each one and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a2.instruction.mp3",
+        "en": "assets/audio/en/ni01.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "صدف أكتر! نعدّ تاني.",
+        "en": "More shells! Let's count again."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2116
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a3.hint1.mp3",
+        "en": "assets/audio/en/ni01.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع تاني؟",
+        "en": "Shall we listen again?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1724
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a3.hint2.mp3",
+        "en": "assets/audio/en/ni01.a3.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ النقط!",
+        "en": "Let's count the dots!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1515
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a3.instruction.mp3",
+        "en": "assets/audio/en/ni01.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع الرقم، وبعدين نلمسه.",
+        "en": "Listen to the number, then tap it."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1907,
+        "en": 2456
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a3.where_1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a3.where_1.mp3",
+        "en": "assets/audio/en/ni01.a3.where_1.mp3"
+      },
+      "transcript": {
+        "ar": "فين رقم واحد؟",
+        "en": "Where's number one?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1019,
+        "en": 1411
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a3.where_3",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a3.where_3.mp3",
+        "en": "assets/audio/en/ni01.a3.where_3.mp3"
+      },
+      "transcript": {
+        "ar": "فين رقم تلاتة؟",
+        "en": "Where's number three?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1097,
+        "en": 1620
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a4.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a4.hint1.mp3",
+        "en": "assets/audio/en/ni01.a4.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نسمع نونو الأول.",
+        "en": "Listen to Nono first."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a4.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a4.hint2.mp3",
+        "en": "assets/audio/en/ni01.a4.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الميكروفون الكبير.",
+        "en": "Tap the big microphone."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 1802
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.a4.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.a4.instruction.mp3",
+        "en": "assets/audio/en/ni01.a4.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نقول «تلاتة» سوا!",
+        "en": "Let's say 'three' together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 1985
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.story.intro.mp3",
+        "en": "assets/audio/en/ni01.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "الموج جاب صدف على الشط! يلا نعدّه للكابوريا.",
+        "en": "The waves brought shells to the beach! Let's count them for Crab."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3344,
+        "en": 3683
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.story.outro.mp3",
+        "en": "assets/audio/en/ni01.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "الكابوريا مبسوطة! عدّينا كل الصدف.",
+        "en": "Crab is happy! We counted all the shells."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2586,
+        "en": 3265
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni01.where_mixed",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni01.where_mixed.mp3"
+      },
+      "transcript": {
+        "ar": "فين رقم…"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a1.hint1.mp3",
+        "en": "assets/audio/en/ni02.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ.",
+        "en": "Tap each one and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a1.instruction.mp3",
+        "en": "assets/audio/en/ni02.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ السمك!",
+        "en": "Let's count the fish!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1567
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a2.hint1.mp3",
+        "en": "assets/audio/en/ni02.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسك سمكة ونزحلقها للمرجان.",
+        "en": "Hold a fish and slide it to the coral."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2064,
+        "en": 2900
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a2.hint2.mp3",
+        "en": "assets/audio/en/ni02.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "البيت هنا!",
+        "en": "Home is here!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1228
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a2.instruction.mp3",
+        "en": "assets/audio/en/ni02.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "ندخّل ٥ سمكات البيت!",
+        "en": "Let's put 5 fish in their home!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2168
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a3.hint1.mp3",
+        "en": "assets/audio/en/ni02.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ.",
+        "en": "Tap each one and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.a3.instruction.mp3",
+        "en": "assets/audio/en/ni02.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ نجوم البحر!",
+        "en": "Let's count the starfish!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1855
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.story.intro.mp3",
+        "en": "assets/audio/en/ni02.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "السمك في البحيرة عايز يروّح بيته في المرجان!",
+        "en": "The fish in the lagoon want to go home to their coral!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3344,
+        "en": 3109
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni02.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni02.story.outro.mp3",
+        "en": "assets/audio/en/ni02.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "كل السمك في البيت! تصبحوا على خير يا سمك!",
+        "en": "All the fish are home! Good night, fish!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3109,
+        "en": 2847
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a1.hint1.mp3",
+        "en": "assets/audio/en/ni03.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ الموز في كل ناحية.",
+        "en": "Count the bananas on each side."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 2220
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a1.hint2.mp3",
+        "en": "assets/audio/en/ni03.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الأكتر يعني عدد أكبر!",
+        "en": "More means a bigger number!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 1985
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a1.instruction.mp3",
+        "en": "assets/audio/en/ni03.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نبص على الموز، ونلاقي مين عنده أكتر.",
+        "en": "Look at the bananas and find who has more."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2743,
+        "en": 2638
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a1.who_more",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a1.who_more.mp3",
+        "en": "assets/audio/en/ni03.a1.who_more.mp3"
+      },
+      "transcript": {
+        "ar": "مين عنده موز أكتر؟",
+        "en": "Who has more bananas?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1384,
+        "en": 1724
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a2.hint1.mp3",
+        "en": "assets/audio/en/ni03.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ الموز في كل ناحية.",
+        "en": "Count the bananas on each side."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 2220
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a2.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a2.hint2.mp3",
+        "en": "assets/audio/en/ni03.a2.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الأقل يعني عدد أصغر!",
+        "en": "Fewer means a smaller number!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2247
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a2.instruction.mp3",
+        "en": "assets/audio/en/ni03.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "ودلوقتي: مين عنده أقل؟",
+        "en": "And now: who has fewer?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1698,
+        "en": 2011
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a2.who_fewer",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a2.who_fewer.mp3",
+        "en": "assets/audio/en/ni03.a2.who_fewer.mp3"
+      },
+      "transcript": {
+        "ar": "مين عنده موز أقل؟",
+        "en": "Who has fewer bananas?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1306,
+        "en": 1985
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a3.hint1.mp3",
+        "en": "assets/audio/en/ni03.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ الموز، وبعدين نلاقي الرقم.",
+        "en": "Count the bananas, then find the number."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2351,
+        "en": 2717
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.a3.instruction.mp3",
+        "en": "assets/audio/en/ni03.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "كل مجموعة موز ورقمها!",
+        "en": "Each bunch of bananas and its number!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1620,
+        "en": 2456
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.story.intro.mp3",
+        "en": "assets/audio/en/ni03.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "القردين بيقسموا الموز! يلا نشوف مين عنده أكتر.",
+        "en": "Two monkeys are sharing bananas! Let's see who has more."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3500,
+        "en": 3657
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni03.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni03.story.outro.mp3",
+        "en": "assets/audio/en/ni03.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "القردين مبسوطين! برافو!",
+        "en": "The monkeys are happy! Hooray!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 2456
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a1.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a1.hint1.mp3",
+        "en": "assets/audio/en/ni04.a1.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نبدأ برقم واحد!",
+        "en": "Let's start with number one!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1176,
+        "en": 2064
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a1.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a1.hint2.mp3",
+        "en": "assets/audio/en/ni04.a1.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ النقط على الصخرة.",
+        "en": "Count the dots on the rock."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1698,
+        "en": 1724
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a1.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a1.instruction.mp3",
+        "en": "assets/audio/en/ni04.a1.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس الصخور بالترتيب: واحد، اتنين، تلاتة!",
+        "en": "Tap the rocks in order: one, two, three!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3109,
+        "en": 3553
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a2.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a2.hint1.mp3",
+        "en": "assets/audio/en/ni04.a2.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ.",
+        "en": "Tap each one and count."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 1959
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a2.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a2.instruction.mp3",
+        "en": "assets/audio/en/ni04.a2.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نعدّ الدهب!",
+        "en": "Let's count the gold coins!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 2011
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a3.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a3.hint1.mp3",
+        "en": "assets/audio/en/ni04.a3.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسك جوهرة ونزحلقها للصندوق.",
+        "en": "Hold a jewel and slide it to the chest."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2142,
+        "en": 2847
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a3.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a3.hint2.mp3",
+        "en": "assets/audio/en/ni04.a3.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "الصندوق هنا!",
+        "en": "The chest is here!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1463
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.a3.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.a3.instruction.mp3",
+        "en": "assets/audio/en/ni04.a3.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "نحط ٥ جواهر في الصندوق عشان يتفتح!",
+        "en": "Put 5 jewels in the chest to open it!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2586,
+        "en": 2403
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.story.intro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.story.intro.mp3",
+        "en": "assets/audio/en/ni04.story.intro.mp3"
+      },
+      "transcript": {
+        "ar": "الببغاء القرصان خبّى صندوق كنز! يلا نمشي ورا الأرقام.",
+        "en": "Pirate Parrot hid a treasure chest! Let's follow the numbers."
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 3997,
+        "en": 3657
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "ni04.story.outro",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/ni04.story.outro.mp3",
+        "en": "assets/audio/en/ni04.story.outro.mp3"
+      },
+      "transcript": {
+        "ar": "فتحنا الكنز! إحنا شطار!",
+        "en": "We opened the treasure! Well done, us!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1750,
+        "en": 2717
+      },
+      "pack": "pack.number-island"
     },
     {
       "id": "nono.break",
@@ -1590,6 +5844,28 @@
       "pack": "pack.common"
     },
     {
+      "id": "sfx.animal_cow",
+      "kind": "sfx",
+      "files": {
+        "common": "assets/audio/common/sfx.animal_cow.mp3"
+      },
+      "transcript": {},
+      "source": "placeholder:synth",
+      "licence": "project-generated",
+      "review": {
+        "common": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Synthesized SFX."
+        }
+      },
+      "durationMs": {
+        "common": 1149
+      },
+      "pack": "pack.common"
+    },
+    {
       "id": "sfx.animal_dog",
       "kind": "sfx",
       "files": {
@@ -1608,6 +5884,28 @@
       },
       "durationMs": {
         "common": 601
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "sfx.animal_duck",
+      "kind": "sfx",
+      "files": {
+        "common": "assets/audio/common/sfx.animal_duck.mp3"
+      },
+      "transcript": {},
+      "source": "placeholder:synth",
+      "licence": "project-generated",
+      "review": {
+        "common": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Synthesized SFX."
+        }
+      },
+      "durationMs": {
+        "common": 496
       },
       "pack": "pack.common"
     },
@@ -2074,6 +6372,402 @@
       }
     },
     {
+      "id": "sticker.af02.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.af02.name.mp3",
+        "en": "assets/audio/en/sticker.af02.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الأرنب",
+        "en": "Rabbit sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1306
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "sticker.af03.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.af03.name.mp3",
+        "en": "assets/audio/en/sticker.af03.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الكورال",
+        "en": "Choir sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1384
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "sticker.af04.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.af04.name.mp3",
+        "en": "assets/audio/en/sticker.af04.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الخريطة",
+        "en": "Map sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1254
+      },
+      "pack": "pack.animal-forest"
+    },
+    {
+      "id": "sticker.ct01.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ct01.name.mp3",
+        "en": "assets/audio/en/sticker.ct01.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الألوان",
+        "en": "Paint sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1306
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "sticker.ct02.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ct02.name.mp3",
+        "en": "assets/audio/en/sticker.ct02.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق اللعب",
+        "en": "Toys sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1306
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "sticker.ct03.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ct03.name.mp3",
+        "en": "assets/audio/en/sticker.ct03.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الأشكال",
+        "en": "Shapes sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1463
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "sticker.ct04.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ct04.name.mp3",
+        "en": "assets/audio/en/sticker.ct04.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق قوس قزح",
+        "en": "Rainbow sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 940,
+        "en": 1515
+      },
+      "pack": "pack.color-town"
+    },
+    {
+      "id": "sticker.ni01.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ni01.name.mp3",
+        "en": "assets/audio/en/sticker.ni01.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الصدف",
+        "en": "Shells sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1411
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "sticker.ni02.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ni02.name.mp3",
+        "en": "assets/audio/en/sticker.ni02.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق السمك",
+        "en": "Fish sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1306
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "sticker.ni03.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ni03.name.mp3",
+        "en": "assets/audio/en/sticker.ni03.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق القرود",
+        "en": "Monkeys sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 862,
+        "en": 1489
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "sticker.ni04.name",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/sticker.ni04.name.mp3",
+        "en": "assets/audio/en/sticker.ni04.name.mp3"
+      },
+      "transcript": {
+        "ar": "ملصق الكنز",
+        "en": "Treasure sticker"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 784,
+        "en": 1306
+      },
+      "pack": "pack.number-island"
+    },
+    {
+      "id": "word.animals.bird",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.bird.mp3",
+        "en": "assets/audio/en/word.animals.bird.mp3"
+      },
+      "transcript": {
+        "ar": "عصفورة",
+        "en": "bird"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 627
+      },
+      "pack": "pack.common"
+    },
+    {
       "id": "word.animals.cat",
       "kind": "voice",
       "files": {
@@ -2107,6 +6801,39 @@
       }
     },
     {
+      "id": "word.animals.cow",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.cow.mp3",
+        "en": "assets/audio/en/word.animals.cow.mp3"
+      },
+      "transcript": {
+        "ar": "بقرة",
+        "en": "cow"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 758
+      },
+      "pack": "pack.common"
+    },
+    {
       "id": "word.animals.dog",
       "kind": "voice",
       "files": {
@@ -2138,6 +6865,39 @@
         "ar": 627,
         "en": 888
       }
+    },
+    {
+      "id": "word.animals.duck",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.duck.mp3",
+        "en": "assets/audio/en/word.animals.duck.mp3"
+      },
+      "transcript": {
+        "ar": "بطة",
+        "en": "duck"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 784
+      },
+      "pack": "pack.common"
     },
     {
       "id": "word.animals.rabbit",
@@ -2202,6 +6962,39 @@
       "durationMs": {
         "ar": 627,
         "en": 967
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.colors.green",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.colors.green.mp3",
+        "en": "assets/audio/en/word.colors.green.mp3"
+      },
+      "transcript": {
+        "ar": "أخضر",
+        "en": "green"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 784
       },
       "pack": "pack.common"
     },
@@ -2499,6 +7292,105 @@
       "durationMs": {
         "ar": 627,
         "en": 810
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.shapes.circle",
+      "kind": "voice",
+      "files": {
+        "en": "assets/audio/en/word.shapes.circle.mp3",
+        "ar": "assets/audio/ar/word.shapes.circle.mp3"
+      },
+      "transcript": {
+        "ar": "دايرة",
+        "en": "circle"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        },
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 1019
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.shapes.square",
+      "kind": "voice",
+      "files": {
+        "en": "assets/audio/en/word.shapes.square.mp3",
+        "ar": "assets/audio/ar/word.shapes.square.mp3"
+      },
+      "transcript": {
+        "ar": "مربع",
+        "en": "square"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        },
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 836
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.shapes.triangle",
+      "kind": "voice",
+      "files": {
+        "en": "assets/audio/en/word.shapes.triangle.mp3",
+        "ar": "assets/audio/ar/word.shapes.triangle.mp3"
+      },
+      "transcript": {
+        "ar": "مثلث",
+        "en": "triangle"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        },
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 1228
       },
       "pack": "pack.common"
     },

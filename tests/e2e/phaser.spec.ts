@@ -2,11 +2,12 @@ import { expect, test } from '@playwright/test';
 import { expectObjectsInViewport, guardPage, setupChild, sceneObjects, waitForObjects } from './helpers';
 
 test.describe('Phaser host lifecycle (02 §4) on the world map', () => {
-  test('map shows only playable worlds, inside the viewport, with large hotspots', async ({ page }) => {
+  test('map shows the playable worlds, inside the viewport, with large hotspots', async ({ page }) => {
     const guard = guardPage(page);
     await setupChild(page);
     await expect(page.locator('[data-testid="game-host"] canvas')).toHaveCount(1);
-    expect((await sceneObjects(page)).map((o) => o.id)).toEqual(['animal-forest']);
+    await waitForObjects(page, 3);
+    expect((await sceneObjects(page)).map((o) => o.id).sort()).toEqual(['animal-forest', 'color-town', 'number-island']);
     await expectObjectsInViewport(page);
     guard.assertClean();
   });
@@ -43,10 +44,11 @@ test.describe('Phaser host lifecycle (02 §4) on the world map', () => {
       await page.waitForURL('**/map/');
       await waitForObjects(page, 1);
     }
+    // Re-attaching to the map container finishes just after the route change.
+    await expect.poll(async () => page.evaluate(() => window.__MWG__.phaser().attachCount - window.__MWG__.phaser().detachCount)).toBe(1);
     const stats = await page.evaluate(() => window.__MWG__.phaser());
     expect(stats.gamesCreated).toBe(1);
     expect(stats.canvasesInDocument).toBe(1);
-    expect(stats.attachCount - stats.detachCount).toBe(1);
     guard.assertClean();
   });
 });

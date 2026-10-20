@@ -13,6 +13,13 @@
     { "id": "numbers.2", "written": { "ar": "اتنين", "en": "two" }, "audio": "word.numbers.2", "picture": "numerals/2" },
     { "id": "numbers.3", "written": { "ar": "تلاتة", "en": "three" }, "audio": "word.numbers.3", "picture": "numerals/3" },
     { "id": "numbers.4", "written": { "ar": "أربعة", "en": "four" }, "audio": "word.numbers.4", "picture": "numerals/4" },
-    { "id": "numbers.5", "written": { "ar": "خمسة", "en": "five" }, "audio": "word.numbers.5", "picture": "numerals/5" }
+    { "id": "numbers.5", "written": { "ar": "خمسة", "en": "five" }, "audio": "word.numbers.5", "picture": "numerals/5" },
+    { "id": "animals.cow", "written": { "ar": "بقرة", "en": "cow" }, "audio": "word.animals.cow", "picture": "animals/cow" },
+    { "id": "animals.duck", "written": { "ar": "بطة", "en": "duck" }, "audio": "word.animals.duck", "picture": "animals/duck" },
+    { "id": "animals.bird", "written": { "ar": "عصفورة", "en": "bird" }, "audio": "word.animals.bird", "picture": "animals/bird" },
+    { "id": "colors.green", "written": { "ar": "أخضر", "en": "green" }, "audio": "word.colors.green", "picture": "objects/drop-green" },
+    { "id": "shapes.circle", "written": { "ar": "دايرة", "en": "circle" }, "audio": "word.shapes.circle", "picture": "shapes/circle-red" },
+    { "id": "shapes.square", "written": { "ar": "مربع", "en": "square" }, "audio": "word.shapes.square", "picture": "shapes/square-blue" },
+    { "id": "shapes.triangle", "written": { "ar": "مثلث", "en": "triangle" }, "audio": "word.shapes.triangle", "picture": "shapes/triangle-yellow" }
   ]
 }

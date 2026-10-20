@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ct-03",
+  "worldId": "color-town",
+  "order": 3,
+  "title": {
+    "ar": "الأشكال والألوان",
+    "en": "Shapes & Colors"
+  },
+  "learningGoal": {
+    "ar": "يتعرّف الطفل على «دائرة» و«مربع» و«مثلث» مع ألوانها.",
+    "en": "The child learns 'circle', 'square' and 'triangle' together with colours."
+  },
+  "story": {
+    "illustration": "scenes/ct-03-intro",
+    "intro": {
+      "ar": [
+        "ct03.story.intro"
+      ],
+      "en": [
+        "ct03.story.intro"
+      ],
+      "caption": {
+        "ar": "شبابيك المدينة على شكل دواير ومربعات ومثلثات! يلا نساعد الأشكال تلاقي شبابيكها.",
+        "en": "The town's windows are circles, squares and triangles! Let's help the shapes find their windows."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ct03.story.outro"
+      ],
+      "en": [
+        "ct03.story.outro"
+      ],
+      "caption": {
+        "ar": "كل شكل لقى شباكه! برافو!",
+        "en": "Every shape found its window! Hooray!"
+      }
+    }
+  },
+  "background": "town/bg-street",
+  "skills": [
+    "shape.identify.circle",
+    "shape.identify.square",
+    "shape.identify.triangle",
+    "color.identify.red",
+    "color.identify.blue",
+    "color.identify.yellow",
+    "speak.vocab.circle"
+  ],
+  "activities": [
+    {
+      "id": "ct03.a1",
+      "mechanic": "listen_choose",
+      "skills": [
+        "shape.identify.circle",
+        "shape.identify.square",
+        "shape.identify.triangle"
+      ],
+      "layout": "row-3",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct03.a1.instruction"
+        ],
+        "en": [
+          "ct03.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نسمع اسم الشكل، وبعدين نلمسه.",
+          "en": "Listen to the shape's name, then tap it."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct03.a1.hint1"
+          ],
+          "en": [
+            "ct03.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع تاني؟",
+            "en": "Shall we listen again?"
+          }
+        },
+        {
+          "ar": [
+            "ct03.a1.hint2"
+          ],
+          "en": [
+            "ct03.a1.hint2"
+          ],
+          "caption": {
+            "ar": "الدايرة مدوّرة زي الكورة!",
+            "en": "A circle is round like a ball!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "ct03.a1.where_circle"
+            ],
+            "en": [
+              "ct03.a1.where_circle"
+            ],
+            "caption": {
+              "ar": "فين الدايرة؟",
+              "en": "Where's the circle?",
+              "mixed": "فين الـ <bdi>Circle</bdi>؟"
+            },
+            "mixed": [
+              "ct03.where_mixed:ar",
+              "word.shapes.circle:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "circle",
+              "vocab": "shapes.circle",
+              "asset": "shapes/circle-blue"
+            },
+            {
+              "id": "square",
+              "vocab": "shapes.square",
+              "asset": "shapes/square-blue"
+            },
+            {
+              "id": "triangle",
+              "vocab": "shapes.triangle",
+              "asset": "shapes/triangle-blue"
+            }
+          ],
+          "answer": "circle"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ct03.a1.where_triangle"
+            ],
+            "en": [
+              "ct03.a1.where_triangle"
+            ],
+            "caption": {
+              "ar": "فين المثلث؟",
+              "en": "Where's the triangle?",
+              "mixed": "فين الـ <bdi>Triangle</bdi>؟"
+            },
+            "mixed": [
+              "ct03.where_mixed:ar",
+              "word.shapes.triangle:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "circle",
+              "vocab": "shapes.circle",
+              "asset": "shapes/circle-blue"
+            },
+            {
+              "id": "square",
+              "vocab": "shapes.square",
+              "asset": "shapes/square-blue"
+            },
+            {
+              "id": "triangle",
+              "vocab": "shapes.triangle",
+              "asset": "shapes/triangle-blue"
+            }
+          ],
+          "answer": "triangle"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ct03.a1.where_square"
+            ],
+            "en": [
+              "ct03.a1.where_square"
+            ],
+            "caption": {
+              "ar": "فين المربع؟",
+              "en": "Where's the square?",
+              "mixed": "فين الـ <bdi>Square</bdi>؟"
+            },
+            "mixed": [
+              "ct03.where_mixed:ar",
+              "word.shapes.square:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "circle",
+              "vocab": "shapes.circle",
+              "asset": "shapes/circle-blue"
+            },
+            {
+              "id": "square",
+              "vocab": "shapes.square",
+              "asset": "shapes/square-blue"
+            },
+            {
+              "id": "triangle",
+              "vocab": "shapes.triangle",
+              "asset": "shapes/triangle-blue"
+            }
+          ],
+          "answer": "square"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    },
+    {
+      "id": "ct03.a2",
+      "mechanic": "match_pairs",
+      "skills": [
+        "shape.identify.circle",
+        "shape.identify.square",
+        "shape.identify.triangle"
+      ],
+      "layout": "pairs",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct03.a2.instruction"
+        ],
+        "en": [
+          "ct03.a2.instruction"
+        ],
+        "caption": {
+          "ar": "كل شكل وشباكه! نفس الشكل ونفس اللون.",
+          "en": "Each shape and its window! Same shape, same colour."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct03.a2.hint1"
+          ],
+          "en": [
+            "ct03.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس شكل، وبعدين الشباك اللي زيه.",
+            "en": "Tap a shape, then the window that looks like it."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "presentation": "two-columns",
+      "pairs": [
+        {
+          "id": "circle",
+          "left": {
+            "asset": "shapes/circle-red",
+            "vocab": "shapes.circle"
+          },
+          "right": {
+            "asset": "shapes/outline-circle-red",
+            "vocab": "colors.red"
+          },
+          "skill": "shape.identify.circle"
+        },
+        {
+          "id": "square",
+          "left": {
+            "asset": "shapes/square-blue",
+            "vocab": "shapes.square"
+          },
+          "right": {
+            "asset": "shapes/outline-square-blue",
+            "vocab": "colors.blue"
+          },
+          "skill": "shape.identify.square"
+        },
+        {
+          "id": "triangle",
+          "left": {
+            "asset": "shapes/triangle-yellow",
+            "vocab": "shapes.triangle"
+          },
+          "right": {
+            "asset": "shapes/outline-triangle-yellow",
+            "vocab": "colors.yellow"
+          },
+          "skill": "shape.identify.triangle"
+        }
+      ],
+      "completion": {
+        "type": "all_matched"
+      }
+    },
+    {
+      "id": "ct03.a3",
+      "mechanic": "speak_repeat",
+      "skills": [
+        "speak.vocab.circle"
+      ],
+      "layout": "speak-center",
+      "allowSkip": true,
+      "vocab": "shapes.circle",
+      "picture": "shapes/circle-red",
+      "instruction": {
+        "ar": [
+          "ct03.a3.instruction"
+        ],
+        "en": [
+          "ct03.a3.instruction"
+        ],
+        "caption": {
+          "ar": "يلا نقول «دايرة» سوا!",
+          "en": "Let's say 'circle' together!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct03.a3.hint1"
+          ],
+          "en": [
+            "ct03.a3.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع نونو الأول.",
+            "en": "Listen to Nono first."
+          }
+        },
+        {
+          "ar": [
+            "ct03.a3.hint2"
+          ],
+          "en": [
+            "ct03.a3.hint2"
+          ],
+          "caption": {
+            "ar": "نلمس الميكروفون الكبير.",
+            "en": "Tap the big microphone."
+          }
+        }
+      ],
+      "model": {
+        "ar": [
+          "word.shapes.circle"
+        ],
+        "en": [
+          "word.shapes.circle"
+        ],
+        "mixed": [
+          "word.shapes.circle:ar",
+          "word.shapes.circle:en"
+        ],
+        "caption": {
+          "ar": "دايرة",
+          "en": "circle",
+          "mixed": "دايرة… <bdi>Circle</bdi>"
+        }
+      },
+      "maxRecordMs": 5000,
+      "attemptsBeforeAutoContinue": 2,
+      "recognition": "optional",
+      "completion": {
+        "type": "any_attempt_or_skip"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ct-03",
+    "asset": "stickers/ct-03",
+    "name": {
+      "ar": [
+        "sticker.ct03.name"
+      ],
+      "en": [
+        "sticker.ct03.name"
+      ],
+      "caption": {
+        "ar": "ملصق الأشكال",
+        "en": "Shapes sticker"
+      }
+    }
+  },
+  "assetPack": "pack.color-town",
+  "estimatedMinutes": [
+    4,
+    7
+  ],
+  "suggestedNext": [
+    "ct-04"
+  ]
+}

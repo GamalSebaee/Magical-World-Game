@@ -17,7 +17,8 @@ describe('bundled content (T-CON)', () => {
   it('fails release validation while audio and art are placeholders', () => {
     const r = validateContent(rawContent, { release: true });
     expect(r.errors.some((e) => e.includes('not approved'))).toBe(true);
-    expect(r.errors.some((e) => e.includes('not authored yet'))).toBe(true);
+    // Every level the worlds list is authored (P4).
+    expect(r.errors.some((e) => e.includes('not authored yet'))).toBe(false);
   });
 
   it('parses AF-01 into the typed definition with all three mechanics', () => {
@@ -128,9 +129,17 @@ describe('cross-reference validation', () => {
   it('reports content files that are not imported in bundle.ts', () => {
     const r = validateContent(rawContent, {
       release: false,
-      filesOnDisk: { worlds: ['animal-forest', 'color-town', 'number-island'], levels: ['af-01', 'af-02'] },
+      filesOnDisk: { worlds: ['animal-forest', 'color-town', 'number-island'], levels: [...Object.keys(rawContent.levels), 'zz-99'] },
     });
-    expect(r.errors).toContain('levels/af-02.level.json exists but is not imported in bundle.ts');
+    expect(r.errors).toContain('levels/zz-99.level.json exists but is not imported in bundle.ts');
+  });
+
+  it('fails when the shipped runtime manifests are stale (D23)', () => {
+    const raw = clone(rawContent) as RawContentBundle & { runtimeAudio: { clips: Record<string, unknown> } };
+    delete raw.runtimeAudio.clips['word.animals.cat'];
+    const r = validateContent(raw, { release: false });
+    expect(r.errors).toContain('runtime/audio.json is stale: run `pnpm content:runtime`');
+    expect(validateContent(rawContent, { release: false }).errors).toEqual([]);
   });
 
   it('checks files exist for non-planned clips', () => {

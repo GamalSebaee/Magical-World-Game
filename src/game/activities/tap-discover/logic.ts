@@ -22,7 +22,8 @@ export const tapDiscoverLogic: MechanicLogic<Def, TapDiscoverState> = {
       if (next && next.id !== item.id) {
         return {
           m,
-          outcome: { kind: 'not_yet', evidence: [], say: [{ ui: 'nono.notyet.02' }], sfx: 'sfx.boop', targetId: item.id, anim: 'wiggle' },
+          // "Let's start with number 1": name the one that comes next.
+          outcome: { kind: 'not_yet', evidence: [], say: [{ ui: 'nono.notyet.02' }, { vocab: next.vocab }], sfx: 'sfx.boop', targetId: item.id, anim: 'wiggle' },
         };
       }
     }

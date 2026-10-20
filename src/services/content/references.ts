@@ -91,6 +91,7 @@ export function collectActivityRefs(a: ActivityDefinition, refs = emptyRefs()): 
     case 'listen_choose':
       for (const r of a.rounds) {
         addAudioRef(refs, r.prompt);
+        if (r.skill) refs.skills.add(r.skill);
         for (const c of r.choices) {
           refs.vocab.add(c.vocab);
           refs.assets.add(c.asset);

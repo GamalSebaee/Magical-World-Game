@@ -1,6 +1,4 @@
 import type {
-  AssetManifest,
-  AudioManifest,
   LocalizedAudioRef,
   UiAudioFile,
   VocabularyEntry,
@@ -9,7 +7,8 @@ import type {
   LevelDefinition as LevelDefinitionT,
   WorldDefinition as WorldDefinitionT,
 } from '@content/schema';
-import type { RawContentBundle } from '@content/bundle';
+import type { AppContentBundle } from '@content/app';
+import type { RuntimeAssets, RuntimeAudio } from './runtimeManifests';
 
 export type ContentResult<T> = { ok: true; value: T } | { ok: false; error: 'not_found' | 'invalid'; detail?: string };
 
@@ -35,7 +34,7 @@ export class ContentRepository {
   private readonly levelCache = new Map<string, LevelDefinitionT>();
   private readonly worldCache = new Map<string, WorldDefinitionT>();
 
-  constructor(private readonly raw: RawContentBundle) {}
+  constructor(private readonly raw: AppContentBundle) {}
 
   index(): ContentIndexT {
     return this.raw.index as ContentIndexT;
@@ -94,8 +93,9 @@ export class ContentRepository {
     return this.memo.get(key) as T;
   }
 
-  audioManifest(): AudioManifest {
-    return this.raw.audioManifest as AudioManifest;
+  /** Which clip files exist and whether they are approved (the slim runtime manifest, D23). */
+  audioManifest(): RuntimeAudio {
+    return this.raw.runtimeAudio as RuntimeAudio;
   }
 
   uiAudio(): UiAudioFile {
@@ -123,15 +123,7 @@ export class ContentRepository {
   }
 
   /** Asset id → URL and 1× display size, for the game (07 §7). Planned assets are absent. */
-  assetTable(): Record<string, { url: string; w: number; h: number; placeholder: boolean }> {
-    return this.once('assets', () => {
-      const out: Record<string, { url: string; w: number; h: number; placeholder: boolean }> = {};
-      for (const a of (this.raw.assetsManifest as AssetManifest).assets) {
-        const file = a.files[0];
-        if (!file || a.status === 'planned') continue;
-        out[a.id] = { url: `/${file}`, w: a.displaySize1x?.w ?? 200, h: a.displaySize1x?.h ?? 200, placeholder: a.status !== 'approved' };
-      }
-      return out;
-    });
+  assetTable(): RuntimeAssets {
+    return this.raw.runtimeAssets as RuntimeAssets;
   }
 }

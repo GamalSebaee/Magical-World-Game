@@ -1,5 +1,6 @@
-import type { AudioManifest, LocalizedAudioRef } from '@content/schema';
+import type { LocalizedAudioRef } from '@content/schema';
 import { parsePinnedClip } from '@content/schema/pinned';
+import { clipPath, type RuntimeAudio } from '@services/content/runtimeManifests';
 import { primaryLang, type LanguageMode } from '@shared/i18n/language';
 
 export type ClipSlot = 'ar' | 'en' | 'common';
@@ -26,18 +27,12 @@ export interface ResolvedLine {
  * bundled clips). Mixed mode uses the author's `mixed` sequence or falls back to Arabic (05 §4.2).
  */
 export class AudioResolver {
-  private readonly byId: Map<string, AudioManifest['clips'][number]>;
-
-  constructor(manifest: AudioManifest, private readonly base = '/') {
-    this.byId = new Map(manifest.clips.map((c) => [c.id, c]));
-  }
+  constructor(private readonly manifest: RuntimeAudio, private readonly base = '/') {}
 
   clip(id: string, slot: ClipSlot): ResolvedClip | undefined {
-    const entry = this.byId.get(id);
-    const file = entry?.files[slot];
-    const review = entry?.review[slot];
-    if (!entry || !file || !review || review.status === 'planned') return undefined;
-    return { id, slot, url: this.base + file, placeholder: review.status !== 'approved' };
+    const status = this.manifest.clips[id]?.[slot];
+    if (!status) return undefined;
+    return { id, slot, url: this.base + clipPath(id, slot), placeholder: status !== 'approved' };
   }
 
   sfx(id: string): ResolvedClip | undefined {

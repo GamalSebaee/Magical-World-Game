@@ -1,4 +1,4 @@
-import { rawContent } from '@content/bundle';
+import { appContent } from '@content/app';
 import { ContentRepository } from '@services/content/ContentRepository';
 import { openStorage, type StorageStatus } from '@services/storage/openStorage';
 import type { StorageRepositories } from '@services/storage/repositories';
@@ -58,7 +58,7 @@ export async function bootApp(onStep: (done: BootStep) => void = () => {}): Prom
   await repos.settings.get();
   onStep('settings');
 
-  const content = new ContentRepository(rawContent);
+  const content = new ContentRepository(appContent);
   try {
     const index = content.index();
     if (content.worlds().length !== index.worlds.length) throw new Error('A world failed validation');

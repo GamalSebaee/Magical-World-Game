@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.2.0",
+  "id": "ct-01",
+  "worldId": "color-town",
+  "order": 1,
+  "title": {
+    "ar": "أحمر وأزرق وأصفر",
+    "en": "Red, Blue, Yellow"
+  },
+  "learningGoal": {
+    "ar": "يتعرّف الطفل على الألوان: أحمر، أزرق، أصفر.",
+    "en": "The child learns the colours red, blue and yellow."
+  },
+  "story": {
+    "illustration": "scenes/ct-01-intro",
+    "intro": {
+      "ar": [
+        "ct01.story.intro"
+      ],
+      "en": [
+        "ct01.story.intro"
+      ],
+      "caption": {
+        "ar": "ألوان الرسّام راحت! لما نلمس الحاجات، الألوان بترجع.",
+        "en": "The painter's colours are gone! When we touch things, the colours come back."
+      }
+    },
+    "outro": {
+      "ar": [
+        "ct01.story.outro"
+      ],
+      "en": [
+        "ct01.story.outro"
+      ],
+      "caption": {
+        "ar": "المدينة رجعت ملونة! برافو!",
+        "en": "The town is colourful again! Hooray!"
+      }
+    }
+  },
+  "background": "town/bg-square",
+  "skills": [
+    "color.identify.red",
+    "color.identify.blue",
+    "color.identify.yellow"
+  ],
+  "activities": [
+    {
+      "id": "ct01.a1",
+      "mechanic": "tap_discover",
+      "skills": [
+        "color.identify.red",
+        "color.identify.blue",
+        "color.identify.yellow"
+      ],
+      "layout": "scatter-3-hide",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct01.a1.instruction"
+        ],
+        "en": [
+          "ct01.a1.instruction"
+        ],
+        "caption": {
+          "ar": "نلمس التفاحة والبحر والشمس عشان نرجّع ألوانهم!",
+          "en": "Tap the apple, the sea and the sun to bring their colours back!"
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct01.a1.hint1"
+          ],
+          "en": [
+            "ct01.a1.hint1"
+          ],
+          "caption": {
+            "ar": "نلمس التفاحة!",
+            "en": "Let's tap the apple!"
+          }
+        },
+        {
+          "ar": [
+            "ct01.a1.hint2"
+          ],
+          "en": [
+            "ct01.a1.hint2"
+          ],
+          "caption": {
+            "ar": "الشمس مستنية!",
+            "en": "The sun is waiting!"
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "mode": "all",
+      "items": [
+        {
+          "id": "apple",
+          "vocab": "colors.red",
+          "asset": "objects/apple",
+          "hiddenBehind": "objects/apple-grey",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "sea",
+          "vocab": "colors.blue",
+          "asset": "objects/sea",
+          "hiddenBehind": "objects/sea-grey",
+          "revealAnimation": "pop"
+        },
+        {
+          "id": "sun",
+          "vocab": "colors.yellow",
+          "asset": "objects/sun",
+          "hiddenBehind": "objects/sun-grey",
+          "revealAnimation": "pop"
+        }
+      ],
+      "completion": {
+        "type": "all_found"
+      }
+    },
+    {
+      "id": "ct01.a2",
+      "mechanic": "listen_choose",
+      "skills": [
+        "color.identify.red",
+        "color.identify.blue",
+        "color.identify.yellow"
+      ],
+      "layout": "row-3",
+      "allowSkip": true,
+      "instruction": {
+        "ar": [
+          "ct01.a2.instruction"
+        ],
+        "en": [
+          "ct01.a2.instruction"
+        ],
+        "caption": {
+          "ar": "نسمع اللون، وبعدين نلمس.",
+          "en": "Listen for the colour, then tap."
+        }
+      },
+      "hints": [
+        {
+          "ar": [
+            "ct01.a2.hint1"
+          ],
+          "en": [
+            "ct01.a2.hint1"
+          ],
+          "caption": {
+            "ar": "نسمع تاني؟",
+            "en": "Shall we listen again?"
+          }
+        },
+        {
+          "ar": [
+            "ct01.a2.hint2"
+          ],
+          "en": [
+            "ct01.a2.hint2"
+          ],
+          "caption": {
+            "ar": "نبص على الألوان كويس.",
+            "en": "Let's look at the colours carefully."
+          }
+        },
+        {
+          "ar": [
+            "nono.hint.watch_me"
+          ],
+          "en": [
+            "nono.hint.watch_me"
+          ],
+          "caption": {
+            "ar": "نتفرّج على نونو!",
+            "en": "Let's watch Nono!"
+          }
+        }
+      ],
+      "shuffle": true,
+      "rounds": [
+        {
+          "prompt": {
+            "ar": [
+              "ct01.a2.where_red"
+            ],
+            "en": [
+              "ct01.a2.where_red"
+            ],
+            "caption": {
+              "ar": "فين الحاجة الحمرا؟",
+              "en": "Where's something red?",
+              "mixed": "فين الحاجة الـ <bdi>Red</bdi>؟"
+            },
+            "mixed": [
+              "ct01.where_mixed:ar",
+              "word.colors.red:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "car-red",
+              "vocab": "colors.red",
+              "asset": "objects/car-red"
+            },
+            {
+              "id": "ball-blue",
+              "vocab": "colors.blue",
+              "asset": "objects/ball-blue"
+            },
+            {
+              "id": "block-yellow",
+              "vocab": "colors.yellow",
+              "asset": "objects/block-yellow"
+            }
+          ],
+          "answer": "car-red"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ct01.a2.where_blue"
+            ],
+            "en": [
+              "ct01.a2.where_blue"
+            ],
+            "caption": {
+              "ar": "فين الحاجة الزرقا؟",
+              "en": "Where's something blue?",
+              "mixed": "فين الحاجة الـ <bdi>Blue</bdi>؟"
+            },
+            "mixed": [
+              "ct01.where_mixed:ar",
+              "word.colors.blue:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "ball-red",
+              "vocab": "colors.red",
+              "asset": "objects/ball-red"
+            },
+            {
+              "id": "block-blue",
+              "vocab": "colors.blue",
+              "asset": "objects/block-blue"
+            },
+            {
+              "id": "car-yellow",
+              "vocab": "colors.yellow",
+              "asset": "objects/car-yellow"
+            }
+          ],
+          "answer": "block-blue"
+        },
+        {
+          "prompt": {
+            "ar": [
+              "ct01.a2.where_yellow"
+            ],
+            "en": [
+              "ct01.a2.where_yellow"
+            ],
+            "caption": {
+              "ar": "فين الحاجة الصفرا؟",
+              "en": "Where's something yellow?",
+              "mixed": "فين الحاجة الـ <bdi>Yellow</bdi>؟"
+            },
+            "mixed": [
+              "ct01.where_mixed:ar",
+              "word.colors.yellow:en"
+            ]
+          },
+          "choices": [
+            {
+              "id": "block-red",
+              "vocab": "colors.red",
+              "asset": "objects/block-red"
+            },
+            {
+              "id": "car-blue",
+              "vocab": "colors.blue",
+              "asset": "objects/car-blue"
+            },
+            {
+              "id": "ball-yellow",
+              "vocab": "colors.yellow",
+              "asset": "objects/ball-yellow"
+            }
+          ],
+          "answer": "ball-yellow"
+        }
+      ],
+      "completion": {
+        "type": "all_rounds"
+      }
+    }
+  ],
+  "sticker": {
+    "id": "sticker.ct-01",
+    "asset": "stickers/ct-01",
+    "name": {
+      "ar": [
+        "sticker.ct01.name"
+      ],
+      "en": [
+        "sticker.ct01.name"
+      ],
+      "caption": {
+        "ar": "ملصق الألوان",
+        "en": "Paint sticker"
+      }
+    }
+  },
+  "assetPack": "pack.color-town",
+  "estimatedMinutes": [
+    3,
+    6
+  ],
+  "suggestedNext": [
+    "ct-02"
+  ]
+}
