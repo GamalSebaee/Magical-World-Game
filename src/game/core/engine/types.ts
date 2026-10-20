@@ -36,17 +36,26 @@ export interface Outcome {
   evidence: EvidenceItem[];
   say: SayItem[];
   sfx?: string;
-  /** Scene animation hint: which object, and how. */
+  /** Scene animation hint: which object(s), and how. */
   targetId?: string;
-  anim?: 'reveal' | 'celebrate' | 'wiggle';
+  targetIds?: string[];
+  anim?: 'reveal' | 'celebrate' | 'wiggle' | 'select' | 'place' | 'count' | 'recount' | 'connect' | 'bounce';
   /** After feedback, replay the current prompt (e.g. next listen_choose round). */
   thenPrompt?: boolean;
+  /**
+   * Inline outcomes skip the feedback phase so the child can keep going (selecting a card,
+   * counting taps). `queue` lines wait their turn (counting 1-2-3 in order); `interrupt` lines
+   * cut the current line. Not-yet counters are untouched.
+   */
+  inline?: 'queue' | 'interrupt';
 }
 
 export type ActivityInput =
   | { type: 'tap'; targetId: string }
   | { type: 'speech'; result: SpeechAttemptResult; line: string; evidence: { kind: 'speech_attempt'; voiced: boolean } | { kind: 'speech_prompt_only' } | { kind: 'none' } }
-  | { type: 'continue' };
+  | { type: 'continue' }
+  /** drag_drop: a draggable released over a target (already resolved with forgiveness), or nowhere. */
+  | { type: 'drop'; itemId: string; targetId: string | null };
 
 export interface LogicContext {
   hintLevel: HintLevel;

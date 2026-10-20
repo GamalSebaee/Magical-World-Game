@@ -1,5 +1,6 @@
 import {
   parsePinnedClip,
+  type ActivityDefinition,
   type UiAudioFile,
   type LevelDefinition,
   type LocalizedAudioRef,
@@ -64,54 +65,66 @@ export function collectLevelRefs(lvl: LevelDefinition, refs = emptyRefs()): Cont
   for (const s of lvl.skills) refs.skills.add(s);
   for (const l of lvl.suggestedNext) refs.levels.add(l);
 
-  for (const a of lvl.activities) {
-    addAudioRef(refs, a.instruction);
-    a.hints.forEach((h) => addAudioRef(refs, h));
-    a.successFeedback?.forEach((f) => addAudioRef(refs, f));
-    for (const s of a.skills) refs.skills.add(s);
+  for (const a of lvl.activities) collectActivityRefs(a, refs);
+  return refs;
+}
 
-    switch (a.mechanic) {
-      case 'tap_discover':
-        for (const it of a.items) {
-          refs.vocab.add(it.vocab);
-          refs.assets.add(it.asset);
-          if (it.hiddenBehind) refs.assets.add(it.hiddenBehind);
+/** Spoken numbers used by counting (count_objects, count_placed drops): `numbers.1` … `numbers.n`. */
+const numberVocab = (refs: ContentReferences, upTo: number) => {
+  for (let n = 1; n <= upTo; n++) refs.vocab.add(`numbers.${n}`);
+};
+
+export function collectActivityRefs(a: ActivityDefinition, refs = emptyRefs()): ContentReferences {
+  addAudioRef(refs, a.instruction);
+  a.hints.forEach((h) => addAudioRef(refs, h));
+  a.successFeedback?.forEach((f) => addAudioRef(refs, f));
+  for (const s of a.skills) refs.skills.add(s);
+
+  switch (a.mechanic) {
+    case 'tap_discover':
+      for (const it of a.items) {
+        refs.vocab.add(it.vocab);
+        refs.assets.add(it.asset);
+        if (it.hiddenBehind) refs.assets.add(it.hiddenBehind);
+      }
+      break;
+    case 'listen_choose':
+      for (const r of a.rounds) {
+        addAudioRef(refs, r.prompt);
+        for (const c of r.choices) {
+          refs.vocab.add(c.vocab);
+          refs.assets.add(c.asset);
         }
-        break;
-      case 'listen_choose':
-        for (const r of a.rounds) {
-          addAudioRef(refs, r.prompt);
-          for (const c of r.choices) {
-            refs.vocab.add(c.vocab);
-            refs.assets.add(c.asset);
-          }
+      }
+      break;
+    case 'drag_drop':
+      for (const d of a.draggables) {
+        refs.assets.add(d.asset);
+        if (d.vocab) refs.vocab.add(d.vocab);
+      }
+      for (const t of a.targets) refs.assets.add(t.asset);
+      if (a.completion.type === 'count_placed') numberVocab(refs, a.completion.n);
+      break;
+    case 'match_pairs':
+      for (const p of a.pairs) {
+        for (const side of [p.left, p.right]) {
+          refs.assets.add(side.asset);
+          if (side.audio) addClip(refs, side.audio, 'common');
+          if (side.vocab) refs.vocab.add(side.vocab);
         }
-        break;
-      case 'drag_drop':
-        for (const d of a.draggables) {
-          refs.assets.add(d.asset);
-          if (d.vocab) refs.vocab.add(d.vocab);
-        }
-        for (const t of a.targets) refs.assets.add(t.asset);
-        break;
-      case 'match_pairs':
-        for (const p of a.pairs) {
-          refs.assets.add(p.left.asset);
-          refs.assets.add(p.right.asset);
-          if (p.left.audio) addClip(refs, p.left.audio, 'common');
-          if (p.right.audio) addClip(refs, p.right.audio, 'common');
-        }
-        break;
-      case 'count_objects':
-        for (const o of a.objects) refs.assets.add(o.asset);
-        if (a.basket) refs.assets.add(a.basket);
-        break;
-      case 'speak_repeat':
-        refs.vocab.add(a.vocab);
-        refs.assets.add(a.picture);
-        addAudioRef(refs, a.model);
-        break;
-    }
+      }
+      break;
+    case 'count_objects':
+      for (const o of a.objects) refs.assets.add(o.asset);
+      if (a.basket) refs.assets.add(a.basket);
+      addAudioRef(refs, a.question);
+      numberVocab(refs, Math.max(a.target, a.objects.length, ...(a.answerChoices ?? [])));
+      break;
+    case 'speak_repeat':
+      refs.vocab.add(a.vocab);
+      refs.assets.add(a.picture);
+      addAudioRef(refs, a.model);
+      break;
   }
   return refs;
 }

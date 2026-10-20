@@ -21,6 +21,69 @@
       "label": { "ar": "نطق «قطة»", "en": "Saying 'cat'" },
       "outcome": { "ar": "يجرّب يقول الكلمة بعد ما يسمعها (تدريب فقط)", "en": "Tries saying the word after the model (practice only)" },
       "evidenceRule": "speech.practice.v1"
+    },
+    {
+      "id": "vocab.animals.rabbit",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «أرنب»", "en": "The word 'rabbit'" },
+      "outcome": { "ar": "يسمع كلمة «أرنب» ويتعرّف على الأرنب", "en": "Hears the word 'rabbit' and recognises the rabbit" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "vocab.food.carrot",
+      "domain": "vocab",
+      "label": { "ar": "كلمة «جزرة»", "en": "The word 'carrot'" },
+      "outcome": { "ar": "يسمع كلمة «جزرة» ويتعرّف على الجزرة", "en": "Hears the word 'carrot' and recognises the carrot" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.count.upto3",
+      "domain": "math",
+      "label": { "ar": "العدّ لحد ٣", "en": "Counting to 3" },
+      "outcome": { "ar": "يعدّ لحد ٣ حاجات، واحدة واحدة", "en": "Counts up to 3 objects, one at a time" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "math.count.upto5",
+      "domain": "math",
+      "label": { "ar": "العدّ لحد ٥", "en": "Counting to 5" },
+      "outcome": { "ar": "يعدّ لحد ٥ حاجات، واحدة واحدة", "en": "Counts up to 5 objects, one at a time" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "color.identify.red",
+      "domain": "color",
+      "label": { "ar": "اللون الأحمر", "en": "The colour red" },
+      "outcome": { "ar": "يحط الحاجات الحمرا مع بعض", "en": "Puts red things together" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "color.identify.blue",
+      "domain": "color",
+      "label": { "ar": "اللون الأزرق", "en": "The colour blue" },
+      "outcome": { "ar": "يحط الحاجات الزرقا مع بعض", "en": "Puts blue things together" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "color.identify.yellow",
+      "domain": "color",
+      "label": { "ar": "اللون الأصفر", "en": "The colour yellow" },
+      "outcome": { "ar": "يحط الحاجات الصفرا مع بعض", "en": "Puts yellow things together" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "listen.sounds.cat",
+      "domain": "listen",
+      "label": { "ar": "صوت القطة", "en": "The cat's sound" },
+      "outcome": { "ar": "يربط صوت «مياو» بالقطة", "en": "Links 'meow' to the cat" },
+      "evidenceRule": "choice.v1"
+    },
+    {
+      "id": "listen.sounds.dog",
+      "domain": "listen",
+      "label": { "ar": "صوت الكلب", "en": "The dog's sound" },
+      "outcome": { "ar": "يربط صوت «هو هو» بالكلب", "en": "Links 'woof' to the dog" },
+      "evidenceRule": "choice.v1"
     }
   ]
 }

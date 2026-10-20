@@ -360,6 +360,114 @@
         "ar": "نجرب تاني؟",
         "en": "Shall we try again?"
       }
+    },
+    "play.drag.instruction": {
+      "ar": [
+        "play.drag.instruction"
+      ],
+      "en": [
+        "play.drag.instruction"
+      ],
+      "caption": {
+        "ar": "يلا نحط كل حاجة في مكانها!",
+        "en": "Let's put each one in its place!"
+      }
+    },
+    "play.drag.hint1": {
+      "ar": [
+        "play.drag.hint1"
+      ],
+      "en": [
+        "play.drag.hint1"
+      ],
+      "caption": {
+        "ar": "نمسكها ونزحلقها لحد مكانها!",
+        "en": "Let's hold it and slide it to its place!"
+      }
+    },
+    "play.drag.hint2": {
+      "ar": [
+        "play.drag.hint2"
+      ],
+      "en": [
+        "play.drag.hint2"
+      ],
+      "caption": {
+        "ar": "شوف! مكانها هنا!",
+        "en": "Look! It goes here!"
+      }
+    },
+    "play.match.instruction": {
+      "ar": [
+        "play.match.instruction"
+      ],
+      "en": [
+        "play.match.instruction"
+      ],
+      "caption": {
+        "ar": "يلا نلاقي الاتنين اللي بيروحوا مع بعض!",
+        "en": "Let's find the ones that go together!"
+      }
+    },
+    "play.match.hint1": {
+      "ar": [
+        "play.match.hint1"
+      ],
+      "en": [
+        "play.match.hint1"
+      ],
+      "caption": {
+        "ar": "نلمس واحدة، وبعدين صاحبتها!",
+        "en": "Let's tap one, then its friend!"
+      }
+    },
+    "play.count.instruction": {
+      "ar": [
+        "play.count.instruction"
+      ],
+      "en": [
+        "play.count.instruction"
+      ],
+      "caption": {
+        "ar": "يلا نعدّ سوا!",
+        "en": "Let's count together!"
+      }
+    },
+    "play.count.hint1": {
+      "ar": [
+        "play.count.hint1"
+      ],
+      "en": [
+        "play.count.hint1"
+      ],
+      "caption": {
+        "ar": "نلمس كل واحدة ونعدّ!",
+        "en": "Let's tap each one and count!"
+      }
+    },
+    "play.count.how_many": {
+      "ar": [
+        "play.count.how_many"
+      ],
+      "en": [
+        "play.count.how_many"
+      ],
+      "caption": {
+        "ar": "كام؟",
+        "en": "How many?"
+      }
+    },
+    "play.count.thats": {
+      "ar": [
+        "play.count.thats"
+      ],
+      "en": [
+        "play.count.thats"
+      ],
+      "caption": {
+        "ar": "كده…",
+        "en": "That's…"
+      }
     }
   },
   "sfx": [
@@ -371,6 +479,8 @@
     "sfx.record_start",
     "sfx.record_stop",
     "sfx.celebrate",
-    "sfx.page"
+    "sfx.page",
+    "sfx.animal_cat",
+    "sfx.animal_dog"
   ]
 }

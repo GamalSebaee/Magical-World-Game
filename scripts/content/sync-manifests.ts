@@ -14,8 +14,10 @@ import {
   type AudioManifest,
 } from '../../src/content/schema';
 import { rawContent } from '../../src/content/bundle';
+import { playgroundFixtures } from '../../src/features/playground/fixtures';
 import {
   addClip,
+  collectActivityRefs,
   collectLevelRefs,
   collectUiAudioRefs,
   collectWorldRefs,
@@ -54,6 +56,7 @@ const refs = emptyRefs();
 for (const w of Object.values(rawContent.worlds)) collectWorldRefs(WorldDefinition.parse(w), refs);
 for (const l of Object.values(rawContent.levels)) collectLevelRefs(LevelDefinition.parse(l), refs);
 collectUiAudioRefs(UiAudioFile.parse(rawContent.uiAudio), refs);
+for (const a of playgroundFixtures()) collectActivityRefs(a, refs);
 const vocabulary = VocabularyFile.parse(rawContent.vocabulary).entries;
 for (const v of vocabulary) {
   addClip(refs, v.audio, 'ar');

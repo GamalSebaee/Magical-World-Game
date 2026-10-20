@@ -69,7 +69,17 @@ export const DragDropDef = ActivityBase.extend({
     z.object({ type: z.literal('all_placed') }),
     z.object({ type: z.literal('count_placed'), n: z.number().int().min(1).max(5) }),
   ]),
+}).superRefine((a, ctx) => {
+  const ok = (d: (typeof a.draggables)[number]) => a.targets.some((t) => t.accepts.includes(d.id) || d.tags.some((tag) => t.accepts.includes(tag)));
+  if (a.completion.type === 'all_placed') {
+    for (const d of a.draggables) if (!ok(d)) ctx.addIssue({ code: 'custom', message: `draggable ${d.id} has no accepting target` });
+  } else if (a.draggables.filter(ok).length < a.completion.n) {
+    ctx.addIssue({ code: 'custom', message: 'count_placed: fewer acceptable draggables than n' });
+  }
 });
+
+/** A card: its picture, an optional sound (SFX clip, e.g. "moo") and an optional word. */
+const PairSide = z.object({ asset: AssetRef, audio: AudioClipId.optional(), vocab: VocabId.optional() });
 
 export const MatchPairsDef = ActivityBase.extend({
   mechanic: z.literal('match_pairs'),
@@ -78,13 +88,20 @@ export const MatchPairsDef = ActivityBase.extend({
     .array(
       z.object({
         id: z.string(),
-        left: z.object({ asset: AssetRef, audio: AudioClipId.optional() }),
-        right: z.object({ asset: AssetRef, audio: AudioClipId.optional() }),
+        left: PairSide,
+        right: PairSide,
+        /** Skill a correct match evidences (must be one of the activity's skills). */
+        skill: SkillId.optional(),
       }),
     )
     .min(2)
     .max(4),
   completion: z.object({ type: z.literal('all_matched') }),
+}).superRefine((a, ctx) => {
+  for (const p of a.pairs) {
+    if (p.skill && !a.skills.includes(p.skill)) ctx.addIssue({ code: 'custom', message: `pair ${p.id}: skill ${p.skill} is not in the activity's skills` });
+  }
+  if (new Set(a.pairs.map((p) => p.id)).size !== a.pairs.length) ctx.addIssue({ code: 'custom', message: 'pair ids must be unique' });
 });
 
 export const CountObjectsDef = ActivityBase.extend({
@@ -94,6 +111,8 @@ export const CountObjectsDef = ActivityBase.extend({
   target: z.number().int().min(1).max(5),
   answerChoices: z.array(z.number().int().min(1).max(5)).min(2).max(3).optional(),
   basket: AssetRef.optional(),
+  /** how_many: the question after counting ("How many?"); defaults to the shared line. */
+  question: LocalizedAudioRef.optional(),
   completion: z.object({ type: z.enum(['answered', 'reached_target']) }),
 }).superRefine((a, ctx) => {
   if (a.ask === 'how_many' && a.objects.length !== a.target) {

@@ -1,4 +1,5 @@
 import type { ActivityDefinition } from '@content/schema';
+import { afterNotYet, demonstrates, HINT_POLICY, idleHintLevel, offersSkip, raiseHint } from './hintPolicy';
 import type { ActivityInput, EvidenceItem, HintLevel, MechanicLogic, Outcome, Phase, SayItem } from './types';
 
 export interface SpeechPort {
@@ -27,7 +28,7 @@ export interface ActivitySnapshot<M = unknown> {
   hintTarget?: string;
   m: M;
   /** Last feedback, for the scene to animate. `seq` increases every time. */
-  last?: { seq: number; targetId?: string; anim?: Outcome['anim']; kind: Outcome['kind'] };
+  last?: { seq: number; targetId?: string; targetIds?: string[]; anim?: Outcome['anim']; kind: Outcome['kind'] };
 }
 
 export interface ControllerOptions<M> {
@@ -48,9 +49,8 @@ export interface ControllerOptions<M> {
   onEnd?: (result: 'completed' | 'skipped', snap: ActivitySnapshot<M>) => void;
 }
 
-const MAX_AUTO_HINTS = 2;
-const NOT_YET_BEFORE_HINT = 2;
-const NOT_YET_BEFORE_SKIP_OFFER = 4;
+/** Waiting lines beyond which the playing one is cut short, so fast counting never lags far behind (04 §4.5). */
+const MAX_QUEUED_LINES = 2;
 
 /**
  * Runs one activity through its lifecycle (04 §3): intro → ready → feedback → … → completed |
@@ -71,6 +71,9 @@ export class ActivityController<M = unknown> {
   private ended = false;
   private disposed = false;
   private pausedFrom?: Phase;
+  /** Feedback and counting lines play one after another through this queue. */
+  private voiceQueue: Array<{ items: SayItem[]; resolve: () => void }> = [];
+  private voiceCurrent?: { stop(): void };
 
   constructor(private readonly o: ControllerOptions<M>) {
     const m = o.resume?.m ?? o.logic.init(o.def, o.seed);
@@ -139,36 +142,34 @@ export class ActivityController<M = unknown> {
     });
     if (!r) return;
 
-    // A child acting during the intro has understood: stop talking and handle it.
-    this.o.speech.stop();
+    // A child acting during the intro has understood: stop talking and handle it. Lines
+    // already queued (counting) keep their order instead.
+    if (!this.voiceBusy || r.outcome.inline === 'interrupt') this.clearVoice();
     this.clearIdle();
+
+    if (r.outcome.inline) return this.inlineOutcome(r.m, r.outcome);
     const t = ++this.token;
 
     let { hintLevel } = this.snap;
     let notYetCount = this.snap.notYetCount;
     if (r.outcome.kind === 'not_yet') {
       notYetCount++;
-      this.consecutiveNotYet++;
-      if (this.consecutiveNotYet >= NOT_YET_BEFORE_HINT && hintLevel < 3) {
-        hintLevel = (hintLevel + 1) as HintLevel;
-        this.consecutiveNotYet = 0;
-      }
+      const next = afterNotYet(hintLevel, this.consecutiveNotYet);
+      hintLevel = next.level;
+      this.consecutiveNotYet = next.consecutive;
     } else {
       this.consecutiveNotYet = 0;
     }
-    const evidence: EvidenceItem[] = r.outcome.evidence.map((e) =>
-      e.kind === 'choice_correct' ? { ...e, firstTry: e.firstTry && this.snap.hintLevel < 2 } : e,
-    );
-    const outcome = { ...r.outcome, evidence };
+    const outcome = this.withEvidence(r.outcome);
 
     this.update({
       phase: 'feedback',
       m: r.m,
       hintLevel,
       notYetCount,
-      offerSkip: this.snap.offerSkip || notYetCount >= NOT_YET_BEFORE_SKIP_OFFER,
-      demo: hintLevel >= 3,
-      last: { seq: ++this.seq, targetId: outcome.targetId, anim: outcome.anim, kind: outcome.kind },
+      offerSkip: this.snap.offerSkip || offersSkip(notYetCount),
+      demo: demonstrates(hintLevel),
+      last: this.lastOf(outcome),
     });
     this.o.onOutcome?.(outcome, this.snap);
 
@@ -181,10 +182,77 @@ export class ActivityController<M = unknown> {
     });
   }
 
+  /** Selecting, counting, a drop that lands nowhere: state moves on, play stays in `ready`. */
+  private inlineOutcome(m: M, outcome: Outcome) {
+    const out = this.withEvidence(outcome);
+    this.update({ phase: 'ready', m, last: this.lastOf(out) });
+    this.o.onOutcome?.(out, this.snap);
+    if (out.sfx) this.o.speech.sfx(out.sfx);
+    if (out.say.length) void this.enqueue(out.say);
+    this.armIdleHint();
+  }
+
+  private withEvidence(outcome: Outcome): Outcome {
+    const evidence: EvidenceItem[] = outcome.evidence.map((e) =>
+      e.kind === 'choice_correct' ? { ...e, firstTry: e.firstTry && this.snap.hintLevel < 2 } : e,
+    );
+    return { ...outcome, evidence };
+  }
+
+  private lastOf(o: Outcome): ActivitySnapshot['last'] {
+    return { seq: ++this.seq, targetId: o.targetId, targetIds: o.targetIds, anim: o.anim, kind: o.kind };
+  }
+
+  private get voiceBusy() {
+    return this.voiceCurrent !== undefined || this.voiceQueue.length > 0;
+  }
+
+  /**
+   * Plays a line after the ones already queued. If the child outpaces the voice by more than
+   * MAX_QUEUED_LINES, the playing line is cut short (never skipped), so 1-2-3 stays in order.
+   */
+  private enqueue(items: SayItem[]): Promise<void> {
+    return new Promise<void>((resolve) => {
+      this.voiceQueue.push({ items, resolve });
+      if (!this.voiceCurrent) this.nextVoice();
+      else if (this.voiceQueue.length > MAX_QUEUED_LINES) this.voiceCurrent.stop();
+    });
+  }
+
+  private nextVoice() {
+    const next = this.voiceQueue.shift();
+    if (!next) return;
+    const h = this.o.speech.say(next.items);
+    const current = { stop: () => h.stop() };
+    this.voiceCurrent = current;
+    void h.done.then(
+      () => this.voiceEnded(current, next.resolve),
+      () => this.voiceEnded(current, next.resolve),
+    );
+  }
+
+  private voiceEnded(current: { stop(): void }, resolve: () => void) {
+    resolve();
+    if (this.voiceCurrent !== current) return;
+    this.voiceCurrent = undefined;
+    this.nextVoice();
+  }
+
+  /** Stops everything this activity says: the current line, the queue and any direct line. */
+  private clearVoice() {
+    const waiting = this.voiceQueue;
+    this.voiceQueue = [];
+    const current = this.voiceCurrent;
+    this.voiceCurrent = undefined;
+    current?.stop();
+    this.o.speech.stop();
+    for (const w of waiting) w.resolve();
+  }
+
   private async feedbackDone(say: SayItem[]) {
     const { feedbackCapMs = 8000, minFeedbackMs = 500 } = this.o;
     const min = this.sleep(minFeedbackMs);
-    const spoken = say.length ? this.o.speech.say(say).done : Promise.resolve();
+    const spoken = say.length ? this.enqueue(say) : Promise.resolve();
     await Promise.race([spoken, this.sleep(feedbackCapMs)]);
     await min;
   }
@@ -199,13 +267,14 @@ export class ActivityController<M = unknown> {
   help() {
     if (this.disposed || this.snap.paused || this.ended) return;
     if (this.snap.phase !== 'ready' && this.snap.phase !== 'intro') return;
-    const hintLevel = Math.min(3, this.snap.hintLevel + 1) as HintLevel;
-    this.update({ hintLevel, demo: hintLevel >= 3, phase: 'ready' });
+    const hintLevel = raiseHint(this.snap.hintLevel);
+    this.update({ hintLevel, demo: demonstrates(hintLevel), phase: 'ready' });
     this.playHint();
   }
 
   private playHint() {
     this.clearIdle();
+    this.clearVoice();
     const hints = this.o.def.hints;
     const hint = hints[Math.min(Math.max(1, this.snap.hintLevel), hints.length) - 1];
     const t = ++this.token;
@@ -221,6 +290,7 @@ export class ActivityController<M = unknown> {
     if (this.disposed || this.snap.paused || this.ended) return;
     const prompt = this.o.logic.prompt(this.o.def, this.snap.m) ?? this.o.def.instruction;
     this.clearIdle();
+    this.clearVoice();
     const t = ++this.token;
     if (this.snap.phase === 'intro') this.update({ phase: 'ready' });
     void this.o.speech.say([{ ref: prompt }]).done.then(() => {
@@ -230,7 +300,7 @@ export class ActivityController<M = unknown> {
 
   skip() {
     if (this.disposed || this.ended) return;
-    this.o.speech.stop();
+    this.clearVoice();
     this.finish('skipped');
   }
 
@@ -239,7 +309,7 @@ export class ActivityController<M = unknown> {
     this.pausedFrom = this.snap.phase;
     this.token++;
     this.clearIdle();
-    this.o.speech.stop();
+    this.clearVoice();
     this.update({ paused: true });
   }
 
@@ -260,7 +330,7 @@ export class ActivityController<M = unknown> {
     this.disposed = true;
     this.token++;
     this.clearIdle();
-    this.o.speech.stop();
+    this.clearVoice();
     this.listeners.clear();
   }
 
@@ -275,12 +345,13 @@ export class ActivityController<M = unknown> {
 
   private armIdleHint() {
     this.clearIdle();
-    if (this.autoHints >= MAX_AUTO_HINTS || this.disposed) return;
+    if (this.autoHints >= HINT_POLICY.maxAutoHints || this.disposed) return;
     this.idleTimer = this.o.timers.setTimeout(() => {
       this.idleTimer = undefined;
       if (this.snap.phase !== 'ready' || this.snap.paused) return;
       this.autoHints++;
-      if (this.snap.hintLevel === 0) this.update({ hintLevel: 1 });
+      const level = idleHintLevel(this.snap.hintLevel);
+      if (level !== this.snap.hintLevel) this.update({ hintLevel: level });
       this.playHint();
     }, this.o.idleHintMs ?? 12_000);
   }

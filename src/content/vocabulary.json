@@ -2,6 +2,17 @@
   "schemaVersion": 1,
   "entries": [
     { "id": "animals.cat", "written": { "ar": "قِطّة", "en": "cat" }, "audio": "word.animals.cat", "picture": "animals/cat" },
-    { "id": "animals.dog", "written": { "ar": "كَلْب", "en": "dog" }, "audio": "word.animals.dog", "picture": "animals/dog" }
+    { "id": "animals.dog", "written": { "ar": "كَلْب", "en": "dog" }, "audio": "word.animals.dog", "picture": "animals/dog" },
+    { "id": "animals.rabbit", "written": { "ar": "أرنب", "en": "rabbit" }, "audio": "word.animals.rabbit", "picture": "animals/rabbit" },
+    { "id": "food.carrot", "written": { "ar": "جزرة", "en": "carrot" }, "audio": "word.food.carrot", "picture": "objects/carrot" },
+    { "id": "food.apple", "written": { "ar": "تفاحة", "en": "apple" }, "audio": "word.food.apple", "picture": "objects/apple" },
+    { "id": "colors.red", "written": { "ar": "أحمر", "en": "red" }, "audio": "word.colors.red", "picture": "objects/ball-red" },
+    { "id": "colors.blue", "written": { "ar": "أزرق", "en": "blue" }, "audio": "word.colors.blue", "picture": "objects/ball-blue" },
+    { "id": "colors.yellow", "written": { "ar": "أصفر", "en": "yellow" }, "audio": "word.colors.yellow", "picture": "objects/ball-yellow" },
+    { "id": "numbers.1", "written": { "ar": "واحد", "en": "one" }, "audio": "word.numbers.1", "picture": "numerals/1" },
+    { "id": "numbers.2", "written": { "ar": "اتنين", "en": "two" }, "audio": "word.numbers.2", "picture": "numerals/2" },
+    { "id": "numbers.3", "written": { "ar": "تلاتة", "en": "three" }, "audio": "word.numbers.3", "picture": "numerals/3" },
+    { "id": "numbers.4", "written": { "ar": "أربعة", "en": "four" }, "audio": "word.numbers.4", "picture": "numerals/4" },
+    { "id": "numbers.5", "written": { "ar": "خمسة", "en": "five" }, "audio": "word.numbers.5", "picture": "numerals/5" }
   ]
 }

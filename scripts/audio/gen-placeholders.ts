@@ -36,6 +36,13 @@ const SFX: Record<string, { expr: string; d: number }> = {
     d: 1.3,
   },
   'sfx.page': { expr: '0.15*(random(0)*2-1)*exp(-14*t)', d: 0.25 },
+  // Animal-sound stand-ins (07: real sounds are licensed or recorded): a rising-falling "meow"
+  // glide and two short low "woof" bursts.
+  'sfx.animal_cat': { expr: '0.35*sin(2*PI*(520+500*sin(PI*t/0.7))*t)*sin(PI*t/0.7)', d: 0.7 },
+  'sfx.animal_dog': {
+    expr: '0.45*(lt(t,0.18)*sin(2*PI*(220-200*t)*t)*sin(PI*t/0.18)+between(t,0.3,0.48)*sin(2*PI*(220-200*(t-0.3))*(t-0.3))*sin(PI*(t-0.3)/0.18))',
+    d: 0.55,
+  },
 };
 
 function ffmpeg(args: string[]) {

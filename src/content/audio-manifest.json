@@ -974,6 +974,303 @@
       "pack": "pack.common"
     },
     {
+      "id": "play.count.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.count.hint1.mp3",
+        "en": "assets/audio/en/play.count.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس كل واحدة ونعدّ!",
+        "en": "Let's tap each one and count!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1541,
+        "en": 2194
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.count.how_many",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.count.how_many.mp3",
+        "en": "assets/audio/en/play.count.how_many.mp3"
+      },
+      "transcript": {
+        "ar": "كام؟",
+        "en": "How many?"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 1097
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.count.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.count.instruction.mp3",
+        "en": "assets/audio/en/play.count.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نعدّ سوا!",
+        "en": "Let's count together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1019,
+        "en": 1567
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.count.thats",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.count.thats.mp3",
+        "en": "assets/audio/en/play.count.thats.mp3"
+      },
+      "transcript": {
+        "ar": "كده…",
+        "en": "That's…"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 627
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.drag.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.drag.hint1.mp3",
+        "en": "assets/audio/en/play.drag.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نمسكها ونزحلقها لحد مكانها!",
+        "en": "Let's hold it and slide it to its place!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2064,
+        "en": 2612
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.drag.hint2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.drag.hint2.mp3",
+        "en": "assets/audio/en/play.drag.hint2.mp3"
+      },
+      "transcript": {
+        "ar": "شوف! مكانها هنا!",
+        "en": "Look! It goes here!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1228,
+        "en": 1646
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.drag.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.drag.instruction.mp3",
+        "en": "assets/audio/en/play.drag.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نحط كل حاجة في مكانها!",
+        "en": "Let's put each one in its place!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 1985,
+        "en": 2194
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.match.hint1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.match.hint1.mp3",
+        "en": "assets/audio/en/play.match.hint1.mp3"
+      },
+      "transcript": {
+        "ar": "نلمس واحدة، وبعدين صاحبتها!",
+        "en": "Let's tap one, then its friend!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2064,
+        "en": 2273
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "play.match.instruction",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/play.match.instruction.mp3",
+        "en": "assets/audio/en/play.match.instruction.mp3"
+      },
+      "transcript": {
+        "ar": "يلا نلاقي الاتنين اللي بيروحوا مع بعض!",
+        "en": "Let's find the ones that go together!"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 2900,
+        "en": 2456
+      },
+      "pack": "pack.common"
+    },
+    {
       "id": "screen.avatar.choose",
       "kind": "voice",
       "files": {
@@ -1267,6 +1564,50 @@
       "durationMs": {
         "ar": 2299,
         "en": 2717
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "sfx.animal_cat",
+      "kind": "sfx",
+      "files": {
+        "common": "assets/audio/common/sfx.animal_cat.mp3"
+      },
+      "transcript": {},
+      "source": "placeholder:synth",
+      "licence": "project-generated",
+      "review": {
+        "common": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Synthesized SFX."
+        }
+      },
+      "durationMs": {
+        "common": 731
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "sfx.animal_dog",
+      "kind": "sfx",
+      "files": {
+        "common": "assets/audio/common/sfx.animal_dog.mp3"
+      },
+      "transcript": {},
+      "source": "placeholder:synth",
+      "licence": "project-generated",
+      "review": {
+        "common": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Synthesized SFX."
+        }
+      },
+      "durationMs": {
+        "common": 601
       },
       "pack": "pack.common"
     },
@@ -1797,6 +2138,369 @@
         "ar": 627,
         "en": 888
       }
+    },
+    {
+      "id": "word.animals.rabbit",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.animals.rabbit.mp3",
+        "en": "assets/audio/en/word.animals.rabbit.mp3"
+      },
+      "transcript": {
+        "ar": "أرنب",
+        "en": "rabbit"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 758
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.colors.blue",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.colors.blue.mp3",
+        "en": "assets/audio/en/word.colors.blue.mp3"
+      },
+      "transcript": {
+        "ar": "أزرق",
+        "en": "blue"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 967
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.colors.red",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.colors.red.mp3",
+        "en": "assets/audio/en/word.colors.red.mp3"
+      },
+      "transcript": {
+        "ar": "أحمر",
+        "en": "red"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 731
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.colors.yellow",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.colors.yellow.mp3",
+        "en": "assets/audio/en/word.colors.yellow.mp3"
+      },
+      "transcript": {
+        "ar": "أصفر",
+        "en": "yellow"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 888
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.food.apple",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.food.apple.mp3",
+        "en": "assets/audio/en/word.food.apple.mp3"
+      },
+      "transcript": {
+        "ar": "تفاحة",
+        "en": "apple"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 1019
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.food.carrot",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.food.carrot.mp3",
+        "en": "assets/audio/en/word.food.carrot.mp3"
+      },
+      "transcript": {
+        "ar": "جزرة",
+        "en": "carrot"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 784
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.numbers.1",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.numbers.1.mp3",
+        "en": "assets/audio/en/word.numbers.1.mp3"
+      },
+      "transcript": {
+        "ar": "واحد",
+        "en": "one"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 836
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.numbers.2",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.numbers.2.mp3",
+        "en": "assets/audio/en/word.numbers.2.mp3"
+      },
+      "transcript": {
+        "ar": "اتنين",
+        "en": "two"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 784
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.numbers.3",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.numbers.3.mp3",
+        "en": "assets/audio/en/word.numbers.3.mp3"
+      },
+      "transcript": {
+        "ar": "تلاتة",
+        "en": "three"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 967
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.numbers.4",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.numbers.4.mp3",
+        "en": "assets/audio/en/word.numbers.4.mp3"
+      },
+      "transcript": {
+        "ar": "أربعة",
+        "en": "four"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 758
+      },
+      "pack": "pack.common"
+    },
+    {
+      "id": "word.numbers.5",
+      "kind": "voice",
+      "files": {
+        "ar": "assets/audio/ar/word.numbers.5.mp3",
+        "en": "assets/audio/en/word.numbers.5.mp3"
+      },
+      "transcript": {
+        "ar": "خمسة",
+        "en": "five"
+      },
+      "source": "placeholder:generated",
+      "licence": "project-generated",
+      "review": {
+        "ar": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Tone stand-in; no Arabic voice yet."
+        },
+        "en": {
+          "status": "placeholder",
+          "by": null,
+          "date": null,
+          "notes": "Generated with flite; replace with reviewed voice."
+        }
+      },
+      "durationMs": {
+        "ar": 627,
+        "en": 810
+      },
+      "pack": "pack.common"
     },
     {
       "id": "world.af.name",

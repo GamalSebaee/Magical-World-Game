@@ -54,6 +54,32 @@
       }
     },
     {
+      "id": "animals/rabbit",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/animals/rabbit.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "forest/bg-clearing",
       "type": "image",
       "pack": "pack.animal-forest",
@@ -236,6 +262,370 @@
       }
     },
     {
+      "id": "numerals/1",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/numerals/1.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "numerals/2",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/numerals/2.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "numerals/3",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/numerals/3.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "numerals/4",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/numerals/4.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "numerals/5",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/numerals/5.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/apple",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/apple.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/ball-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/ball-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/ball-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/ball-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/ball-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/ball-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/basket",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/basket.svg"
+      ],
+      "displaySize1x": {
+        "w": 260,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/box-blue",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/box-blue.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/box-red",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/box-red.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/box-yellow",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/box-yellow.svg"
+      ],
+      "displaySize1x": {
+        "w": 240,
+        "h": 200
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "objects/carrot",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/objects/carrot.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
       "id": "scenes/af-01-intro",
       "type": "background",
       "pack": "pack.animal-forest",
@@ -271,6 +661,32 @@
       "displaySize1x": {
         "w": 240,
         "h": 240
+      },
+      "source": "custom-vector",
+      "creator": "project (placeholder)",
+      "aiAssisted": false,
+      "licence": {
+        "type": "project-owned",
+        "url": null,
+        "attributionRequired": false
+      },
+      "status": "placeholder",
+      "review": {
+        "by": null,
+        "date": null,
+        "notes": "Functional placeholder vector; replace with art per style bible."
+      }
+    },
+    {
+      "id": "ui/sound-card",
+      "type": "image",
+      "pack": "pack.common",
+      "files": [
+        "assets/art/ui/sound-card.svg"
+      ],
+      "displaySize1x": {
+        "w": 180,
+        "h": 180
       },
       "source": "custom-vector",
       "creator": "project (placeholder)",
